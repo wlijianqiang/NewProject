@@ -1,0 +1,29 @@
+//
+//  TJPrefixHeader.pch
+//  NewProject
+//
+//  Created by lijianqiang on 2017/1/11.
+//  Copyright © 2017年 STV. All rights reserved.
+//
+
+#ifndef TJPrefixHeader_pch
+#define TJPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <SystemConfiguration/SystemConfiguration.h> // for AFNetworking
+
+
+#pragma mark - Custom Classs
+
+#import "TJAPIConst.h"
+#import "TJAPIManager.h"
+
+#import "TJProjectConfig.h"
+#import "TJStoryboardConst.h"
+
+#import "TJCategory.h"
+
+#endif /* TJPrefixHeader_pch */
