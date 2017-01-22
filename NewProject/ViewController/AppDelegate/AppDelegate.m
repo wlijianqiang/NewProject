@@ -10,6 +10,7 @@
 #import "AFNetworkActivityLogger.h"
 #import "IQKeyboardManager.h"
 #import "TJMainTabBarViewController.h"
+#import "TJRoutes.h"
 
 @interface AppDelegate ()
 

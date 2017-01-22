@@ -18,7 +18,7 @@
 
 @interface TJMainTabBarViewController ()
 
-@property (nonatomic, strong, nullable)UIWindow *windows;
+@property (nonatomic, strong, nullable)UIWindow *window;
 
 @end
 
@@ -141,13 +141,13 @@
 
 #pragma mark - 向视图控制器容器中添加子视图控制器
 - (void)shouldAddChildViewController:(UIViewController *)childViewController{
-    if (self.windows) {
-        if ([self.windows.rootViewController isKindOfClass:[UINavigationController class]]) {
-            UINavigationController *navigationController = (UINavigationController *)self.windows.rootViewController;
+    if (self.window) {
+        if ([self.window.rootViewController isKindOfClass:[UINavigationController class]]) {
+            UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
             UIViewController *topViewController = navigationController.topViewController;
             [childViewController willMoveToParentViewController:topViewController];
             [navigationController.view setFrame:navigationController.view.frame];
-            [self.windows addSubview:childViewController.view];
+            [self.window addSubview:childViewController.view];
             [topViewController addChildViewController:childViewController];
             [childViewController didMoveToParentViewController:topViewController];
         }
@@ -155,11 +155,36 @@
 }
 
 - (void)shouldKeyWindowViewController:(UIViewController *)viewController{
-    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.opaque = YES;
+    self.window.windowLevel = UIWindowLevelStatusBar;
+    self.window.rootViewController = viewController;
+    [self.window makeKeyWindow];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+    viewController.view.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, CGRectGetHeight([UIScreen mainScreen].bounds));
+    [UIView animateWithDuration:0.25 animations:^{
+        viewController.view.transform = CGAffineTransformIdentity;
+    }];
 }
 
 - (void)dismissKeyWindowViewController:(UIViewController *)viewController{
-    
+    [viewController viewWillDisappear:YES];
+    [viewController viewDidDisappear:YES];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+    [UIView animateWithDuration:0.25 animations:^{
+        if (viewController.navigationController) {
+            viewController.navigationController.view.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, CGRectGetHeight([UIScreen mainScreen].bounds));
+        }else{
+            viewController.view.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, CGRectGetHeight([UIScreen mainScreen].bounds));
+        }
+    } completion:^(BOOL finished) {
+        [viewController.view removeFromSuperview];
+        [self.window removeFromSuperview];
+        [self.window resignKeyWindow];
+        self.window = nil;
+        UIWindow *window = [UIApplication sharedApplication].windows[0];
+        [window makeKeyWindow];
+    }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

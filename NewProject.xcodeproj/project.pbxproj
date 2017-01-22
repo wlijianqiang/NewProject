@@ -33,6 +33,8 @@
 		CD13B15C1E24C58F00093161 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13B15B1E24C58F00093161 /* MBProgressHUD.m */; };
 		CD4B7C131E260018007945A0 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B7C121E260018007945A0 /* Aspects.m */; };
 		CD4B7C171E26053A007945A0 /* TJProjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B7C161E26053A007945A0 /* TJProjectConfig.m */; };
+		CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7E7BDB1E339FBA002405A5 /* TJRoutesConfig.m */; };
+		CD7E7BE01E33A0EC002405A5 /* TJRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7E7BDF1E33A0EC002405A5 /* TJRoutes.m */; };
 		CD8AEAAD1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAAC1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m */; };
 		CD8AEABB1E2C8F6C00C64BB7 /* TJAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAB81E2C8F6C00C64BB7 /* TJAPIManager.m */; };
 		CD8AEABC1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEABA1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m */; };
@@ -161,6 +163,10 @@
 		CD4B7C121E260018007945A0 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		CD4B7C151E26053A007945A0 /* TJProjectConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJProjectConfig.h; sourceTree = "<group>"; };
 		CD4B7C161E26053A007945A0 /* TJProjectConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJProjectConfig.m; sourceTree = "<group>"; };
+		CD7E7BDA1E339FBA002405A5 /* TJRoutesConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJRoutesConfig.h; sourceTree = "<group>"; };
+		CD7E7BDB1E339FBA002405A5 /* TJRoutesConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJRoutesConfig.m; sourceTree = "<group>"; };
+		CD7E7BDE1E33A0EC002405A5 /* TJRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJRoutes.h; sourceTree = "<group>"; };
+		CD7E7BDF1E33A0EC002405A5 /* TJRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJRoutes.m; sourceTree = "<group>"; };
 		CD8AEAAB1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJMethodSwizzied.h"; sourceTree = "<group>"; };
 		CD8AEAAC1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TJMethodSwizzied.m"; sourceTree = "<group>"; };
 		CD8AEAB61E2C8F6C00C64BB7 /* TJAPIConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJAPIConst.h; sourceTree = "<group>"; };
@@ -442,8 +448,19 @@
 			children = (
 				CD4B7C151E26053A007945A0 /* TJProjectConfig.h */,
 				CD4B7C161E26053A007945A0 /* TJProjectConfig.m */,
+				CD7E7BDA1E339FBA002405A5 /* TJRoutesConfig.h */,
+				CD7E7BDB1E339FBA002405A5 /* TJRoutesConfig.m */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		CD7E7BDD1E33A0D0002405A5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CD7E7BDE1E33A0EC002405A5 /* TJRoutes.h */,
+				CD7E7BDF1E33A0EC002405A5 /* TJRoutes.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		CD8AEAB11E2C788300C64BB7 /* ViewController */ = {
@@ -691,6 +708,7 @@
 		CDC414A61E24ED7400EA685D /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				CD7E7BDD1E33A0D0002405A5 /* Tool */,
 				CD8AEAB51E2C8F6C00C64BB7 /* Network */,
 				CD4B7C141E2604E9007945A0 /* Config */,
 				CDC414B71E24EE3000EA685D /* Category */,
@@ -918,6 +936,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC414BE1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m in Sources */,
+				CD7E7BE01E33A0EC002405A5 /* TJRoutes.m in Sources */,
 				CD8AEB321E2DB86400C64BB7 /* UIWindow+TJWindow.m in Sources */,
 				CDC414A01E24ECAF00EA685D /* IQBarButtonItem.m in Sources */,
 				CD13B1371E23354E00093161 /* UIProgressView+AFNetworking.m in Sources */,
@@ -971,6 +990,7 @@
 				CD8AEAE51E2C95CF00C64BB7 /* TJSecondViewController.m in Sources */,
 				CDC414A21E24ECAF00EA685D /* IQTitleBarButtonItem.m in Sources */,
 				CD13B12B1E23354E00093161 /* AFHTTPSessionManager.m in Sources */,
+				CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */,
 				CD8AEB2E1E2DB45700C64BB7 /* NSString+TJCountCut.m in Sources */,
 				CD13B1321E23354E00093161 /* AFImageDownloader.m in Sources */,
 				CDC414A41E24ECAF00EA685D /* IQUIView+IQKeyboardToolbar.m in Sources */,
