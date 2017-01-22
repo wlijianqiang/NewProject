@@ -15,15 +15,16 @@
 #import <UIKit/UIKit.h>
 #import <SystemConfiguration/SystemConfiguration.h> // for AFNetworking
 
+#pragma mark - Vender
+#import "JLRoutes.h"
 
 #pragma mark - Custom Classs
 
 #import "TJAPIConst.h"
 #import "TJAPIManager.h"
 
-#import "TJProjectConfig.h"
 #import "TJStoryboardConst.h"
-
 #import "TJCategory.h"
+#import "TJConfig.h"
 
 #endif /* TJPrefixHeader_pch */

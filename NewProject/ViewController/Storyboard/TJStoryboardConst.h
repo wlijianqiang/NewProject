@@ -9,6 +9,7 @@
 #ifndef TJStoryboardConst_h
 #define TJStoryboardConst_h
 
+static NSString * _Nonnull const TJMainTabBarViewControllerStoryboard  = @"TJMainTabBarViewController";
 static NSString * _Nonnull const TJFirstViewControllerStoryboard  = @"TJFirstViewController";
 static NSString * _Nonnull const TJSecondViewControllerStoryboard = @"TJSecondViewController";
 static NSString * _Nonnull const TJThirdViewControllerStoryboard  = @"TJThirdViewController";

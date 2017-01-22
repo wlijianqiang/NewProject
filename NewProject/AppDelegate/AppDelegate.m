@@ -14,6 +14,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong)TJMainTabBarViewController *mainTabBarViewController;
+
 @end
 
 @implementation AppDelegate
@@ -27,14 +29,27 @@
     [TJProjectConfig setSystemConfig];
     
     // 配置根视图
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[TJMainTabBarViewController alloc] init];
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    self.window.rootViewController = [[TJMainTabBarViewController alloc] init];
+//    [self.window makeKeyAndVisible];
 
     return YES;
 }
 
+- (void)setupRoute{
+    self.mainTabBarViewController = [[UIStoryboard MainStoryboard]instantiateViewControllerWithIdentifier:TJMainTabBarViewControllerStoryboard];
+    [[TJRoutesConfig registerRoutes] enumerateObjectsUsingBlock:^(TJRoutes *route, NSUInteger idx, BOOL * _Nonnull stop) {
+        [[JLRoutes globalRoutes] addRoute:route.routePattern handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
+            route.handlerBlock(self.mainTabBarViewController,route.routePattern,parameters);
+            return YES;
+        }];
+    }];
+    [[JLRoutes globalRoutes] addRoute:@"/rootvc" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
+        
+        return YES;
+    }];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

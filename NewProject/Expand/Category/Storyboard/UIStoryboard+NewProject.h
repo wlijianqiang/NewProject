@@ -13,8 +13,10 @@
 /**
  *  MainTabStoryboard
  *
- *  @return ss
+ *  @return Storyboard
  */
++ (UIStoryboard *)MainStoryboard;
+
 + (UIStoryboard *)FirstTabStoryboard;
 
 + (UIStoryboard *)SecondTabStoryboard;

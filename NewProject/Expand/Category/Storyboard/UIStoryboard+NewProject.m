@@ -10,6 +10,10 @@
 
 @implementation UIStoryboard (NewProject)
 
++ (UIStoryboard *)MainStoryboard{
+    return [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+}
+
 + (UIStoryboard *)FirstTabStoryboard{
   return [UIStoryboard storyboardWithName:@"First" bundle:nil];
 }
