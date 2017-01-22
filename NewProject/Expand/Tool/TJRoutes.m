@@ -10,7 +10,8 @@
 
 @implementation TJRoutes
 
-+ (TJRoutes *)routePattern:(NSString *)routePattern handler:(TJRoutesActionBlock)handlerBlock{
++ (TJRoutes *)routePattern:(NSString *)routePattern
+                   handler:(TJRoutesActionBlock)handlerBlock{
     TJRoutes *route = [[TJRoutes alloc] init];
     route.routePattern = routePattern;
     route.handlerBlock = handlerBlock;

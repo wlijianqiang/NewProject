@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TJMainTabBarViewController.h"
+#import "TJRoutes.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, strong)TJMainTabBarViewController *mainTabBarViewController;
 
 @end
 

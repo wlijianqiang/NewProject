@@ -91,6 +91,8 @@
 		CDC96A9C1E34574D000239DB /* JLRRouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96A951E34574D000239DB /* JLRRouteRequest.m */; };
 		CDC96A9D1E34574D000239DB /* JLRRouteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96A971E34574D000239DB /* JLRRouteResponse.m */; };
 		CDC96A9E1E34574D000239DB /* JLRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96A991E34574D000239DB /* JLRoutes.m */; };
+		CDC96AA11E34861E000239DB /* TJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96AA01E34861E000239DB /* TJTestViewController.m */; };
+		CDC96AA41E348903000239DB /* AppDelegate+JLRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96AA31E348903000239DB /* AppDelegate+JLRoute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,6 +271,10 @@
 		CDC96A971E34574D000239DB /* JLRRouteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLRRouteResponse.m; sourceTree = "<group>"; };
 		CDC96A981E34574D000239DB /* JLRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLRoutes.h; sourceTree = "<group>"; };
 		CDC96A991E34574D000239DB /* JLRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLRoutes.m; sourceTree = "<group>"; };
+		CDC96A9F1E34861E000239DB /* TJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJTestViewController.h; sourceTree = "<group>"; };
+		CDC96AA01E34861E000239DB /* TJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJTestViewController.m; sourceTree = "<group>"; };
+		CDC96AA21E348903000239DB /* AppDelegate+JLRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JLRoute.h"; sourceTree = "<group>"; };
+		CDC96AA31E348903000239DB /* AppDelegate+JLRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JLRoute.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -539,6 +545,8 @@
 			children = (
 				CD8AEAE01E2C95C300C64BB7 /* TJFirstViewController.h */,
 				CD8AEAE11E2C95C300C64BB7 /* TJFirstViewController.m */,
+				CDC96A9F1E34861E000239DB /* TJTestViewController.h */,
+				CDC96AA01E34861E000239DB /* TJTestViewController.m */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -807,6 +815,8 @@
 			children = (
 				CDC96A891E345289000239DB /* AppDelegate.h */,
 				CDC96A8A1E345289000239DB /* AppDelegate.m */,
+				CDC96AA21E348903000239DB /* AppDelegate+JLRoute.h */,
+				CDC96AA31E348903000239DB /* AppDelegate+JLRoute.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -1012,6 +1022,7 @@
 				CD4B7C171E26053A007945A0 /* TJProjectConfig.m in Sources */,
 				CDC414A31E24ECAF00EA685D /* IQToolbar.m in Sources */,
 				CDC414981E24ECAF00EA685D /* IQUIScrollView+Additions.m in Sources */,
+				CDC96AA41E348903000239DB /* AppDelegate+JLRoute.m in Sources */,
 				CD13B1571E2472B800093161 /* AFNetworkActivityConsoleLogger.m in Sources */,
 				CDC414BD1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m in Sources */,
 				CD8AEABB1E2C8F6C00C64BB7 /* TJAPIManager.m in Sources */,
@@ -1048,6 +1059,7 @@
 				CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */,
 				CD8AEB2E1E2DB45700C64BB7 /* NSString+TJCountCut.m in Sources */,
 				CDC96A9A1E34574D000239DB /* JLROptionalRouteParser.m in Sources */,
+				CDC96AA11E34861E000239DB /* TJTestViewController.m in Sources */,
 				CD13B1321E23354E00093161 /* AFImageDownloader.m in Sources */,
 				CDC414A41E24ECAF00EA685D /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				CD13B1341E23354E00093161 /* UIActivityIndicatorView+AFNetworking.m in Sources */,

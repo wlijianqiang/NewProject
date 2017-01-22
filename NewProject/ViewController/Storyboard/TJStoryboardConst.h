@@ -15,4 +15,5 @@ static NSString * _Nonnull const TJSecondViewControllerStoryboard = @"TJSecondVi
 static NSString * _Nonnull const TJThirdViewControllerStoryboard  = @"TJThirdViewController";
 static NSString * _Nonnull const TJFourViewControllerStoryboard   = @"TJFourViewController";
 
+static NSString * _Nonnull const TJTestViewController_Storyboard = @"TJTestViewController";
 #endif /* TJStoryboardConst_h */

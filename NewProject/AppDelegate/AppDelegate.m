@@ -8,15 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AFNetworkActivityLogger.h"
-#import "IQKeyboardManager.h"
-#import "TJMainTabBarViewController.h"
-#import "TJRoutes.h"
-
-@interface AppDelegate ()
-
-@property (nonatomic, strong)TJMainTabBarViewController *mainTabBarViewController;
-
-@end
+#import "AppDelegate+JLRoute.h"
 
 @implementation AppDelegate
 
@@ -27,28 +19,9 @@
     [[AFNetworkActivityLogger sharedLogger] startLogging];
 #endif
     [TJProjectConfig setSystemConfig];
+    [self setupRoute];
     
-    // 配置根视图
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    self.window.rootViewController = [[TJMainTabBarViewController alloc] init];
-//    [self.window makeKeyAndVisible];
-
     return YES;
-}
-
-- (void)setupRoute{
-    self.mainTabBarViewController = [[UIStoryboard MainStoryboard]instantiateViewControllerWithIdentifier:TJMainTabBarViewControllerStoryboard];
-    [[TJRoutesConfig registerRoutes] enumerateObjectsUsingBlock:^(TJRoutes *route, NSUInteger idx, BOOL * _Nonnull stop) {
-        [[JLRoutes globalRoutes] addRoute:route.routePattern handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
-            route.handlerBlock(self.mainTabBarViewController,route.routePattern,parameters);
-            return YES;
-        }];
-    }];
-    [[JLRoutes globalRoutes] addRoute:@"/rootvc" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
-        
-        return YES;
-    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

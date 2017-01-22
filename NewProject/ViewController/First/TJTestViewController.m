@@ -1,31 +1,23 @@
 //
-//  TJFirstViewController.m
+//  TJTestViewController.m
 //  NewProject
 //
-//  Created by lijianqiang on 2017/1/16.
+//  Created by lijianqiang on 2017/1/22.
 //  Copyright © 2017年 STV. All rights reserved.
 //
 
-#import "TJFirstViewController.h"
-#import "UITabBar+TJBadge.h"
+#import "TJTestViewController.h"
 
-@interface TJFirstViewController ()
+@interface TJTestViewController ()
 
 @end
 
-@implementation TJFirstViewController
+@implementation TJTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"首页";
-    //显示红点
-    [self.tabBarController.tabBar showBadgeOnItemIndex:0];
-}
-- (IBAction)hiddenBadgeAction:(UIButton *)sender {
-    //隐藏红点
-    //[self.tabBarController.tabBar hiddenBadgeOnItemIndex:0];
-    [JLRoutes routeURL:[NSURL URLWithString:@"testViewController"] withParameters:nil];
+    self.navigationItem.title = @"test";
 }
 
 - (void)didReceiveMemoryWarning {

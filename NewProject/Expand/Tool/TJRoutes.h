@@ -14,6 +14,7 @@
 @property (nonatomic, copy, nullable) NSString *routePattern;
 @property (nonatomic, copy, nullable) TJRoutesActionBlock handlerBlock;
 
-+ (nullable TJRoutes *)routePattern:(nullable NSString *)routePattern handler:(nullable TJRoutesActionBlock)handlerBlock;
++ (nullable TJRoutes *)routePattern:(nullable NSString *)routePattern
+                            handler:(nullable TJRoutesActionBlock)handlerBlock;
 
 @end
