@@ -40,7 +40,7 @@
     //导航栏字体
     NSDictionary *attributeDictionary = @{NSForegroundColorAttributeName:[UIColor whiteColor],
                                                    NSShadowAttributeName:[NSShadow new],
-                                          NSFontAttributeName:[UIFont systemFontOfSize:15.0f]};
+                                          NSFontAttributeName:[UIFont systemFontOfSize:20.0f]};
     [[UINavigationBar appearance] setTitleTextAttributes:attributeDictionary];
     
     

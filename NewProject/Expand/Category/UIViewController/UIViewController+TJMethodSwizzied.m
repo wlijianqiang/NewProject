@@ -13,6 +13,10 @@
 
 @implementation UIViewController (TJMethodSwizzied)
 
+- (NSString *)jk_navigationItemBackBarButtonTitle{
+    return @"返回";
+}
+
 + (void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
