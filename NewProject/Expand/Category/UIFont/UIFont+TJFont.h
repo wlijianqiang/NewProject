@@ -50,4 +50,32 @@
  @return 20号字体
  */
 +( nullable UIFont *)defaultFontOfSize20;
+
+/**
+ 获取指定的字体大小
+ 
+ @param size 字体大小
+ 
+ @return 指定的字体大小
+ */
++ (nullable UIFont *)defaultFontOfSize:(NSUInteger)size;
+/**
+ 预留文字方法，方便以后更换字体
+ @param size 字体的大小
+ @param name 字体名称
+ 
+ @return 字体
+ */
++ (nullable UIFont *)fontOfSize:(NSInteger)size fontName:(nullable NSString *)name;
+
+/**
+ 预留的加粗文字方法，方便以后更换字体
+ 
+ @param size 加粗字体的大小
+ @param name 字体名称
+ 
+ @return 加粗字体
+ */
++ (nullable UIFont *)boldFontOfSize:(NSUInteger)size fontName:(nullable NSString *)name;
+
 @end
