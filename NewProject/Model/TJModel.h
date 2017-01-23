@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface TJModel : NSObject
+#import "MJExtension.h"
+/**
+统一处理各种转换情况，Model类都要继承此类
+ */
+@interface TJModel : NSObject <NSCoding>
 
 @end
