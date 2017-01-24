@@ -35,6 +35,7 @@
 		CD4B7C171E26053A007945A0 /* TJProjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B7C161E26053A007945A0 /* TJProjectConfig.m */; };
 		CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7E7BDB1E339FBA002405A5 /* TJRoutesConfig.m */; };
 		CD7E7BE01E33A0EC002405A5 /* TJRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7E7BDF1E33A0EC002405A5 /* TJRoutes.m */; };
+		CD7F23AE1E372B6300F47D3F /* TJTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F23AD1E372B6300F47D3F /* TJTestModel.m */; };
 		CD8AEAAD1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAAC1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m */; };
 		CD8AEABB1E2C8F6C00C64BB7 /* TJAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAB81E2C8F6C00C64BB7 /* TJAPIManager.m */; };
 		CD8AEABC1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEABA1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m */; };
@@ -426,6 +427,8 @@
 		CD7E7BDB1E339FBA002405A5 /* TJRoutesConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJRoutesConfig.m; sourceTree = "<group>"; };
 		CD7E7BDE1E33A0EC002405A5 /* TJRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJRoutes.h; sourceTree = "<group>"; };
 		CD7E7BDF1E33A0EC002405A5 /* TJRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJRoutes.m; sourceTree = "<group>"; };
+		CD7F23AC1E372B6300F47D3F /* TJTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJTestModel.h; sourceTree = "<group>"; };
+		CD7F23AD1E372B6300F47D3F /* TJTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJTestModel.m; sourceTree = "<group>"; };
 		CD8AEAAB1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJMethodSwizzied.h"; sourceTree = "<group>"; };
 		CD8AEAAC1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TJMethodSwizzied.m"; sourceTree = "<group>"; };
 		CD8AEAB61E2C8F6C00C64BB7 /* TJAPIConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJAPIConst.h; sourceTree = "<group>"; };
@@ -2763,6 +2766,8 @@
 			children = (
 				CDC96DEC1E35E4AD000239DB /* TJModel.h */,
 				CDC96DED1E35E4AD000239DB /* TJModel.m */,
+				CD7F23AC1E372B6300F47D3F /* TJTestModel.h */,
+				CD7F23AD1E372B6300F47D3F /* TJTestModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3085,6 +3090,7 @@
 				CDC96D2F1E348CA4000239DB /* UISplitViewController+JKQuickAccess.m in Sources */,
 				CDC96CA41E348CA4000239DB /* NSDictionary+JKJSONString.m in Sources */,
 				CDC96CCE1E348CA4000239DB /* NSString+JKScore.m in Sources */,
+				CD7F23AE1E372B6300F47D3F /* TJTestModel.m in Sources */,
 				CD13B1381E23354E00093161 /* UIRefreshControl+AFNetworking.m in Sources */,
 				CDC96CD91E348CA4000239DB /* NSURLConnection+JKSelfSigned.m in Sources */,
 				CDC414D31E24EF4F00EA685D /* UIImage+TJGaussFuzzy.m in Sources */,
