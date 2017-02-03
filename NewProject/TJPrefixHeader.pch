@@ -28,5 +28,6 @@
 #import "TJStoryboardConst.h"
 #import "TJCategory.h"
 #import "TJConfig.h"
+#import "TJNotification.h"
 
 #endif /* TJPrefixHeader_pch */

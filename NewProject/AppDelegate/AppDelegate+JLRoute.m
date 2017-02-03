@@ -11,7 +11,7 @@
 @implementation AppDelegate (JLRoute)
 
 - (void)setupRoute{
-    self.mainTabBarViewController = [[UIStoryboard MainStoryboard]instantiateViewControllerWithIdentifier:TJMainTabBarViewControllerStoryboard];
+    self.mainTabBarViewController = [[UIStoryboard MainStoryboard]instantiateViewControllerWithIdentifier:TJMainTabBarViewController_Storyboard];
     [[TJRoutesConfig registerRoutes] enumerateObjectsUsingBlock:^(TJRoutes *route, NSUInteger idx, BOOL * _Nonnull stop) {
         [[JLRoutes globalRoutes] addRoute:route.routePattern handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
             route.handlerBlock(self.mainTabBarViewController,route.routePattern,parameters);

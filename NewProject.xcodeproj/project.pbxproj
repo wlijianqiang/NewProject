@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD02EF5C1E44648F00A7E8CC /* UIView+showOnKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CD02EF5B1E44648F00A7E8CC /* UIView+showOnKeyWindow.m */; };
 		CD13B0D51E2333C900093161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13B0D41E2333C900093161 /* main.m */; };
 		CD13B0DE1E2333C900093161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD13B0DC1E2333C900093161 /* Main.storyboard */; };
 		CD13B0E01E2333C900093161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13B0DF1E2333C900093161 /* Assets.xcassets */; };
@@ -366,6 +367,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD02EF551E445DA800A7E8CC /* TJNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJNotification.h; sourceTree = "<group>"; };
+		CD02EF5A1E44648F00A7E8CC /* UIView+showOnKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+showOnKeyWindow.h"; sourceTree = "<group>"; };
+		CD02EF5B1E44648F00A7E8CC /* UIView+showOnKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+showOnKeyWindow.m"; sourceTree = "<group>"; };
 		CD13B0D01E2333C900093161 /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13B0D41E2333C900093161 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD13B0DD1E2333C900093161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1068,6 +1072,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD02EF541E445D8100A7E8CC /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				CD02EF551E445DA800A7E8CC /* TJNotification.h */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		CD02EF561E44635100A7E8CC /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				CD02EF5A1E44648F00A7E8CC /* UIView+showOnKeyWindow.h */,
+				CD02EF5B1E44648F00A7E8CC /* UIView+showOnKeyWindow.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		CD13B0C71E2333C900093161 = {
 			isa = PBXGroup;
 			children = (
@@ -1481,6 +1502,7 @@
 		CDC414A61E24ED7400EA685D /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				CD02EF541E445D8100A7E8CC /* Notification */,
 				CD7E7BDD1E33A0D0002405A5 /* Tool */,
 				CD8AEAB51E2C8F6C00C64BB7 /* Network */,
 				CD4B7C141E2604E9007945A0 /* Config */,
@@ -1501,6 +1523,7 @@
 		CDC414B71E24EE3000EA685D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CD02EF561E44635100A7E8CC /* UIView */,
 				CD8AEB2B1E2DB31B00C64BB7 /* TJCategory.h */,
 				CD8AEB2F1E2DB84600C64BB7 /* UIWindow */,
 				CDC414B81E24EE3B00EA685D /* UIViewController */,
@@ -2992,6 +3015,7 @@
 				CD13B15C1E24C58F00093161 /* MBProgressHUD.m in Sources */,
 				CDC96CCB1E348CA4000239DB /* NSString+JKNormalRegex.m in Sources */,
 				CDC96DD21E35E3E9000239DB /* NSObject+MJProperty.m in Sources */,
+				CD02EF5C1E44648F00A7E8CC /* UIView+showOnKeyWindow.m in Sources */,
 				CDC96D371E348CA4000239DB /* UITextView+JKPinchZoom.m in Sources */,
 				CD13B1391E23354E00093161 /* UIWebView+AFNetworking.m in Sources */,
 				CDC96CFB1E348CA4000239DB /* UIColor+JKHEX.m in Sources */,

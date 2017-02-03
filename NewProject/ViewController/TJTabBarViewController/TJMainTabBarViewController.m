@@ -19,10 +19,20 @@
 @interface TJMainTabBarViewController ()
 
 @property (nonatomic, strong, nullable)UIWindow *window;
+/**
+ 之前被选中的UITabBarItem
+ */
+@property (nonatomic, strong, nullable)UITabBarItem *lastTabBarItem;
 
 @end
 
 @implementation TJMainTabBarViewController
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //将默认被选中的tabBarItem保存为属性
+    self.lastTabBarItem = self.tabBar.selectedItem;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,16 +56,16 @@
                                  @"MainTabItemIcon_Select_2",
                                  @"MainTabItemIcon_Select_4"];
     
-    TJFirstViewController *firstController = [[UIStoryboard FirstTabStoryboard] instantiateViewControllerWithIdentifier:TJFirstViewControllerStoryboard];
+    TJFirstViewController *firstController = [[UIStoryboard FirstTabStoryboard] instantiateViewControllerWithIdentifier:TJFirstViewController_Storyboard];
     UINavigationController *v1 = [[UINavigationController alloc]initWithRootViewController:firstController];
     
-    TJSecondViewController *secondController = [[UIStoryboard SecondTabStoryboard] instantiateViewControllerWithIdentifier:TJSecondViewControllerStoryboard];
+    TJSecondViewController *secondController = [[UIStoryboard SecondTabStoryboard] instantiateViewControllerWithIdentifier:TJSecondViewController_Storyboard];
     UINavigationController *v2 = [[UINavigationController alloc]initWithRootViewController:secondController];
     
-    TJThirdViewController *thirdController = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJThirdViewControllerStoryboard];
+    TJThirdViewController *thirdController = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJThirdViewController_Storyboard];
     UINavigationController *v3 = [[UINavigationController alloc]initWithRootViewController:thirdController];
     
-    TJFourViewController *fourController = [[UIStoryboard FourTabStoryboard] instantiateViewControllerWithIdentifier:TJFourViewControllerStoryboard];
+    TJFourViewController *fourController = [[UIStoryboard FourTabStoryboard] instantiateViewControllerWithIdentifier:TJFourViewController_Storyboard];
     UINavigationController *v4 = [[UINavigationController alloc]initWithRootViewController:fourController];
     self.viewControllers = @[v1,v2,v3,v4];
     
@@ -78,6 +88,15 @@
     //默认选中首页
     self.selectedIndex = 0;
 
+}
+
+#pragma mark - UITabBarDelegate
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    //本次点击的UITabBarItem是否和上次的一样
+    if (item == self.lastTabBarItem) {//一样则抛出通知
+        [[NSNotificationCenter defaultCenter] postNotificationName:TJTabBarDidClickNotification object:nil userInfo:nil];
+    }
+    self.lastTabBarItem = item;
 }
 
 #pragma mark - TJRoutesDelegate
