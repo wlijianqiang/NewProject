@@ -12,7 +12,7 @@
 @implementation UIImage (TJGaussFuzzy)
 + (UIImage *)blurryImage:(UIImage *)image withBlurLevel:(CGFloat)blur{
     if (image==nil){
-        NSLog(@"error:为图片添加模糊效果时，未能获取原始图片");
+        TJLog(@"error:为图片添加模糊效果时，未能获取原始图片");
         return nil;
     }
     
@@ -22,7 +22,7 @@
     
     int boxSize = (int)(blur * 100);
     boxSize -= (boxSize % 2) + 1;
-    NSLog(@"boxSize:%i",boxSize);
+    TJLog(@"boxSize:%i",boxSize);
     
     CGImageRef img = image.CGImage;
     
@@ -66,7 +66,7 @@
     
     
     if (error) {
-        NSLog(@"error from convolution %ld", error);
+        TJLog(@"error from convolution %ld", error);
     }
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();

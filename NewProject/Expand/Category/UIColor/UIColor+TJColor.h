@@ -9,17 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (TJColor)
-/**
- 通过 Hex 设置的颜色 UIColor
- */
+/**通过 Hex 设置的颜色 UIColor*/
 + (UIColor *)colorWithHexString:(NSString *)hexString;
-/**
- 通过 RGB 设置的颜色 UIColor
- */
+/**通过 RGB 设置的颜色 UIColor */
 + (UIColor *)RGBColorWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(NSInteger)alpha;
-/**
- 随即颜色
- */
+/** 随即颜色*/
 + (UIColor *)randomColor;
 
 @end

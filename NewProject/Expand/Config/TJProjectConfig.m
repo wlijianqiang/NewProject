@@ -26,7 +26,8 @@
                      usingBlock:^(id<AspectInfo> aspectInfo){
                          UIViewController *viewController = (UIViewController *)aspectInfo.instance;
                          NSString *className = NSStringFromClass([viewController class]);
-                         if ([[className substringWithRange:NSMakeRange(0, 2)] isEqualToString:@"TJ"]) {
+                         if ([[className substringWithRange:NSMakeRange(0, 2)] isEqualToString:kClassPrefix
+                              ]) {
                              //视图默认背景颜色
                              viewController.view.backgroundColor = [UIColor whiteColor];
                              [viewController setupForDismissKeyboard];
@@ -44,14 +45,14 @@
                      }
                           error:nil];
     
-    [[UIView appearance] setContentMode:UIViewContentModeScaleAspectFill];
+    [[UIView appearance] setContentMode:UIViewContentModeScaleToFill];
     
     [[UIScrollView appearance] setKeyboardDismissMode:UIScrollViewKeyboardDismissModeOnDrag];
     
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     
-    [[UITableView appearance] setSeparatorInset:UIEdgeInsetsMake(0.0f, 15.0f, 0.0f, 0.0f)];
+    [[UITableView appearance] setSeparatorInset:UIEdgeInsetsMake(0.0f, 15.0f, 0.0f, 15.0f)];
     [[UITableView appearance] setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
     [[UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil] setTintColor:[UIColor blackColor]];
@@ -93,6 +94,6 @@
         NSArray *names = [UIFont fontNamesForFamilyName:familyName];
         [fontNames addObjectsFromArray:names];
     }
-    NSLog(@"系统中所有字体:%@",fontNames);
+    TJLog(@"系统中所有字体:%@",fontNames);
 }
 @end

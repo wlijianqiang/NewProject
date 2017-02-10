@@ -8,7 +8,7 @@
 
 #ifndef TJNotification_h
 #define TJNotification_h
-
+/**控制器item点击通知*/
 static NSString * _Nonnull const TJTabBarDidClickNotification = @"TJTabBarDidClickNotification";
 
 #endif /* TJNotification_h */

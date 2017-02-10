@@ -62,14 +62,14 @@
                 if ([responseObject isKindOfClass:[NSDictionary class]]) {
                     NSInteger code = [[NSString stringWithFormat:@"%@", responseObject[@"code"]] integerValue];
                     NSString *message = [NSString stringWithFormat:@"%@", responseObject[@"msg"]];
-                     NSLog(@"%@%@, code: %zi, message: %@, responseObject: %@", kApiBaseURL, URLString, code, message, responseObject);
+                     TJLog(@"%@%@, code: %zi, message: %@, responseObject: %@", kApiBaseURL, URLString, code, message, responseObject);
                     if (success) {
                         success(task, responseObject, code, message);
                     }else{
                         
                     }
                 }else{
-                    NSLog(@"%@%@, responseObject: %@", kApiBaseURL, URLString, responseObject);
+                    TJLog(@"%@%@, responseObject: %@", kApiBaseURL, URLString, responseObject);
                     if (failure) {
                         failure(task, nil, 99999, @"ErrorMessage");
                     }
@@ -77,7 +77,7 @@
                 
             } failure:^(NSURLSessionDataTask * _Nullable task , NSError * _Nullable error) {
                 if (error) {
-                    NSLog(@"%@%@, code: %zi, message: %@, error: %@", kApiBaseURL, URLString, error.code, error.description, error);
+                    TJLog(@"%@%@, code: %zi, message: %@, error: %@", kApiBaseURL, URLString, error.code, error.description, error);
                     if (failure) {
                         failure(task, error, error.code, @"ErrorMessage");
                     }
@@ -108,14 +108,14 @@
         if ([responseObject isKindOfClass:[NSDictionary class]]) {
             NSInteger code = [[NSString stringWithFormat:@"%@", responseObject[@"code"]] integerValue];
             NSString *message = [NSString stringWithFormat:@"%@", responseObject[@"msg"]];
-            NSLog(@"%@%@, code: %zi, message: %@, responseObject: %@", kApiBaseURL, URLString, code, message, responseObject);
+            TJLog(@"%@%@, code: %zi, message: %@, responseObject: %@", kApiBaseURL, URLString, code, message, responseObject);
             if (success) {
                 success(task, responseObject, code, message);
             }else{
                 
             }
         }else{
-            NSLog(@"%@%@, responseObject: %@", kApiBaseURL, URLString, responseObject);
+            TJLog(@"%@%@, responseObject: %@", kApiBaseURL, URLString, responseObject);
             if (failure) {
                 failure(task, nil, 99999, @"ErrorMessage");
             }
@@ -123,7 +123,7 @@
         
     } failure:^(NSURLSessionDataTask * _Nullable task , NSError * _Nullable error) {
         if (error) {
-            NSLog(@"%@%@, code: %zi, message: %@, error: %@", kApiBaseURL, URLString, error.code, error.description, error);
+            TJLog(@"%@%@, code: %zi, message: %@, error: %@", kApiBaseURL, URLString, error.code, error.description, error);
             if (failure) {
                 failure(task, error, error.code, @"ErrorMessage");
             }

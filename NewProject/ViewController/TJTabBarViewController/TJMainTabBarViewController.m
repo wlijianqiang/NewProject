@@ -87,7 +87,6 @@
     }
     //默认选中首页
     self.selectedIndex = 0;
-
 }
 
 #pragma mark - UITabBarDelegate

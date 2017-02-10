@@ -19,9 +19,11 @@
 #import "JLRoutes.h"
 #import "JKCategories.h"
 #import "Masonry.h"
+#import "MJRefresh.h"
 
 #pragma mark - Custom Classs
 
+#import "TJConst.h"
 #import "TJAPIConst.h"
 #import "TJAPIManager.h"
 
@@ -29,5 +31,6 @@
 #import "TJCategory.h"
 #import "TJConfig.h"
 #import "TJNotification.h"
+#import "TJMcros.h"
 
 #endif /* TJPrefixHeader_pch */

@@ -18,6 +18,7 @@
 }
 
 + (void)load{
+    [super load];
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         //获取原有方法  class_getInstanceMethod 得到类的实例方法  class_getClassMethod 得到类的方法
@@ -54,8 +55,8 @@
 
 - (void)swizzled_dealloc{
     NSString *classPrefix = NSStringFromClass([self class]);
-    if ([[classPrefix substringWithRange:NSMakeRange(0, 2)]isEqualToString:@"TJ"]) {//判断类的前缀
-         NSLog(@"swizzled_dealloc: <%@ 销毁了>", NSStringFromClass([self class]));
+    if ([[classPrefix substringWithRange:NSMakeRange(0, 2)]isEqualToString:kClassPrefix]) {//判断类的前缀
+         TJLog(@"swizzled_dealloc: <%@ 销毁了>", NSStringFromClass([self class]));
     }
     [self swizzled_dealloc];
 }
