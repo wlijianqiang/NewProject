@@ -35,9 +35,31 @@
     }
     if (URL) {
         self.HTTPSessionManager = [[TJHTTPSessionManager alloc]initWithBaseURL:URL];
+       
+#if DEBUG_DEVELOP
+        //配置HTTPS 尚未验证！
+#else
+         self.HTTPSessionManager.securityPolicy = [self apiServerSecurityPolicy];
+#endif
+
     }
     return self;
 }
+
+- (AFSecurityPolicy*)apiServerSecurityPolicy {
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy defaultPolicy];
+    securityPolicy.allowInvalidCertificates = YES;
+    securityPolicy.validatesDomainName = NO;
+    return securityPolicy;
+    
+    //使用命令：openssl s_client -connect apiserver.jijiankang.cn:443 </dev/null 2>/dev/null | openssl x509 -outform DER > apiserver.jijiankang.cn.cer
+    //将公钥放入工程
+    //    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
+    //    securityPolicy.allowInvalidCertificates = YES;
+    //    securityPolicy.validatesDomainName = NO;
+    //    return securityPolicy;
+}
+
 
 #pragma mark -GET
 
