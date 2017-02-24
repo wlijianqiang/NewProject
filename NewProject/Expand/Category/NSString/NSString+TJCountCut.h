@@ -10,8 +10,9 @@
 
 @interface NSString (TJCountCut)
 /**
- 数字截取
- */
+数字截取
+@return num
+*/
 +(NSString *)countNumAndChangeformat:(NSString *)num;
 
 

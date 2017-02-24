@@ -20,14 +20,14 @@
  */
 + (UIImage *)encodeQRImageWithContent:(NSString *)content size:(CGSize)size;
 /**
- *  生成一张高斯模糊的图片
+ *  使用vImage API进行图像的模糊处理
  *
  *  @param image 原图
- *  @param blur  模糊程度 (0~1)
+ *  @param blur  模糊度（0.0~1.0）
  *
- *  @return 高斯模糊图片
+ *  @return 糊处理之后的图像
  */
-+ (UIImage *)blurImage:(UIImage *)image blur:(CGFloat)blur;
+- (UIImage *)blurryImage:(UIImage *)image withBlurLevel:(CGFloat)blur;
 
 /**
  *  根据颜色生成一张图片

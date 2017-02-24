@@ -46,30 +46,31 @@
     return codeImage;
 }
 
-+ (UIImage *)blurImage:(UIImage *)image blur:(CGFloat)blur;
-{
-    // 模糊度越界
+- (UIImage *)blurryImage:(UIImage *)image withBlurLevel:(CGFloat)blur {
     if (blur < 0.f || blur > 1.f) {
         blur = 0.5f;
-    }
-    int boxSize = (int)(blur * 40);
-    boxSize = boxSize - (boxSize % 2) + 1;
-    CGImageRef img = image.CGImage;
-    vImage_Buffer inBuffer, outBuffer;
-    vImage_Error error;
-    void *pixelBuffer;
-    //从CGImage中获取数据
-    CGDataProviderRef inProvider = CGImageGetDataProvider(img);
-    CFDataRef inBitmapData = CGDataProviderCopyData(inProvider);
-    //设置从CGImage获取对象的属性
-    inBuffer.width = CGImageGetWidth(img);
-    inBuffer.height = CGImageGetHeight(img);
-    inBuffer.rowBytes = CGImageGetBytesPerRow(img);
+    }//判断曝光度
+    int boxSize = (int)(blur * 100);//放大100，就是小数点之后两位有效
+    boxSize = boxSize - (boxSize % 2) + 1;//如果是偶数，+1，变奇数
     
-    inBuffer.data = (void*)CFDataGetBytePtr(inBitmapData);
+    CGImageRef img = image.CGImage;//获取图片指针
+    
+    vImage_Buffer inBuffer, outBuffer;//获取缓冲区
+    vImage_Error error;//一个错误类，在后调用画图函数的时候要用
+    
+    void *pixelBuffer;
+    
+    CGDataProviderRef inProvider = CGImageGetDataProvider(img);//放回一个图片供应者信息
+    CFDataRef inBitmapData = CGDataProviderCopyData(inProvider);//拷贝数据，并转化
+    
+    inBuffer.width = CGImageGetWidth(img);//放回位图的宽度
+    inBuffer.height = CGImageGetHeight(img);//放回位图的高度
+    inBuffer.rowBytes = CGImageGetBytesPerRow(img);//放回位图的
+    
+    inBuffer.data = (void*)CFDataGetBytePtr(inBitmapData);//填写图片信息
     
     pixelBuffer = malloc(CGImageGetBytesPerRow(img) *
-                         CGImageGetHeight(img));
+                         CGImageGetHeight(img));//创建一个空间
     
     if(pixelBuffer == NULL)
         NSLog(@"No pixelbuffer");
@@ -79,12 +80,22 @@
     outBuffer.height = CGImageGetHeight(img);
     outBuffer.rowBytes = CGImageGetBytesPerRow(img);
     
-    error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+    error = vImageBoxConvolve_ARGB8888(&inBuffer,
+                                       &outBuffer,
+                                       NULL,
+                                       0,
+                                       0,
+                                       boxSize,//这个数一定要是奇数的，因此我们一开始的时候需要转化
+                                       boxSize,//这个数一定要是奇数的，因此我们一开始的时候需要转化
+                                       NULL,
+                                       kvImageEdgeExtend);
+    
     
     if (error) {
         NSLog(@"error from convolution %ld", error);
     }
     
+    //将刚刚得出的数据，画出来。
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGContextRef ctx = CGBitmapContextCreate(
                                              outBuffer.data,
@@ -97,6 +108,7 @@
     CGImageRef imageRef = CGBitmapContextCreateImage (ctx);
     UIImage *returnImage = [UIImage imageWithCGImage:imageRef];
     
+    //clean up
     CGContextRelease(ctx);
     CGColorSpaceRelease(colorSpace);
     
