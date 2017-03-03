@@ -8,5 +8,11 @@ pod 'SDWebImage'
 pod 'AFNetworking'
 pod 'SVProgressHUD'
 pod 'MJRefresh'
+pod 'MJExtension'
+pod 'JKCategories'
+pod 'JLRoutes'
+pod 'Aspects'
+pod 'IQKeyboardManager'
+pod 'MBProgressHUD'
 
 end

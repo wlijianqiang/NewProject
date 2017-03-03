@@ -68,7 +68,6 @@
                     </subviews>
                     <color key="backgroundColor" red="0.84696626659999996" green="0.84711211919999996" blue="0.84695702790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="centerX" secondItem="ggX-JA-L4v" secondAttribute="centerX" id="3Bg-bU-qPn"/>
                         <constraint firstItem="0go-y8-4da" firstAttribute="leading" secondItem="FcF-Py-2SK" secondAttribute="trailing" constant="2" id="BTd-2r-IUO"/>
                         <constraint firstItem="RW1-ST-qBt" firstAttribute="leading" secondItem="ggX-JA-L4v" secondAttribute="leading" id="C8c-v2-X4o"/>
                         <constraint firstItem="0go-y8-4da" firstAttribute="baseline" secondItem="FcF-Py-2SK" secondAttribute="baseline" id="H61-OT-9cP"/>

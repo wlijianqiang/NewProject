@@ -17,5 +17,6 @@
 #import "UIWindow+TJWindow.h"
 #import "UIColor+TJColor.h"
 #import "UIFont+TJFont.h"
+#import "UIImage+Extension.h"
 
 #endif /* TJCategory_h */
