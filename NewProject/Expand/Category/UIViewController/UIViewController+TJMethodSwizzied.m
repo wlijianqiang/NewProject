@@ -9,7 +9,7 @@
 #import "UIViewController+TJMethodSwizzied.h"
 #import <objc/runtime.h>
 
-#import "TJThirdViewController.h"
+#import "TJFourViewController.h"
 
 @implementation UIViewController (TJMethodSwizzied)
 
@@ -70,7 +70,7 @@
 //某些页面隐藏导航栏
 - (BOOL)needNavigationBarHiddenInViewController:(UIViewController *)viewController {
     BOOL needNavigationBarHidden = NO;
-        if ([viewController isKindOfClass:[TJThirdViewController class]]) {
+        if ([viewController isKindOfClass:[TJFourViewController class]]) {
             needNavigationBarHidden = YES;
         }
     return needNavigationBarHidden;

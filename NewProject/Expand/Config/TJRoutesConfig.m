@@ -10,6 +10,7 @@
 #import "TJRoutes.h"
 
 #import "TJTestViewController.h"
+#import "TJStrockViewController.h"
 
 @implementation TJRoutesConfig
 
@@ -21,8 +22,15 @@
                  TJTestViewController *vc = [[UIStoryboard FirstTabStoryboard] instantiateViewControllerWithIdentifier:TJTestViewController_Storyboard];
                      [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
+             }],
+             //tableView描边
+             [TJRoutes routePattern:@"TJStrockViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 
+                 TJStrockViewController *stv = [[TJStrockViewController alloc] init];
+                 [routeDelegate shouldPushViewController:stv animated:YES];
+                 return YES;
              }]
-             
+           
              ];
 }
 

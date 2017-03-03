@@ -43,7 +43,7 @@
 - (void)setupTabBarItem{
     NSArray *titleArray = @[@"首页",
                             @"咨询",
-                            @"资讯",
+                            @"UIKit",
                             @"我的"];
     
     NSArray *iconArray  = @[@"MainTabItemIcon_0",

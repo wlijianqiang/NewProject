@@ -56,7 +56,8 @@
     [[UITableView appearance] setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
     [[UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil] setTintColor:[UIColor blackColor]];
-    [[UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil] setBarTintColor:[UIColor redColor]];
+    //导航栏颜色
+//    [[UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil] setBarTintColor:[UIColor redColor]];
     
     [[UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil] setBarStyle:UIBarStyleDefault];
     [[UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil] setTranslucent:YES];
