@@ -15,6 +15,13 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - FMDBMigrationManager (1.4.1):
+    - FMDBMigrationManager/System (= 1.4.1)
+  - FMDBMigrationManager/System (1.4.1):
+    - FMDB/standard (>= 2.3)
   - IQKeyboardManager (4.0.8)
   - JKCategories (1.5)
   - JLRoutes (2.0.1)
@@ -33,6 +40,8 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Aspects
+  - FMDB
+  - FMDBMigrationManager
   - IQKeyboardManager
   - JKCategories
   - JLRoutes
@@ -47,6 +56,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  FMDBMigrationManager: d52007f328ea0665e8985ca8a33500707aef084f
   IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
   JKCategories: 863f4c7ed2d521ee6bf72ceea97948da23bb5af4
   JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
@@ -58,6 +69,6 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 71eec7788a589679354d08a11bb3ec1c4497124c
+PODFILE CHECKSUM: d71ce5aaaea7380218b0d23dc047424266ff33af
 
 COCOAPODS: 1.1.1

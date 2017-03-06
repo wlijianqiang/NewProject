@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="i00-S4-hFl">
+            <objects>
+                <viewController storyboardIdentifier="TJSecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kez-g3-z6f" customClass="TJSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N0M-et-vLA"/>
+                        <viewControllerLayoutGuide type="bottom" id="di5-ld-lqW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="REv-dU-AoR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uL4-ng-HAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-150" y="148"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PGa-dq-FDn">
+            <objects>
+                <viewController storyboardIdentifier="TJFMDBViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fVg-ge-I7Z" customClass="TJFMDBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zAZ-uy-4tb"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZBs-eE-Pmb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dJp-D7-BNU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woc-ab-5sa">
+                                <rect key="frame" x="30" y="47" width="329" height="30"/>
+                                <color key="backgroundColor" red="0.84696626659999996" green="0.84711211919999996" blue="0.84695702790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cYu-lM-Bb6"/>
+                                </constraints>
+                                <state key="normal" title="建表"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="fVg-ge-I7Z" eventType="touchUpInside" id="H85-Bx-bIi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tx8-2p-fFe">
+                                <rect key="frame" x="30" y="85" width="329" height="30"/>
+                                <color key="backgroundColor" red="0.84696626659999996" green="0.84711211919999996" blue="0.84695702790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="插入"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="fVg-ge-I7Z" eventType="touchUpInside" id="joS-zy-dBf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZ0-ai-mYz">
+                                <rect key="frame" x="30" y="123" width="329" height="30"/>
+                                <color key="backgroundColor" red="0.84696626659999996" green="0.84711211919999996" blue="0.84695702790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="查询"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="fVg-ge-I7Z" eventType="touchUpInside" id="JDc-FF-roJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-Rw-A3x">
+                                <rect key="frame" x="30" y="161" width="329" height="30"/>
+                                <color key="backgroundColor" red="0.84696626659999996" green="0.84711211919999996" blue="0.84695702790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="删除表"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="fVg-ge-I7Z" eventType="touchUpInside" id="Hcb-2R-h6P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eMh-Rw-A3x" firstAttribute="top" secondItem="YZ0-ai-mYz" secondAttribute="bottom" constant="8" id="1BH-Hx-tyi"/>
+                            <constraint firstItem="YZ0-ai-mYz" firstAttribute="top" secondItem="tx8-2p-fFe" secondAttribute="bottom" constant="8" id="5QP-SO-MFR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tx8-2p-fFe" secondAttribute="trailing" id="AX0-OU-6fX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Woc-ab-5sa" secondAttribute="trailing" id="Loj-ij-6Sp"/>
+                            <constraint firstItem="Woc-ab-5sa" firstAttribute="top" secondItem="zAZ-uy-4tb" secondAttribute="bottom" constant="27" id="S7b-Pd-6kZ"/>
+                            <constraint firstItem="Woc-ab-5sa" firstAttribute="leading" secondItem="dJp-D7-BNU" secondAttribute="leadingMargin" constant="14" id="SZu-xq-iq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YZ0-ai-mYz" secondAttribute="trailing" id="TAU-lG-u7d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eMh-Rw-A3x" secondAttribute="trailing" id="WXi-l5-mos"/>
+                            <constraint firstItem="tx8-2p-fFe" firstAttribute="leading" secondItem="dJp-D7-BNU" secondAttribute="leadingMargin" constant="14" id="Y2e-JH-bKh"/>
+                            <constraint firstItem="tx8-2p-fFe" firstAttribute="top" secondItem="Woc-ab-5sa" secondAttribute="bottom" constant="8" id="ZgA-MQ-eQS"/>
+                            <constraint firstItem="YZ0-ai-mYz" firstAttribute="leading" secondItem="dJp-D7-BNU" secondAttribute="leadingMargin" constant="14" id="e4F-hq-6QJ"/>
+                            <constraint firstItem="eMh-Rw-A3x" firstAttribute="leading" secondItem="dJp-D7-BNU" secondAttribute="leadingMargin" constant="14" id="zOp-9b-nYt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7io-C0-Ntm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517.60000000000002" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+</document>

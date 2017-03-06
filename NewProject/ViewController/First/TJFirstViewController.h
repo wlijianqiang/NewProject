@@ -8,6 +8,6 @@
 
 #import "TJBaseViewController.h"
 
-@interface TJFirstViewController : TJBaseViewController
+@interface TJFirstViewController : UIViewController
 
 @end

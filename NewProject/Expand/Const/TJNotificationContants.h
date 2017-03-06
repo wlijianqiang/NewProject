@@ -1,14 +1,15 @@
 //
-//  TJNotification.h
+//  TJNotificationContants.h
 //  NewProject
 //
-//  Created by lijianqiang on 2017/2/3.
+//  Created by lijianqiang on 2017/3/6.
 //  Copyright © 2017年 STV. All rights reserved.
 //
 
-#ifndef TJNotification_h
-#define TJNotification_h
+#ifndef TJNotificationContants_h
+#define TJNotificationContants_h
+
 /**控制器item点击通知*/
 static NSString * _Nonnull const TJTabBarDidClickNotification = @"TJTabBarDidClickNotification";
 
-#endif /* TJNotification_h */
+#endif /* TJNotificationContants_h */

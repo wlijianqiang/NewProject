@@ -11,6 +11,7 @@
 
 #import "TJTestViewController.h"
 #import "TJStrockViewController.h"
+#import "TJFMDBViewController.h"
 
 @implementation TJRoutesConfig
 
@@ -28,6 +29,14 @@
                  
                  TJStrockViewController *stv = [[TJStrockViewController alloc] init];
                  [routeDelegate shouldPushViewController:stv animated:YES];
+                 return YES;
+             }],
+             
+             //FMDB
+             [TJRoutes routePattern:@"TJFMDBViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJFMDBViewController *vc = [[UIStoryboard SecondTabStoryboard] instantiateViewControllerWithIdentifier:TJFMDBViewController_Storyboard];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 
                  return YES;
              }]
            

@@ -52,6 +52,19 @@
 #define iPhone6Plus (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)736.0f) < DBL_EPSILON)
 #endif
 
+//APP版本号
+#define  appVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+//Library/Caches 文件路径
+#define kFilePath ([[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil])
+//获取temp
+#define kPathTemp NSTemporaryDirectory()
+//获取沙盒 Document
+#define kPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 Cache
+#define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+
 //weakify
 //#ifndef kWeakSelf
 //#define kWeakSelf @weakify(self)

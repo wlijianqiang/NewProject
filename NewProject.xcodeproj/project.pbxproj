@@ -22,27 +22,28 @@
 		CD3659D71E5BD672008DCB12 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3659D61E5BD672008DCB12 /* UIImage+Extension.m */; };
 		CD4B7C171E26053A007945A0 /* TJProjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B7C161E26053A007945A0 /* TJProjectConfig.m */; };
 		CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67A29B1E67F08700FEA095 /* UIView+Nib.m */; };
-		CD67A29F1E67FA7200FEA095 /* TJCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67A29E1E67FA7200FEA095 /* TJCustomAlertView.m */; };
-		CD67A2A11E67FA8100FEA095 /* TJCustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD67A2A01E67FA8100FEA095 /* TJCustomAlertView.xib */; };
-		CD67A2A81E680BC600FEA095 /* TJStrockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67A2A71E680BC600FEA095 /* TJStrockViewController.m */; };
 		CD67A2AE1E6940A900FEA095 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD67A2AD1E6940A900FEA095 /* 1.jpg */; };
+		CD71E5AB1E6D02370058B89F /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5AA1E6D02370058B89F /* First.storyboard */; };
+		CD71E5AD1E6D023E0058B89F /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5AC1E6D023E0058B89F /* Second.storyboard */; };
+		CD71E5B11E6D02520058B89F /* Four.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5B01E6D02520058B89F /* Four.storyboard */; };
+		CD71E5BE1E6D02750058B89F /* TJCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD71E5B51E6D02750058B89F /* TJCustomAlertView.m */; };
+		CD71E5BF1E6D02750058B89F /* TJCustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5B61E6D02750058B89F /* TJCustomAlertView.xib */; };
+		CD71E5C01E6D02750058B89F /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5B71E6D02750058B89F /* Third.storyboard */; };
+		CD71E5C11E6D02750058B89F /* TJThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD71E5B91E6D02750058B89F /* TJThirdViewController.m */; };
+		CD71E5C21E6D02750058B89F /* TJStrockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD71E5BD1E6D02750058B89F /* TJStrockViewController.m */; };
+		CD71E5CA1E6D04210058B89F /* TJBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD71E5C51E6D04210058B89F /* TJBaseNavigationViewController.m */; };
+		CD71E5CB1E6D04210058B89F /* TJBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD71E5C71E6D04210058B89F /* TJBaseTableViewController.m */; };
+		CD71E5CC1E6D04210058B89F /* TJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD71E5C91E6D04210058B89F /* TJBaseViewController.m */; };
+		CD71E5CF1E6D04FC0058B89F /* TJFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD71E5CE1E6D04FC0058B89F /* TJFMDBViewController.m */; };
 		CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7E7BDB1E339FBA002405A5 /* TJRoutesConfig.m */; };
 		CD7E7BE01E33A0EC002405A5 /* TJRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7E7BDF1E33A0EC002405A5 /* TJRoutes.m */; };
 		CD7F23AE1E372B6300F47D3F /* TJTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F23AD1E372B6300F47D3F /* TJTestModel.m */; };
 		CD8AEAAD1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAAC1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m */; };
 		CD8AEABB1E2C8F6C00C64BB7 /* TJAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAB81E2C8F6C00C64BB7 /* TJAPIManager.m */; };
 		CD8AEABC1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEABA1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m */; };
-		CD8AEABE1E2C8FA100C64BB7 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8AEABD1E2C8FA100C64BB7 /* First.storyboard */; };
-		CD8AEAC01E2C8FC100C64BB7 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8AEABF1E2C8FC100C64BB7 /* Second.storyboard */; };
-		CD8AEAC21E2C8FD700C64BB7 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8AEAC11E2C8FD700C64BB7 /* Third.storyboard */; };
-		CD8AEAC41E2C8FE600C64BB7 /* Four.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8AEAC31E2C8FE600C64BB7 /* Four.storyboard */; };
-		CD8AEACC1E2C90F400C64BB7 /* TJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEACB1E2C90F400C64BB7 /* TJBaseViewController.m */; };
-		CD8AEAD21E2C915000C64BB7 /* TJBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAD11E2C915000C64BB7 /* TJBaseTableViewController.m */; };
-		CD8AEAD51E2C916E00C64BB7 /* TJBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAD41E2C916E00C64BB7 /* TJBaseNavigationViewController.m */; };
 		CD8AEADF1E2C94F300C64BB7 /* TJMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEADE1E2C94F300C64BB7 /* TJMainTabBarViewController.m */; };
 		CD8AEAE21E2C95C300C64BB7 /* TJFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAE11E2C95C300C64BB7 /* TJFirstViewController.m */; };
 		CD8AEAE51E2C95CF00C64BB7 /* TJSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAE41E2C95CF00C64BB7 /* TJSecondViewController.m */; };
-		CD8AEAE81E2C95DA00C64BB7 /* TJThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAE71E2C95DA00C64BB7 /* TJThirdViewController.m */; };
 		CD8AEAEB1E2C95E500C64BB7 /* TJFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAEA1E2C95E500C64BB7 /* TJFourViewController.m */; };
 		CD8AEAEF1E2C96EF00C64BB7 /* UIStoryboard+NewProject.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAEE1E2C96EF00C64BB7 /* UIStoryboard+NewProject.m */; };
 		CD8AEAFD1E2C9AF700C64BB7 /* UIWebView+TJCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEAFC1E2C9AF700C64BB7 /* UIWebView+TJCache.m */; };
@@ -85,7 +86,6 @@
 		532B01B05635263ACECCD636 /* Pods-NewProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewProject/Pods-NewProject.debug.xcconfig"; sourceTree = "<group>"; };
 		865A46DFA4885307B4324AC0 /* Pods-NewProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewProject/Pods-NewProject.release.xcconfig"; sourceTree = "<group>"; };
 		8C28FFE686E2C28AB0B8B924 /* libPods-NewProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD02EF551E445DA800A7E8CC /* TJNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJNotification.h; sourceTree = "<group>"; };
 		CD02EF5A1E44648F00A7E8CC /* UIView+showOnKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+showOnKeyWindow.h"; sourceTree = "<group>"; };
 		CD02EF5B1E44648F00A7E8CC /* UIView+showOnKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+showOnKeyWindow.m"; sourceTree = "<group>"; };
 		CD13B0D01E2333C900093161 /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,12 +115,28 @@
 		CD4B7C161E26053A007945A0 /* TJProjectConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJProjectConfig.m; sourceTree = "<group>"; };
 		CD67A29A1E67F08700FEA095 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
 		CD67A29B1E67F08700FEA095 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
-		CD67A29D1E67FA7200FEA095 /* TJCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCustomAlertView.h; sourceTree = "<group>"; };
-		CD67A29E1E67FA7200FEA095 /* TJCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCustomAlertView.m; sourceTree = "<group>"; };
-		CD67A2A01E67FA8100FEA095 /* TJCustomAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TJCustomAlertView.xib; sourceTree = "<group>"; };
-		CD67A2A61E680BC600FEA095 /* TJStrockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJStrockViewController.h; sourceTree = "<group>"; };
-		CD67A2A71E680BC600FEA095 /* TJStrockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJStrockViewController.m; sourceTree = "<group>"; };
 		CD67A2AD1E6940A900FEA095 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		CD71E5AA1E6D02370058B89F /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		CD71E5AC1E6D023E0058B89F /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		CD71E5B01E6D02520058B89F /* Four.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Four.storyboard; sourceTree = "<group>"; };
+		CD71E5B41E6D02750058B89F /* TJCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCustomAlertView.h; sourceTree = "<group>"; };
+		CD71E5B51E6D02750058B89F /* TJCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCustomAlertView.m; sourceTree = "<group>"; };
+		CD71E5B61E6D02750058B89F /* TJCustomAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TJCustomAlertView.xib; sourceTree = "<group>"; };
+		CD71E5B71E6D02750058B89F /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
+		CD71E5B81E6D02750058B89F /* TJThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJThirdViewController.h; sourceTree = "<group>"; };
+		CD71E5B91E6D02750058B89F /* TJThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJThirdViewController.m; sourceTree = "<group>"; };
+		CD71E5BC1E6D02750058B89F /* TJStrockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJStrockViewController.h; sourceTree = "<group>"; };
+		CD71E5BD1E6D02750058B89F /* TJStrockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJStrockViewController.m; sourceTree = "<group>"; };
+		CD71E5C41E6D04210058B89F /* TJBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBaseNavigationViewController.h; sourceTree = "<group>"; };
+		CD71E5C51E6D04210058B89F /* TJBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBaseNavigationViewController.m; sourceTree = "<group>"; };
+		CD71E5C61E6D04210058B89F /* TJBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBaseTableViewController.h; sourceTree = "<group>"; };
+		CD71E5C71E6D04210058B89F /* TJBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBaseTableViewController.m; sourceTree = "<group>"; };
+		CD71E5C81E6D04210058B89F /* TJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBaseViewController.h; sourceTree = "<group>"; };
+		CD71E5C91E6D04210058B89F /* TJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBaseViewController.m; sourceTree = "<group>"; };
+		CD71E5CD1E6D04FC0058B89F /* TJFMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJFMDBViewController.h; sourceTree = "<group>"; };
+		CD71E5CE1E6D04FC0058B89F /* TJFMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJFMDBViewController.m; sourceTree = "<group>"; };
+		CD71E5D01E6D338C0058B89F /* TJNotificationContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJNotificationContants.h; sourceTree = "<group>"; };
+		CD71E5D11E6D36B20058B89F /* TJStoryboardContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJStoryboardContants.h; sourceTree = "<group>"; };
 		CD7E7BDA1E339FBA002405A5 /* TJRoutesConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJRoutesConfig.h; sourceTree = "<group>"; };
 		CD7E7BDB1E339FBA002405A5 /* TJRoutesConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJRoutesConfig.m; sourceTree = "<group>"; };
 		CD7E7BDE1E33A0EC002405A5 /* TJRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJRoutes.h; sourceTree = "<group>"; };
@@ -136,31 +152,18 @@
 		CD8AEAB81E2C8F6C00C64BB7 /* TJAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJAPIManager.m; sourceTree = "<group>"; };
 		CD8AEAB91E2C8F6C00C64BB7 /* TJHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJHTTPSessionManager.h; sourceTree = "<group>"; };
 		CD8AEABA1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJHTTPSessionManager.m; sourceTree = "<group>"; };
-		CD8AEABD1E2C8FA100C64BB7 /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
-		CD8AEABF1E2C8FC100C64BB7 /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
-		CD8AEAC11E2C8FD700C64BB7 /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
-		CD8AEAC31E2C8FE600C64BB7 /* Four.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Four.storyboard; sourceTree = "<group>"; };
-		CD8AEACA1E2C90F400C64BB7 /* TJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBaseViewController.h; sourceTree = "<group>"; };
-		CD8AEACB1E2C90F400C64BB7 /* TJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBaseViewController.m; sourceTree = "<group>"; };
-		CD8AEAD01E2C915000C64BB7 /* TJBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBaseTableViewController.h; sourceTree = "<group>"; };
-		CD8AEAD11E2C915000C64BB7 /* TJBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBaseTableViewController.m; sourceTree = "<group>"; };
-		CD8AEAD31E2C916E00C64BB7 /* TJBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBaseNavigationViewController.h; sourceTree = "<group>"; };
-		CD8AEAD41E2C916E00C64BB7 /* TJBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBaseNavigationViewController.m; sourceTree = "<group>"; };
 		CD8AEADD1E2C94F300C64BB7 /* TJMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJMainTabBarViewController.h; sourceTree = "<group>"; };
 		CD8AEADE1E2C94F300C64BB7 /* TJMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJMainTabBarViewController.m; sourceTree = "<group>"; };
 		CD8AEAE01E2C95C300C64BB7 /* TJFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJFirstViewController.h; sourceTree = "<group>"; };
 		CD8AEAE11E2C95C300C64BB7 /* TJFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJFirstViewController.m; sourceTree = "<group>"; };
 		CD8AEAE31E2C95CF00C64BB7 /* TJSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSecondViewController.h; sourceTree = "<group>"; };
 		CD8AEAE41E2C95CF00C64BB7 /* TJSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSecondViewController.m; sourceTree = "<group>"; };
-		CD8AEAE61E2C95DA00C64BB7 /* TJThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJThirdViewController.h; sourceTree = "<group>"; };
-		CD8AEAE71E2C95DA00C64BB7 /* TJThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJThirdViewController.m; sourceTree = "<group>"; };
 		CD8AEAE91E2C95E500C64BB7 /* TJFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJFourViewController.h; sourceTree = "<group>"; };
 		CD8AEAEA1E2C95E500C64BB7 /* TJFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJFourViewController.m; sourceTree = "<group>"; };
 		CD8AEAED1E2C96EF00C64BB7 /* UIStoryboard+NewProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+NewProject.h"; sourceTree = "<group>"; };
 		CD8AEAEE1E2C96EF00C64BB7 /* UIStoryboard+NewProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+NewProject.m"; sourceTree = "<group>"; };
 		CD8AEAFB1E2C9AF700C64BB7 /* UIWebView+TJCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+TJCache.h"; sourceTree = "<group>"; };
 		CD8AEAFC1E2C9AF700C64BB7 /* UIWebView+TJCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+TJCache.m"; sourceTree = "<group>"; };
-		CD8AEAFE1E2CAABF00C64BB7 /* TJStoryboardConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJStoryboardConst.h; sourceTree = "<group>"; };
 		CD8AEB251E2CB99900C64BB7 /* TabIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabIcon.xcassets; sourceTree = "<group>"; };
 		CD8AEB281E2CBD3200C64BB7 /* UITabBar+TJBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+TJBadge.h"; sourceTree = "<group>"; };
 		CD8AEB291E2CBD3200C64BB7 /* UITabBar+TJBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+TJBadge.m"; sourceTree = "<group>"; };
@@ -223,15 +226,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CD02EF541E445D8100A7E8CC /* Notification(通知) */ = {
-			isa = PBXGroup;
-			children = (
-				CD02EF551E445DA800A7E8CC /* TJNotification.h */,
-			);
-			name = "Notification(通知)";
-			path = Notification;
-			sourceTree = "<group>";
-		};
 		CD02EF561E44635100A7E8CC /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,9 +262,9 @@
 		CD13B0D21E2333C900093161 /* NewProject */ = {
 			isa = PBXGroup;
 			children = (
+				CDC96A881E345289000239DB /* AppDelegate */,
 				CDC96DEF1E35E4BA000239DB /* View */,
 				CDC96DEB1E35E49E000239DB /* Model */,
-				CDC96A881E345289000239DB /* AppDelegate */,
 				CD8AEB221E2CB99900C64BB7 /* Resources(资源) */,
 				CD8AEAB11E2C788300C64BB7 /* ViewController(控制器) */,
 				CDC414A61E24ED7400EA685D /* Expand(扩展) */,
@@ -345,32 +339,6 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		CD67A28B1E66AA7D00FEA095 /* UITableView */ = {
-			isa = PBXGroup;
-			children = (
-				CD67A2A61E680BC600FEA095 /* TJStrockViewController.h */,
-				CD67A2A71E680BC600FEA095 /* TJStrockViewController.m */,
-			);
-			path = UITableView;
-			sourceTree = "<group>";
-		};
-		CD67A28C1E66AA9400FEA095 /* UICollectionView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UICollectionView;
-			sourceTree = "<group>";
-		};
-		CD67A28D1E66B7E800FEA095 /* customAltertView */ = {
-			isa = PBXGroup;
-			children = (
-				CD67A29D1E67FA7200FEA095 /* TJCustomAlertView.h */,
-				CD67A29E1E67FA7200FEA095 /* TJCustomAlertView.m */,
-				CD67A2A01E67FA8100FEA095 /* TJCustomAlertView.xib */,
-			);
-			path = customAltertView;
-			sourceTree = "<group>";
-		};
 		CD67A2A91E693FE600FEA095 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +347,91 @@
 				CD1DCF521E694CA6002C21AF /* TJTableViewHeaderView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CD71E5A61E6D01710058B89F /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				CD71E5A71E6D01710058B89F /* Controller */,
+				CD71E5A81E6D01710058B89F /* Model */,
+				CD71E5A91E6D01710058B89F /* View */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		CD71E5A71E6D01710058B89F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD71E5CD1E6D04FC0058B89F /* TJFMDBViewController.h */,
+				CD71E5CE1E6D04FC0058B89F /* TJFMDBViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD71E5A81E6D01710058B89F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD71E5A91E6D01710058B89F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD71E5B21E6D02750058B89F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CD71E5B31E6D02750058B89F /* customAltertView */,
+				CD71E5B71E6D02750058B89F /* Third.storyboard */,
+				CD71E5B81E6D02750058B89F /* TJThirdViewController.h */,
+				CD71E5B91E6D02750058B89F /* TJThirdViewController.m */,
+				CD71E5BA1E6D02750058B89F /* UICollectionView */,
+				CD71E5BB1E6D02750058B89F /* UITableView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CD71E5B31E6D02750058B89F /* customAltertView */ = {
+			isa = PBXGroup;
+			children = (
+				CD71E5B41E6D02750058B89F /* TJCustomAlertView.h */,
+				CD71E5B51E6D02750058B89F /* TJCustomAlertView.m */,
+				CD71E5B61E6D02750058B89F /* TJCustomAlertView.xib */,
+			);
+			path = customAltertView;
+			sourceTree = "<group>";
+		};
+		CD71E5BA1E6D02750058B89F /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		CD71E5BB1E6D02750058B89F /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				CD71E5BC1E6D02750058B89F /* TJStrockViewController.h */,
+				CD71E5BD1E6D02750058B89F /* TJStrockViewController.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		CD71E5C31E6D04210058B89F /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD71E5C41E6D04210058B89F /* TJBaseNavigationViewController.h */,
+				CD71E5C51E6D04210058B89F /* TJBaseNavigationViewController.m */,
+				CD71E5C61E6D04210058B89F /* TJBaseTableViewController.h */,
+				CD71E5C71E6D04210058B89F /* TJBaseTableViewController.m */,
+				CD71E5C81E6D04210058B89F /* TJBaseViewController.h */,
+				CD71E5C91E6D04210058B89F /* TJBaseViewController.m */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		CD7E7BDD1E33A0D0002405A5 /* Tool(工具类) */ = {
@@ -404,6 +457,8 @@
 			isa = PBXGroup;
 			children = (
 				CD84D03B1E486E81005026C3 /* TJConst.h */,
+				CD71E5D01E6D338C0058B89F /* TJNotificationContants.h */,
+				CD71E5D11E6D36B20058B89F /* TJStoryboardContants.h */,
 			);
 			name = "Const(常量)";
 			path = Const;
@@ -412,28 +467,15 @@
 		CD8AEAB11E2C788300C64BB7 /* ViewController(控制器) */ = {
 			isa = PBXGroup;
 			children = (
-				CD8AEAC91E2C90E000C64BB7 /* BaseViewController */,
-				CD8AEAD61E2C944600C64BB7 /* TJTabBarViewController */,
-				CD8AEAB41E2C789200C64BB7 /* Storyboard */,
+				CD71E5C31E6D04210058B89F /* BaseViewController */,
 				CD8AEAC51E2C905900C64BB7 /* First */,
 				CD8AEAC61E2C906400C64BB7 /* Second */,
-				CD8AEAC71E2C906E00C64BB7 /* UIKit */,
+				CD71E5B21E6D02750058B89F /* UIKit */,
 				CD8AEAC81E2C907700C64BB7 /* Four */,
+				CD8AEAD61E2C944600C64BB7 /* TJTabBarViewController */,
 			);
 			name = "ViewController(控制器)";
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		CD8AEAB41E2C789200C64BB7 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				CD8AEAFE1E2CAABF00C64BB7 /* TJStoryboardConst.h */,
-				CD8AEABD1E2C8FA100C64BB7 /* First.storyboard */,
-				CD8AEABF1E2C8FC100C64BB7 /* Second.storyboard */,
-				CD8AEAC11E2C8FD700C64BB7 /* Third.storyboard */,
-				CD8AEAC31E2C8FE600C64BB7 /* Four.storyboard */,
-			);
-			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		CD8AEAB51E2C8F6C00C64BB7 /* Network(网络) */ = {
@@ -452,6 +494,7 @@
 		CD8AEAC51E2C905900C64BB7 /* First */ = {
 			isa = PBXGroup;
 			children = (
+				CD71E5AA1E6D02370058B89F /* First.storyboard */,
 				CD8AEAE01E2C95C300C64BB7 /* TJFirstViewController.h */,
 				CD8AEAE11E2C95C300C64BB7 /* TJFirstViewController.m */,
 				CDC96A9F1E34861E000239DB /* TJTestViewController.h */,
@@ -463,46 +506,23 @@
 		CD8AEAC61E2C906400C64BB7 /* Second */ = {
 			isa = PBXGroup;
 			children = (
+				CD71E5A61E6D01710058B89F /* FMDB */,
 				CD8AEAE31E2C95CF00C64BB7 /* TJSecondViewController.h */,
 				CD8AEAE41E2C95CF00C64BB7 /* TJSecondViewController.m */,
+				CD71E5AC1E6D023E0058B89F /* Second.storyboard */,
 			);
 			path = Second;
-			sourceTree = "<group>";
-		};
-		CD8AEAC71E2C906E00C64BB7 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				CD67A28D1E66B7E800FEA095 /* customAltertView */,
-				CD67A28B1E66AA7D00FEA095 /* UITableView */,
-				CD67A28C1E66AA9400FEA095 /* UICollectionView */,
-				CD8AEAE61E2C95DA00C64BB7 /* TJThirdViewController.h */,
-				CD8AEAE71E2C95DA00C64BB7 /* TJThirdViewController.m */,
-			);
-			name = UIKit;
-			path = Third;
 			sourceTree = "<group>";
 		};
 		CD8AEAC81E2C907700C64BB7 /* Four */ = {
 			isa = PBXGroup;
 			children = (
+				CD71E5B01E6D02520058B89F /* Four.storyboard */,
 				CD67A2A91E693FE600FEA095 /* View */,
 				CD8AEAE91E2C95E500C64BB7 /* TJFourViewController.h */,
 				CD8AEAEA1E2C95E500C64BB7 /* TJFourViewController.m */,
 			);
 			path = Four;
-			sourceTree = "<group>";
-		};
-		CD8AEAC91E2C90E000C64BB7 /* BaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CD8AEACA1E2C90F400C64BB7 /* TJBaseViewController.h */,
-				CD8AEACB1E2C90F400C64BB7 /* TJBaseViewController.m */,
-				CD8AEAD31E2C916E00C64BB7 /* TJBaseNavigationViewController.h */,
-				CD8AEAD41E2C916E00C64BB7 /* TJBaseNavigationViewController.m */,
-				CD8AEAD01E2C915000C64BB7 /* TJBaseTableViewController.h */,
-				CD8AEAD11E2C915000C64BB7 /* TJBaseTableViewController.m */,
-			);
-			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		CD8AEAD61E2C944600C64BB7 /* TJTabBarViewController */ = {
@@ -565,7 +585,6 @@
 			children = (
 				CD84D03A1E486D6E005026C3 /* Const(常量) */,
 				CD84D0381E485174005026C3 /* Macros(宏) */,
-				CD02EF541E445D8100A7E8CC /* Notification(通知) */,
 				CD7E7BDD1E33A0D0002405A5 /* Tool(工具类) */,
 				CD8AEAB51E2C8F6C00C64BB7 /* Network(网络) */,
 				CD4B7C141E2604E9007945A0 /* Config(配置) */,
@@ -804,16 +823,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD67A2AE1E6940A900FEA095 /* 1.jpg in Resources */,
-				CD8AEAC01E2C8FC100C64BB7 /* Second.storyboard in Resources */,
 				CD13B0E31E2333C900093161 /* LaunchScreen.storyboard in Resources */,
-				CD8AEAC41E2C8FE600C64BB7 /* Four.storyboard in Resources */,
-				CD67A2A11E67FA8100FEA095 /* TJCustomAlertView.xib in Resources */,
+				CD71E5AD1E6D023E0058B89F /* Second.storyboard in Resources */,
 				CD13B0E01E2333C900093161 /* Assets.xcassets in Resources */,
+				CD71E5C01E6D02750058B89F /* Third.storyboard in Resources */,
 				CD1DCF531E694CA6002C21AF /* TJTableViewHeaderView.xib in Resources */,
 				CD8AEB261E2CB99900C64BB7 /* TabIcon.xcassets in Resources */,
-				CD8AEAC21E2C8FD700C64BB7 /* Third.storyboard in Resources */,
+				CD71E5BF1E6D02750058B89F /* TJCustomAlertView.xib in Resources */,
 				CD13B0DE1E2333C900093161 /* Main.storyboard in Resources */,
-				CD8AEABE1E2C8FA100C64BB7 /* First.storyboard in Resources */,
+				CD71E5B11E6D02520058B89F /* Four.storyboard in Resources */,
+				CD71E5AB1E6D02370058B89F /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -889,15 +908,14 @@
 				CDC414BE1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m in Sources */,
 				CD7E7BE01E33A0EC002405A5 /* TJRoutes.m in Sources */,
 				CD8AEB321E2DB86400C64BB7 /* UIWindow+TJWindow.m in Sources */,
-				CD67A2A81E680BC600FEA095 /* TJStrockViewController.m in Sources */,
 				CD8AEAE21E2C95C300C64BB7 /* TJFirstViewController.m in Sources */,
-				CD8AEAD21E2C915000C64BB7 /* TJBaseTableViewController.m in Sources */,
+				CD71E5C21E6D02750058B89F /* TJStrockViewController.m in Sources */,
 				CDC96DEE1E35E4AD000239DB /* TJModel.m in Sources */,
 				CD1DCF561E694CB9002C21AF /* TJTableViewHeaderView.m in Sources */,
-				CD8AEAE81E2C95DA00C64BB7 /* TJThirdViewController.m in Sources */,
 				CD02EF5C1E44648F00A7E8CC /* UIView+showOnKeyWindow.m in Sources */,
 				CD8AEAAD1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m in Sources */,
 				CD8AEABC1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m in Sources */,
+				CD71E5CB1E6D04210058B89F /* TJBaseTableViewController.m in Sources */,
 				CD8AEAFD1E2C9AF700C64BB7 /* UIWebView+TJCache.m in Sources */,
 				CD3659D71E5BD672008DCB12 /* UIImage+Extension.m in Sources */,
 				CDC414D81E24EFC900EA685D /* UIFont+TJFont.m in Sources */,
@@ -906,19 +924,21 @@
 				CD13B1571E2472B800093161 /* AFNetworkActivityConsoleLogger.m in Sources */,
 				CDC414BD1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m in Sources */,
 				CD8AEABB1E2C8F6C00C64BB7 /* TJAPIManager.m in Sources */,
-				CD67A29F1E67FA7200FEA095 /* TJCustomAlertView.m in Sources */,
 				CD7F23AE1E372B6300F47D3F /* TJTestModel.m in Sources */,
-				CD8AEAD51E2C916E00C64BB7 /* TJBaseNavigationViewController.m in Sources */,
 				CD13B0D51E2333C900093161 /* main.m in Sources */,
+				CD71E5CA1E6D04210058B89F /* TJBaseNavigationViewController.m in Sources */,
 				CDC414DD1E24F0FE00EA685D /* UIColor+TJColor.m in Sources */,
 				CD13B1581E2472B800093161 /* AFNetworkActivityLogger.m in Sources */,
 				CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */,
-				CD8AEACC1E2C90F400C64BB7 /* TJBaseViewController.m in Sources */,
+				CD71E5CF1E6D04FC0058B89F /* TJFMDBViewController.m in Sources */,
 				CD8AEB2A1E2CBD3200C64BB7 /* UITabBar+TJBadge.m in Sources */,
 				CDC96A8B1E345289000239DB /* AppDelegate.m in Sources */,
+				CD71E5CC1E6D04210058B89F /* TJBaseViewController.m in Sources */,
 				CD8AEAEF1E2C96EF00C64BB7 /* UIStoryboard+NewProject.m in Sources */,
 				CD8AEADF1E2C94F300C64BB7 /* TJMainTabBarViewController.m in Sources */,
 				CD8AEAEB1E2C95E500C64BB7 /* TJFourViewController.m in Sources */,
+				CD71E5C11E6D02750058B89F /* TJThirdViewController.m in Sources */,
+				CD71E5BE1E6D02750058B89F /* TJCustomAlertView.m in Sources */,
 				CD8AEAE51E2C95CF00C64BB7 /* TJSecondViewController.m in Sources */,
 				CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */,
 				CD8AEB2E1E2DB45700C64BB7 /* NSString+TJCountCut.m in Sources */,

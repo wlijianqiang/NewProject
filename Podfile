@@ -13,6 +13,10 @@ pod 'JKCategories'
 pod 'JLRoutes'
 pod 'Aspects'
 pod 'IQKeyboardManager'
+pod 'FMDB'
+pod 'FMDBMigrationManager'
 pod 'MBProgressHUD'
+pod 'MBProgressHUD'
+
 
 end

@@ -16,10 +16,12 @@
 //#import <SystemConfiguration/SystemConfiguration.h> // for AFNetworking
 
 #pragma mark - Vender
-#import "JLRoutes.h"
-#import "JKCategories.h"
-#import "Masonry.h"
-#import "MJRefresh.h"
+#import <JLRoutes/JLRoutes.h>
+#import <JKCategories/JKCategories.h>
+#import <Masonry/Masonry.h>
+#import <MJRefresh/MJRefresh.h>
+#import <FMDB/FMDB.h>
+#import <FMDBMigrationManager/FMDBMigrationManager.h>
 
 #pragma mark - Custom Classs
 
@@ -27,10 +29,10 @@
 #import "TJAPIConst.h"
 #import "TJAPIManager.h"
 
-#import "TJStoryboardConst.h"
+#import "TJStoryboardContants.h"
 #import "TJCategory.h"
 #import "TJConfig.h"
-#import "TJNotification.h"
+#import "TJNotificationContants.h"
 #import "TJMcros.h"
 
 #endif /* TJPrefixHeader_pch */

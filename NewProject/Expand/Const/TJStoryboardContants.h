@@ -1,13 +1,13 @@
 //
-//  TJStoryboardConst.h
+//  TJStoryboardContants.h
 //  NewProject
 //
-//  Created by lijianqiang on 2017/1/16.
+//  Created by lijianqiang on 2017/3/6.
 //  Copyright © 2017年 STV. All rights reserved.
 //
 
-#ifndef TJStoryboardConst_h
-#define TJStoryboardConst_h
+#ifndef TJStoryboardContants_h
+#define TJStoryboardContants_h
 
 static NSString * _Nonnull const TJMainTabBarViewController_Storyboard  = @"TJMainTabBarViewController";
 static NSString * _Nonnull const TJFirstViewController_Storyboard  = @"TJFirstViewController";
@@ -16,4 +16,6 @@ static NSString * _Nonnull const TJThirdViewController_Storyboard  = @"TJThirdVi
 static NSString * _Nonnull const TJFourViewController_Storyboard   = @"TJFourViewController";
 
 static NSString * _Nonnull const TJTestViewController_Storyboard = @"TJTestViewController";
-#endif /* TJStoryboardConst_h */
+static NSString * _Nonnull const TJFMDBViewController_Storyboard = @"TJFMDBViewController";
+
+#endif /* TJStoryboardContants_h */
