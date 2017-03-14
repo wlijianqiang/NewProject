@@ -31,5 +31,12 @@
     [self.view endEditing:YES];
 }
 
+#pragma mark - 判断手势是否可用
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    if ([touch.view isKindOfClass:[UIButton class]] || [touch.view isKindOfClass:[UITableView class]]) {
+        return NO;
+    }
+    return YES;
+}
 
 @end
