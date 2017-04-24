@@ -2,7 +2,7 @@ platform :ios, '8.0'
 
 target 'NewProject' do
 
-pod 'JSPatch'
+#pod 'JSPatch'
 pod 'Masonry'
 pod 'SDWebImage'
 pod 'AFNetworking'
@@ -16,6 +16,6 @@ pod 'IQKeyboardManager'
 pod 'FMDB'
 pod 'FMDBMigrationManager'
 pod 'MBProgressHUD'
-
+pod 'TZImagePickerController'
 
 end

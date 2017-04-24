@@ -23,6 +23,7 @@
 #import <FMDB/FMDB.h>
 #import <FMDBMigrationManager/FMDBMigrationManager.h>
 #import <MBProgressHUD/MBProgressHUD.h>
+#import <TZImagePickerController/TZImageManager.h>
 
 #pragma mark - Custom Classs
 

@@ -21,6 +21,7 @@
     self.navigationItem.title = @"首页";
     //显示红点
     [self.tabBarController.tabBar showBadgeOnItemIndex:0];
+    TJLog(@"test");
 }
 - (IBAction)hiddenBadgeAction:(UIButton *)sender {
     //隐藏红点

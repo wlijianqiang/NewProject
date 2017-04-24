@@ -18,6 +18,9 @@
 
 @interface TJTableViewHeaderView : UIView
 
+@property (nonatomic, copy)UIImage *headerImage;
 @property (nonatomic, weak)id<TJTableViewHeaderViewDelegate> delegate;
+
+- (void)tableViewHeaderViewReload;
 
 @end

@@ -28,6 +28,14 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
     self.centerImageView.layer.cornerRadius = self.centerImageView.frame.size.width/2;
+    if (self.headerImage) {
+        self.centerImageView.image = self.headerImage;
+        self.backgroundImageView.image = self.headerImage;
+    }
+}
+
+-(void)tableViewHeaderViewReload{
+    [self layoutSubviews];
 }
 
 - (IBAction)centerImageView:(UITapGestureRecognizer *)sender {

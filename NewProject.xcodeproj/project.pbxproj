@@ -468,10 +468,10 @@
 			isa = PBXGroup;
 			children = (
 				CD71E5C31E6D04210058B89F /* BaseViewController */,
-				CD8AEAC51E2C905900C64BB7 /* First */,
-				CD8AEAC61E2C906400C64BB7 /* Second */,
+				CD8AEAC51E2C905900C64BB7 /* First(首页) */,
+				CD8AEAC61E2C906400C64BB7 /* Second(咨询) */,
 				CD71E5B21E6D02750058B89F /* UIKit */,
-				CD8AEAC81E2C907700C64BB7 /* Four */,
+				CD8AEAC81E2C907700C64BB7 /* Four(我的) */,
 				CD8AEAD61E2C944600C64BB7 /* TJTabBarViewController */,
 			);
 			name = "ViewController(控制器)";
@@ -491,7 +491,7 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		CD8AEAC51E2C905900C64BB7 /* First */ = {
+		CD8AEAC51E2C905900C64BB7 /* First(首页) */ = {
 			isa = PBXGroup;
 			children = (
 				CD71E5AA1E6D02370058B89F /* First.storyboard */,
@@ -500,10 +500,11 @@
 				CDC96A9F1E34861E000239DB /* TJTestViewController.h */,
 				CDC96AA01E34861E000239DB /* TJTestViewController.m */,
 			);
+			name = "First(首页)";
 			path = First;
 			sourceTree = "<group>";
 		};
-		CD8AEAC61E2C906400C64BB7 /* Second */ = {
+		CD8AEAC61E2C906400C64BB7 /* Second(咨询) */ = {
 			isa = PBXGroup;
 			children = (
 				CD71E5A61E6D01710058B89F /* FMDB */,
@@ -511,10 +512,11 @@
 				CD8AEAE41E2C95CF00C64BB7 /* TJSecondViewController.m */,
 				CD71E5AC1E6D023E0058B89F /* Second.storyboard */,
 			);
+			name = "Second(咨询)";
 			path = Second;
 			sourceTree = "<group>";
 		};
-		CD8AEAC81E2C907700C64BB7 /* Four */ = {
+		CD8AEAC81E2C907700C64BB7 /* Four(我的) */ = {
 			isa = PBXGroup;
 			children = (
 				CD71E5B01E6D02520058B89F /* Four.storyboard */,
@@ -522,6 +524,7 @@
 				CD8AEAE91E2C95E500C64BB7 /* TJFourViewController.h */,
 				CD8AEAEA1E2C95E500C64BB7 /* TJFourViewController.m */,
 			);
+			name = "Four(我的)";
 			path = Four;
 			sourceTree = "<group>";
 		};

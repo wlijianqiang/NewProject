@@ -194,6 +194,7 @@
             viewController.navigationController.view.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, CGRectGetHeight([UIScreen mainScreen].bounds));
         }else{
             viewController.view.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, CGRectGetHeight([UIScreen mainScreen].bounds));
+            
         }
     } completion:^(BOOL finished) {
         [viewController.view removeFromSuperview];

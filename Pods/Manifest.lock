@@ -22,12 +22,9 @@ PODS:
     - FMDBMigrationManager/System (= 1.4.1)
   - FMDBMigrationManager/System (1.4.1):
     - FMDB/standard (>= 2.3)
-  - IQKeyboardManager (4.0.8)
+  - IQKeyboardManager (4.0.9)
   - JKCategories (1.5)
-  - JLRoutes (2.0.1)
-  - JSPatch (1.1.3):
-    - JSPatch/Core (= 1.1.3)
-  - JSPatch/Core (1.1.3)
+  - JLRoutes (2.0.5)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
@@ -36,6 +33,7 @@ PODS:
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - SVProgressHUD (2.1.2)
+  - TZImagePickerController (1.7.9)
 
 DEPENDENCIES:
   - AFNetworking
@@ -45,30 +43,30 @@ DEPENDENCIES:
   - IQKeyboardManager
   - JKCategories
   - JLRoutes
-  - JSPatch
   - Masonry
   - MBProgressHUD
   - MJExtension
   - MJRefresh
   - SDWebImage
   - SVProgressHUD
+  - TZImagePickerController
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   FMDBMigrationManager: d52007f328ea0665e8985ca8a33500707aef084f
-  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+  IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
   JKCategories: 863f4c7ed2d521ee6bf72ceea97948da23bb5af4
-  JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
-  JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
+  JLRoutes: 2a5ee61d739b51a98c9d8112bee5149a19de8854
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  TZImagePickerController: 0a8ff228d287ebdd7d485e8c42a2a932894f1fba
 
-PODFILE CHECKSUM: d71ce5aaaea7380218b0d23dc047424266ff33af
+PODFILE CHECKSUM: 399d2c0b2cead60c27efe460f90de4f192b31694
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

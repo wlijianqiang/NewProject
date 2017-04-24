@@ -12,7 +12,8 @@
 
 
 #if DEBUG//打印日志
-#define TJLog(...) NSLog(__VA_ARGS__)
+//#define TJLog(...) NSLog(__VA_ARGS__)
+#define TJLog(FORMAT,...) fprintf(stderr,"%s::%d\t  %s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define TJLog(...) 
 #endif
