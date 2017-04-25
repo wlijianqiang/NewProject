@@ -45,6 +45,8 @@
 	<string>需要获取您的麦克风权限</string>
 	<key>NSMotionUsageDescription</key>
 	<string>运动使用权限</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要您的同意，才能访问相册</string>
 	<key>NSRemindersUsageDescription</key>
 	<string>是否允许此App访问你的媒体资料库？</string>
 	<key>NSSiriUsageDescription</key>

@@ -12,7 +12,8 @@
 #import "TJTestViewController.h"
 #import "TJStrockViewController.h"
 #import "TJFMDBViewController.h"
-
+#import "TJCollectionViewController.h"
+#import "TJStoryboardCollectionViewController.h"
 @implementation TJRoutesConfig
 
 
@@ -27,8 +28,8 @@
              //tableView描边
              [TJRoutes routePattern:@"TJStrockViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  
-                 TJStrockViewController *stv = [[TJStrockViewController alloc] init];
-                 [routeDelegate shouldPushViewController:stv animated:YES];
+                 TJStrockViewController *vc = [[TJStrockViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
              }],
              
@@ -38,9 +39,21 @@
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  
                  return YES;
+             }],
+             //CollectionViewController   TJStoryboardCollectionViewController
+             [TJRoutes routePattern:@"TJCollectionViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJCollectionViewController *vc = [[TJCollectionViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"TJStoryboardCollectionViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 
+                 TJStoryboardCollectionViewController *vc = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJStoryboardCollectionViewController_Storyboard];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
              }]
-           
-             ];
+            
+            ];
 }
 
 @end

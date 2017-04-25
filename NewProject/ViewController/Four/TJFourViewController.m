@@ -10,6 +10,11 @@
 #import "TJTableViewHeaderView.h"
 #import <Photos/PHPhotoLibrary.h>
 
+typedef NS_ENUM(NSInteger,CellIndexPath){
+    CellIndexPath_ImagePickerCode = 0,
+    CellIndexPath_ImagePickerStoryboard,
+};
+
 @interface TJFourViewController ()<UITableViewDelegate,UITableViewDataSource,TJTableViewHeaderViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property(nonatomic,strong)UITableView *tableView;
@@ -27,7 +32,6 @@
 }
 
 - (void)setSubViews{
-    
     self.tableView = [[UITableView alloc]init];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -103,6 +107,8 @@
                 }
             }];
         }];
+    }else{
+        [self showHint:@"未检测到相机！请使用真机测试"];
     }
 
 }
@@ -170,7 +176,13 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.text = kRandomData;
+    if (CellIndexPath_ImagePickerCode == indexPath.row) {
+        cell.textLabel.text = @"图片选择器(代码)";
+    }else if (CellIndexPath_ImagePickerStoryboard == indexPath.row){
+        cell.textLabel.text = @"图片选择器(Storyboard)";
+    }else{
+        cell.textLabel.text = kRandomData;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -182,6 +194,16 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    switch (indexPath.row) {
+//        case CellIndexPath_ImagePicker:
+//        {
+//            
+//        }
+//            break;
+//            
+//    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

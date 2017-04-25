@@ -63,6 +63,13 @@
 		CDC96AA11E34861E000239DB /* TJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96AA01E34861E000239DB /* TJTestViewController.m */; };
 		CDC96AA41E348903000239DB /* AppDelegate+JLRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96AA31E348903000239DB /* AppDelegate+JLRoute.m */; };
 		CDC96DEE1E35E4AD000239DB /* TJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC96DED1E35E4AD000239DB /* TJModel.m */; };
+		CDED52381EAEEEC8006BF64C /* TJImagePickerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED52371EAEEEC8006BF64C /* TJImagePickerCollectionViewController.m */; };
+		CDED523B1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED523A1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m */; };
+		CDED525D1EAF2817006BF64C /* TJCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED525A1EAF2817006BF64C /* TJCollectionViewController.m */; };
+		CDED525E1EAF2817006BF64C /* TJStoryboardCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED525C1EAF2817006BF64C /* TJStoryboardCollectionViewController.m */; };
+		CDED52641EAF286A006BF64C /* TJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED52631EAF286A006BF64C /* TJCollectionViewCell.m */; };
+		CDED52671EAF287E006BF64C /* TJCollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED52661EAF287E006BF64C /* TJCollectionHeaderReusableView.m */; };
+		CDED526A1EAF288E006BF64C /* TJCollectionFooterReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED52691EAF288E006BF64C /* TJCollectionFooterReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +197,20 @@
 		CDC96AA31E348903000239DB /* AppDelegate+JLRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JLRoute.m"; sourceTree = "<group>"; };
 		CDC96DEC1E35E4AD000239DB /* TJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJModel.h; sourceTree = "<group>"; };
 		CDC96DED1E35E4AD000239DB /* TJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJModel.m; sourceTree = "<group>"; };
+		CDED52361EAEEEC8006BF64C /* TJImagePickerCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJImagePickerCollectionViewController.h; sourceTree = "<group>"; };
+		CDED52371EAEEEC8006BF64C /* TJImagePickerCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJImagePickerCollectionViewController.m; sourceTree = "<group>"; };
+		CDED52391EAEEEED006BF64C /* TJImagePickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJImagePickerCollectionViewCell.h; sourceTree = "<group>"; };
+		CDED523A1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJImagePickerCollectionViewCell.m; sourceTree = "<group>"; };
+		CDED52591EAF2817006BF64C /* TJCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCollectionViewController.h; sourceTree = "<group>"; };
+		CDED525A1EAF2817006BF64C /* TJCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCollectionViewController.m; sourceTree = "<group>"; };
+		CDED525B1EAF2817006BF64C /* TJStoryboardCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJStoryboardCollectionViewController.h; sourceTree = "<group>"; };
+		CDED525C1EAF2817006BF64C /* TJStoryboardCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJStoryboardCollectionViewController.m; sourceTree = "<group>"; };
+		CDED52621EAF286A006BF64C /* TJCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCollectionViewCell.h; sourceTree = "<group>"; };
+		CDED52631EAF286A006BF64C /* TJCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCollectionViewCell.m; sourceTree = "<group>"; };
+		CDED52651EAF287E006BF64C /* TJCollectionHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCollectionHeaderReusableView.h; sourceTree = "<group>"; };
+		CDED52661EAF287E006BF64C /* TJCollectionHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCollectionHeaderReusableView.m; sourceTree = "<group>"; };
+		CDED52681EAF288E006BF64C /* TJCollectionFooterReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCollectionFooterReusableView.h; sourceTree = "<group>"; };
+		CDED52691EAF288E006BF64C /* TJCollectionFooterReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCollectionFooterReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +366,8 @@
 				CD1DCF541E694CB9002C21AF /* TJTableViewHeaderView.h */,
 				CD1DCF551E694CB9002C21AF /* TJTableViewHeaderView.m */,
 				CD1DCF521E694CA6002C21AF /* TJTableViewHeaderView.xib */,
+				CDED52391EAEEEED006BF64C /* TJImagePickerCollectionViewCell.h */,
+				CDED523A1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,6 +431,9 @@
 		CD71E5BA1E6D02750058B89F /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				CDED52581EAF27EC006BF64C /* Model */,
+				CDED52561EAF279A006BF64C /* View */,
+				CDED52571EAF27E0006BF64C /* Controller */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -523,6 +549,8 @@
 				CD67A2A91E693FE600FEA095 /* View */,
 				CD8AEAE91E2C95E500C64BB7 /* TJFourViewController.h */,
 				CD8AEAEA1E2C95E500C64BB7 /* TJFourViewController.m */,
+				CDED52361EAEEEC8006BF64C /* TJImagePickerCollectionViewController.h */,
+				CDED52371EAEEEC8006BF64C /* TJImagePickerCollectionViewController.m */,
 			);
 			name = "Four(我的)";
 			path = Four;
@@ -702,6 +730,37 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CDED52561EAF279A006BF64C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDED52621EAF286A006BF64C /* TJCollectionViewCell.h */,
+				CDED52631EAF286A006BF64C /* TJCollectionViewCell.m */,
+				CDED52651EAF287E006BF64C /* TJCollectionHeaderReusableView.h */,
+				CDED52661EAF287E006BF64C /* TJCollectionHeaderReusableView.m */,
+				CDED52681EAF288E006BF64C /* TJCollectionFooterReusableView.h */,
+				CDED52691EAF288E006BF64C /* TJCollectionFooterReusableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDED52571EAF27E0006BF64C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDED52591EAF2817006BF64C /* TJCollectionViewController.h */,
+				CDED525A1EAF2817006BF64C /* TJCollectionViewController.m */,
+				CDED525B1EAF2817006BF64C /* TJStoryboardCollectionViewController.h */,
+				CDED525C1EAF2817006BF64C /* TJStoryboardCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDED52581EAF27EC006BF64C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DA68B9A826B128090858925A /* Pods */ = {
@@ -917,6 +976,8 @@
 				CD1DCF561E694CB9002C21AF /* TJTableViewHeaderView.m in Sources */,
 				CD02EF5C1E44648F00A7E8CC /* UIView+showOnKeyWindow.m in Sources */,
 				CD8AEAAD1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m in Sources */,
+				CDED525D1EAF2817006BF64C /* TJCollectionViewController.m in Sources */,
+				CDED52641EAF286A006BF64C /* TJCollectionViewCell.m in Sources */,
 				CD8AEABC1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m in Sources */,
 				CD71E5CB1E6D04210058B89F /* TJBaseTableViewController.m in Sources */,
 				CD8AEAFD1E2C9AF700C64BB7 /* UIWebView+TJCache.m in Sources */,
@@ -930,12 +991,16 @@
 				CD7F23AE1E372B6300F47D3F /* TJTestModel.m in Sources */,
 				CD13B0D51E2333C900093161 /* main.m in Sources */,
 				CD71E5CA1E6D04210058B89F /* TJBaseNavigationViewController.m in Sources */,
+				CDED526A1EAF288E006BF64C /* TJCollectionFooterReusableView.m in Sources */,
+				CDED523B1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m in Sources */,
 				CDC414DD1E24F0FE00EA685D /* UIColor+TJColor.m in Sources */,
 				CD13B1581E2472B800093161 /* AFNetworkActivityLogger.m in Sources */,
 				CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */,
+				CDED52381EAEEEC8006BF64C /* TJImagePickerCollectionViewController.m in Sources */,
 				CD71E5CF1E6D04FC0058B89F /* TJFMDBViewController.m in Sources */,
 				CD8AEB2A1E2CBD3200C64BB7 /* UITabBar+TJBadge.m in Sources */,
 				CDC96A8B1E345289000239DB /* AppDelegate.m in Sources */,
+				CDED52671EAF287E006BF64C /* TJCollectionHeaderReusableView.m in Sources */,
 				CD71E5CC1E6D04210058B89F /* TJBaseViewController.m in Sources */,
 				CD8AEAEF1E2C96EF00C64BB7 /* UIStoryboard+NewProject.m in Sources */,
 				CD8AEADF1E2C94F300C64BB7 /* TJMainTabBarViewController.m in Sources */,
@@ -944,6 +1009,7 @@
 				CD71E5BE1E6D02750058B89F /* TJCustomAlertView.m in Sources */,
 				CD8AEAE51E2C95CF00C64BB7 /* TJSecondViewController.m in Sources */,
 				CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */,
+				CDED525E1EAF2817006BF64C /* TJStoryboardCollectionViewController.m in Sources */,
 				CD8AEB2E1E2DB45700C64BB7 /* NSString+TJCountCut.m in Sources */,
 				CDC96AA11E34861E000239DB /* TJTestViewController.m in Sources */,
 			);

@@ -12,6 +12,7 @@
 typedef NS_ENUM(NSInteger, IndexPathSection) {
     IndexPathSection_AlertView = 0,
     IndexPathSection_TableView,
+    IndexPathSection_CollectionView,
 };
 
 @interface TJThirdViewController ()<UITableViewDelegate,UITableViewDataSource,TJCustomAlertViewDelegate>
@@ -47,8 +48,11 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
 }
 
 - (void)DataForTableView{
-    self.sectionTitleMutableArray = [NSMutableArray arrayWithObjects:@"弹出框",@"tableView",nil];
-    self.dataMutableArray = [NSMutableArray arrayWithObjects: @[@"系统默认样式",@"xib自定义弹出框"],@[@"tableView描边"],nil];
+    self.sectionTitleMutableArray = [NSMutableArray arrayWithObjects:@"弹出框",@"tableView",@"collectionView",nil];
+    self.dataMutableArray = [NSMutableArray arrayWithObjects:
+      @[@"系统默认样式",@"xib自定义弹出框"],
+      @[@"tableView描边"],
+      @[@"collectionView(代码)",@"collectionView(Storyboard)"],nil];
 }
 #pragma mark tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -86,6 +90,8 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
         [self showAltertViewForRow:indexPath.row];
     }else if (IndexPathSection_TableView == indexPath.section){
        [JLRoutes routeURL:[NSURL URLWithString:@"TJStrockViewController"] withParameters:nil];
+    }else if (IndexPathSection_CollectionView == indexPath.section){
+        [self showCollectionViewForRow:indexPath.row];
     }
 }
 
@@ -119,6 +125,13 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
     }
 }
 
+- (void)showCollectionViewForRow:(NSInteger )row{
+    if (0 == row) {
+        [JLRoutes routeURL:[NSURL URLWithString:@"TJCollectionViewController"] withParameters:nil];
+    }else{
+        [JLRoutes routeURL:[NSURL URLWithString:@"TJStoryboardCollectionViewController"] withParameters:nil];
+    }
+}
 #pragma mark - TJCustomAlertViewDelegate
 - (void)customAlertView:(TJCustomAlertView *)customAlertView cancleButton:(UIButton *)sender{
     [customAlertView dismiss];
