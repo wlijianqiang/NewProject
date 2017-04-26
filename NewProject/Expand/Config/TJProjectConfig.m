@@ -21,7 +21,7 @@
     [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
     [IQKeyboardManager sharedManager].enable = YES;
     
-    [UIView aspect_hookSelector:@selector(viewDidLoad)
+    [UIViewController aspect_hookSelector:@selector(viewDidLoad)
                     withOptions:AspectPositionAfter
                      usingBlock:^(id<AspectInfo> aspectInfo){
                          UIViewController *viewController = (UIViewController *)aspectInfo.instance;
