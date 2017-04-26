@@ -90,7 +90,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [JLRoutes routeURL:[NSURL URLWithString:@"TJFMDBViewController"] withParameters:nil];
+    [JLRoutes routeURL:[NSURL URLWithString:@"/TJFMDBViewController"] withParameters:nil];
 }
 
 - (void)tabBarNotification{

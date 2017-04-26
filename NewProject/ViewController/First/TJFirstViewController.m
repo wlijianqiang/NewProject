@@ -26,7 +26,7 @@
 - (IBAction)hiddenBadgeAction:(UIButton *)sender {
     //隐藏红点
     //[self.tabBarController.tabBar hiddenBadgeOnItemIndex:0];
-    [JLRoutes routeURL:[NSURL URLWithString:@"testViewController"] withParameters:nil];
+    [JLRoutes routeURL:[NSURL URLWithString:@"/testViewController"] withParameters:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger,CellIndexPath){
     CellIndexPath_ImagePickerStoryboard,
 };
 
-@interface TJFourViewController ()<UITableViewDelegate,UITableViewDataSource,TJTableViewHeaderViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface TJFourViewController ()<UITableViewDelegate,UITableViewDataSource,TJTableViewHeaderViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,TZImagePickerControllerDelegate>
 
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic, strong)TJTableViewHeaderView *headrView;
@@ -177,9 +177,7 @@ typedef NS_ENUM(NSInteger,CellIndexPath){
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     if (CellIndexPath_ImagePickerCode == indexPath.row) {
-        cell.textLabel.text = @"图片选择器(代码)";
-    }else if (CellIndexPath_ImagePickerStoryboard == indexPath.row){
-        cell.textLabel.text = @"图片选择器(Storyboard)";
+        cell.textLabel.text = @"图片选择器";
     }else{
         cell.textLabel.text = kRandomData;
     }
@@ -195,16 +193,27 @@ typedef NS_ENUM(NSInteger,CellIndexPath){
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    switch (indexPath.row) {
-//        case CellIndexPath_ImagePicker:
-//        {
-//            
-//        }
-//            break;
-//            
-//    }
+    switch (indexPath.row) {
+        case CellIndexPath_ImagePickerCode:
+        {
+            TZImagePickerController *imagePicker = [[TZImagePickerController alloc] initWithMaxImagesCount:9 delegate:self];
+    
+            [self presentViewController:imagePicker animated:YES completion:nil];
+        }
+            break;
+            
+    }
 }
 
+#pragma mark - TZImagePickerControllerDelegate
+- (void)tz_imagePickerControllerDidCancel:(TZImagePickerController *)picker{
+    
+}
+
+- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto{
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -89,7 +89,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
     if (IndexPathSection_AlertView == indexPath.section) {
         [self showAltertViewForRow:indexPath.row];
     }else if (IndexPathSection_TableView == indexPath.section){
-       [JLRoutes routeURL:[NSURL URLWithString:@"TJStrockViewController"] withParameters:nil];
+       [JLRoutes routeURL:[NSURL URLWithString:@"/TJStrockViewController"] withParameters:nil];
     }else if (IndexPathSection_CollectionView == indexPath.section){
         [self showCollectionViewForRow:indexPath.row];
     }
@@ -127,9 +127,9 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
 
 - (void)showCollectionViewForRow:(NSInteger )row{
     if (0 == row) {
-        [JLRoutes routeURL:[NSURL URLWithString:@"TJCollectionViewController"] withParameters:nil];
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJCollectionViewController"] withParameters:nil];
     }else{
-        [JLRoutes routeURL:[NSURL URLWithString:@"TJStoryboardCollectionViewController"] withParameters:nil];
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJStoryboardCollectionViewController"] withParameters:nil];
     }
 }
 #pragma mark - TJCustomAlertViewDelegate
