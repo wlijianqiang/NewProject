@@ -27,40 +27,32 @@
             </objects>
             <point key="canvasLocation" x="-34" y="149"/>
         </scene>
-        <!--Image Picker Collection View Controller-->
-        <scene sceneID="mu3-fJ-P2s">
+        <!--Image Picker View Controller-->
+        <scene sceneID="mio-uj-gYs">
             <objects>
-                <collectionViewController storyboardIdentifier="TJImagePickerCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CLn-Mh-HdD" customClass="TJImagePickerCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="vck-jz-X0l">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xyr-9d-gGi" customClass="TJImagePickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZDN-yP-Z50"/>
+                        <viewControllerLayoutGuide type="bottom" id="16o-RG-Tsp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tM7-QZ-CmS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ix2-C6-HXy">
-                            <size key="itemSize" width="140" height="141"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="TJImagePickerCollectionViewCell" reuseIdentifier="TJImagePickerCollectionViewCell" id="LJb-n2-s7V" customClass="TJImagePickerCollectionViewCell">
-                                <rect key="frame" x="0.0" y="0.0" width="140" height="141"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="显示内部拍照按钮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnD-dc-3oV">
+                                <rect key="frame" x="0.0" y="51" width="139" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="140" height="141"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="CLn-Mh-HdD" id="bTQ-r3-2sd"/>
-                            <outlet property="delegate" destination="CLn-Mh-HdD" id="k6f-b2-r8f"/>
-                        </connections>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FyE-4J-WC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SI3-4q-PRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623.20000000000005" y="148.87556221889056"/>
+            <point key="canvasLocation" x="636" y="149"/>
         </scene>
     </scenes>
 </document>

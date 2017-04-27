@@ -17,5 +17,6 @@ pod 'FMDB'
 pod 'FMDBMigrationManager'
 pod 'MBProgressHUD'
 pod 'TZImagePickerController'
+pod 'SDCycleScrollView'
 
 end

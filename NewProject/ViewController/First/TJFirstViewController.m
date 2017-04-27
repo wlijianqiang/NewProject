@@ -8,6 +8,7 @@
 
 #import "TJFirstViewController.h"
 #import "UITabBar+TJBadge.h"
+#import "TJFirstViewController+CycleScrollView.h"
 
 @interface TJFirstViewController ()
 
@@ -19,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"首页";
+    [self addCycleScrollView];
     //显示红点
     [self.tabBarController.tabBar showBadgeOnItemIndex:0];
     TJLog(@"test");

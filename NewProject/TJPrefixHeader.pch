@@ -24,6 +24,7 @@
 #import <FMDBMigrationManager/FMDBMigrationManager.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <TZImagePickerController/TZImagePickerController.h>
+#import <SDWebImage/SDWebImageManager.h>
 
 #pragma mark - Custom Classs
 

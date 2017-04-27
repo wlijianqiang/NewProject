@@ -7,7 +7,10 @@
 //
 
 #import "TJBaseViewController.h"
+#import "TJTableViewHeaderView.h"
 
 @interface TJFourViewController : TJBaseViewController
+
+@property(nonatomic, strong)TJTableViewHeaderView *headrView;
 
 @end

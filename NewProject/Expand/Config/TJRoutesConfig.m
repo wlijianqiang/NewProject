@@ -14,6 +14,9 @@
 #import "TJFMDBViewController.h"
 #import "TJCollectionViewController.h"
 #import "TJStoryboardCollectionViewController.h"
+#import "TJImagePickerViewController.h"
+
+
 @implementation TJRoutesConfig
 
 
@@ -49,6 +52,11 @@
              [TJRoutes routePattern:@"/TJStoryboardCollectionViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  
                  TJStoryboardCollectionViewController *vc = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJStoryboardCollectionViewController_Storyboard];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"/TJImagePickerViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJImagePickerViewController *vc = [[TJImagePickerViewController alloc] init];
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
              }]
