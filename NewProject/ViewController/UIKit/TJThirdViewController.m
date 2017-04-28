@@ -52,7 +52,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
     self.dataMutableArray = [NSMutableArray arrayWithObjects:
       @[@"系统默认样式",@"xib自定义弹出框"],
       @[@"tableView描边"],
-      @[@"collectionView(代码)",@"collectionView(Storyboard)"],nil];
+      @[@"collectionView(代码)",@"collectionView(Storyboard)",@"图片选择器"],nil];
 }
 #pragma mark tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -126,10 +126,24 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
 }
 
 - (void)showCollectionViewForRow:(NSInteger )row{
-    if (0 == row) {
-        [JLRoutes routeURL:[NSURL URLWithString:@"/TJCollectionViewController"] withParameters:nil];
-    }else{
-        [JLRoutes routeURL:[NSURL URLWithString:@"/TJStoryboardCollectionViewController"] withParameters:nil];
+    
+    switch (row) {
+        case 0:
+        {
+            [JLRoutes routeURL:[NSURL URLWithString:@"/TJCollectionViewController"] withParameters:nil];
+        }
+            break;
+        case 1:
+        {
+            [JLRoutes routeURL:[NSURL URLWithString:@"/TJStoryboardCollectionViewController"] withParameters:nil];
+        }
+            break;
+            case 2:
+        {
+             [JLRoutes routeURL:[NSURL URLWithString:@"/TJImagePickerViewController"] withParameters:nil];
+        }
+            break;
+       
     }
 }
 #pragma mark - TJCustomAlertViewDelegate

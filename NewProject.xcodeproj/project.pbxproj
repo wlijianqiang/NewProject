@@ -10,8 +10,10 @@
 		4F5C2FBF65254427F27A69E8 /* libPods-NewProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C28FFE686E2C28AB0B8B924 /* libPods-NewProject.a */; };
 		CD02EF5C1E44648F00A7E8CC /* UIView+showOnKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CD02EF5B1E44648F00A7E8CC /* UIView+showOnKeyWindow.m */; };
 		CD0CF9B61EB196A800B98686 /* TJFirstViewController+CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CF9B51EB196A800B98686 /* TJFirstViewController+CycleScrollView.m */; };
-		CD0CF9B91EB1DC1C00B98686 /* TJImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CF9B81EB1DC1C00B98686 /* TJImagePickerViewController.m */; };
 		CD0CF9C21EB1E2D200B98686 /* TJFourViewController+HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CF9C11EB1E2D200B98686 /* TJFourViewController+HeaderView.m */; };
+		CD0CF9C81EB2D9F700B98686 /* TJImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CF9C71EB2D9F700B98686 /* TJImagePickerViewController.m */; };
+		CD0CF9CE1EB2E05E00B98686 /* LxGridViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CF9CD1EB2E05E00B98686 /* LxGridViewFlowLayout.m */; };
+		CD0CF9D11EB2E5B000B98686 /* TZTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CF9D01EB2E5B000B98686 /* TZTestCell.m */; };
 		CD13B0D51E2333C900093161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13B0D41E2333C900093161 /* main.m */; };
 		CD13B0DE1E2333C900093161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD13B0DC1E2333C900093161 /* Main.storyboard */; };
 		CD13B0E01E2333C900093161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13B0DF1E2333C900093161 /* Assets.xcassets */; };
@@ -99,10 +101,14 @@
 		CD02EF5B1E44648F00A7E8CC /* UIView+showOnKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+showOnKeyWindow.m"; sourceTree = "<group>"; };
 		CD0CF9B41EB196A800B98686 /* TJFirstViewController+CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TJFirstViewController+CycleScrollView.h"; sourceTree = "<group>"; };
 		CD0CF9B51EB196A800B98686 /* TJFirstViewController+CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TJFirstViewController+CycleScrollView.m"; sourceTree = "<group>"; };
-		CD0CF9B71EB1DC1C00B98686 /* TJImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJImagePickerViewController.h; sourceTree = "<group>"; };
-		CD0CF9B81EB1DC1C00B98686 /* TJImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJImagePickerViewController.m; sourceTree = "<group>"; };
 		CD0CF9C01EB1E2D200B98686 /* TJFourViewController+HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TJFourViewController+HeaderView.h"; sourceTree = "<group>"; };
 		CD0CF9C11EB1E2D200B98686 /* TJFourViewController+HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TJFourViewController+HeaderView.m"; sourceTree = "<group>"; };
+		CD0CF9C61EB2D9F700B98686 /* TJImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJImagePickerViewController.h; sourceTree = "<group>"; };
+		CD0CF9C71EB2D9F700B98686 /* TJImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJImagePickerViewController.m; sourceTree = "<group>"; };
+		CD0CF9CC1EB2E05E00B98686 /* LxGridViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxGridViewFlowLayout.h; sourceTree = "<group>"; };
+		CD0CF9CD1EB2E05E00B98686 /* LxGridViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LxGridViewFlowLayout.m; sourceTree = "<group>"; };
+		CD0CF9CF1EB2E5B000B98686 /* TZTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTestCell.h; sourceTree = "<group>"; };
+		CD0CF9D01EB2E5B000B98686 /* TZTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTestCell.m; sourceTree = "<group>"; };
 		CD13B0D01E2333C900093161 /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13B0D41E2333C900093161 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD13B0DD1E2333C900093161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -560,8 +566,6 @@
 				CD8AEAEA1E2C95E500C64BB7 /* TJFourViewController.m */,
 				CD0CF9C01EB1E2D200B98686 /* TJFourViewController+HeaderView.h */,
 				CD0CF9C11EB1E2D200B98686 /* TJFourViewController+HeaderView.m */,
-				CD0CF9B71EB1DC1C00B98686 /* TJImagePickerViewController.h */,
-				CD0CF9B81EB1DC1C00B98686 /* TJImagePickerViewController.m */,
 			);
 			name = "Four(我的)";
 			path = Four;
@@ -746,6 +750,10 @@
 		CDED52561EAF279A006BF64C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CD0CF9CC1EB2E05E00B98686 /* LxGridViewFlowLayout.h */,
+				CD0CF9CD1EB2E05E00B98686 /* LxGridViewFlowLayout.m */,
+				CD0CF9CF1EB2E5B000B98686 /* TZTestCell.h */,
+				CD0CF9D01EB2E5B000B98686 /* TZTestCell.m */,
 				CDED52621EAF286A006BF64C /* TJCollectionViewCell.h */,
 				CDED52631EAF286A006BF64C /* TJCollectionViewCell.m */,
 				CDED52651EAF287E006BF64C /* TJCollectionHeaderReusableView.h */,
@@ -763,6 +771,8 @@
 				CDED525A1EAF2817006BF64C /* TJCollectionViewController.m */,
 				CDED525B1EAF2817006BF64C /* TJStoryboardCollectionViewController.h */,
 				CDED525C1EAF2817006BF64C /* TJStoryboardCollectionViewController.m */,
+				CD0CF9C61EB2D9F700B98686 /* TJImagePickerViewController.h */,
+				CD0CF9C71EB2D9F700B98686 /* TJImagePickerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1004,6 +1014,7 @@
 				CD7F23AE1E372B6300F47D3F /* TJTestModel.m in Sources */,
 				CD13B0D51E2333C900093161 /* main.m in Sources */,
 				CD71E5CA1E6D04210058B89F /* TJBaseNavigationViewController.m in Sources */,
+				CD0CF9CE1EB2E05E00B98686 /* LxGridViewFlowLayout.m in Sources */,
 				CDED526A1EAF288E006BF64C /* TJCollectionFooterReusableView.m in Sources */,
 				CDED523B1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m in Sources */,
 				CDC414DD1E24F0FE00EA685D /* UIColor+TJColor.m in Sources */,
@@ -1013,13 +1024,14 @@
 				CD8AEB2A1E2CBD3200C64BB7 /* UITabBar+TJBadge.m in Sources */,
 				CDC96A8B1E345289000239DB /* AppDelegate.m in Sources */,
 				CDED52671EAF287E006BF64C /* TJCollectionHeaderReusableView.m in Sources */,
+				CD0CF9D11EB2E5B000B98686 /* TZTestCell.m in Sources */,
 				CD71E5CC1E6D04210058B89F /* TJBaseViewController.m in Sources */,
 				CD8AEAEF1E2C96EF00C64BB7 /* UIStoryboard+NewProject.m in Sources */,
-				CD0CF9B91EB1DC1C00B98686 /* TJImagePickerViewController.m in Sources */,
 				CD8AEADF1E2C94F300C64BB7 /* TJMainTabBarViewController.m in Sources */,
 				CD8AEAEB1E2C95E500C64BB7 /* TJFourViewController.m in Sources */,
 				CD71E5C11E6D02750058B89F /* TJThirdViewController.m in Sources */,
 				CD71E5BE1E6D02750058B89F /* TJCustomAlertView.m in Sources */,
+				CD0CF9C81EB2D9F700B98686 /* TJImagePickerViewController.m in Sources */,
 				CD8AEAE51E2C95CF00C64BB7 /* TJSecondViewController.m in Sources */,
 				CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */,
 				CDED525E1EAF2817006BF64C /* TJStoryboardCollectionViewController.m in Sources */,
