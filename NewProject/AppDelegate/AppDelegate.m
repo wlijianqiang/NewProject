@@ -20,9 +20,14 @@
 #endif
     [TJProjectConfig setSystemConfig];
     [self setupRoute];
-    
+
     return YES;
 }
+
+//设置屏幕旋转方向 或直接在plis文件中设置
+//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+//    return UIInterfaceOrientationMaskAll;
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

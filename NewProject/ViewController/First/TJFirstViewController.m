@@ -10,7 +10,11 @@
 #import "UITabBar+TJBadge.h"
 #import "TJFirstViewController+CycleScrollView.h"
 
-@interface TJFirstViewController ()
+#import "SRWebSocket.h"
+
+@interface TJFirstViewController ()<SRWebSocketDelegate>
+
+@property (nonatomic, strong)SRWebSocket *webSocket;
 
 @end
 
@@ -24,7 +28,34 @@
     //显示红点
     [self.tabBarController.tabBar showBadgeOnItemIndex:0];
     TJLog(@"test");
+    [self reconnect];
 }
+
+- (void)reconnect{
+    self.webSocket.delegate = nil;
+    [self.webSocket close];
+    self.webSocket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"ws://echo.websocket.org"]]];
+    self.webSocket.delegate = self;
+    [self.webSocket open];
+}
+
+- (void)webSocketDidOpen:(SRWebSocket *)webSocket{
+    
+}
+- (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error{
+    
+}
+- (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean{
+    
+}
+- (void)webSocket:(SRWebSocket *)webSocket didReceivePong:(NSData *)pongPayload{
+    
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message{
+    
+}
+
 - (IBAction)hiddenBadgeAction:(UIButton *)sender {
     //隐藏红点
     //[self.tabBarController.tabBar hiddenBadgeOnItemIndex:0];

@@ -56,6 +56,7 @@
 		CD8AEB2A1E2CBD3200C64BB7 /* UITabBar+TJBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEB291E2CBD3200C64BB7 /* UITabBar+TJBadge.m */; };
 		CD8AEB2E1E2DB45700C64BB7 /* NSString+TJCountCut.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEB2D1E2DB45700C64BB7 /* NSString+TJCountCut.m */; };
 		CD8AEB321E2DB86400C64BB7 /* UIWindow+TJWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEB311E2DB86400C64BB7 /* UIWindow+TJWindow.m */; };
+		CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */; };
 		CDC414BD1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414BA1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m */; };
 		CDC414BE1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414BC1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m */; };
 		CDC414D81E24EFC900EA685D /* UIFont+TJFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414D71E24EFC900EA685D /* UIFont+TJFont.m */; };
@@ -194,6 +195,8 @@
 		CD8AEB301E2DB86400C64BB7 /* UIWindow+TJWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TJWindow.h"; sourceTree = "<group>"; };
 		CD8AEB311E2DB86400C64BB7 /* UIWindow+TJWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+TJWindow.m"; sourceTree = "<group>"; };
 		CD8AEB411E2DBFE100C64BB7 /* TJRoutesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJRoutesDelegate.h; sourceTree = "<group>"; };
+		CD9537FC1EB96F3300326288 /* TJOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJOrientationViewController.h; sourceTree = "<group>"; };
+		CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJOrientationViewController.m; sourceTree = "<group>"; };
 		CDC414B91E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJDismissKeyboard.h"; sourceTree = "<group>"; };
 		CDC414BA1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TJDismissKeyboard.m"; sourceTree = "<group>"; };
 		CDC414BB1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJMBProgressHUD.h"; sourceTree = "<group>"; };
@@ -424,6 +427,7 @@
 				CD71E5B71E6D02750058B89F /* Third.storyboard */,
 				CD71E5B81E6D02750058B89F /* TJThirdViewController.h */,
 				CD71E5B91E6D02750058B89F /* TJThirdViewController.m */,
+				CD9537FB1EB96F0B00326288 /* Orientation */,
 				CD71E5BA1E6D02750058B89F /* UICollectionView */,
 				CD71E5BB1E6D02750058B89F /* UITableView */,
 			);
@@ -624,6 +628,15 @@
 				CD8AEB311E2DB86400C64BB7 /* UIWindow+TJWindow.m */,
 			);
 			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		CD9537FB1EB96F0B00326288 /* Orientation */ = {
+			isa = PBXGroup;
+			children = (
+				CD9537FC1EB96F3300326288 /* TJOrientationViewController.h */,
+				CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */,
+			);
+			path = Orientation;
 			sourceTree = "<group>";
 		};
 		CDC414A61E24ED7400EA685D /* Expand(扩展) */ = {
@@ -1021,6 +1034,7 @@
 				CD13B1581E2472B800093161 /* AFNetworkActivityLogger.m in Sources */,
 				CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */,
 				CD71E5CF1E6D04FC0058B89F /* TJFMDBViewController.m in Sources */,
+				CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */,
 				CD8AEB2A1E2CBD3200C64BB7 /* UITabBar+TJBadge.m in Sources */,
 				CDC96A8B1E345289000239DB /* AppDelegate.m in Sources */,
 				CDED52671EAF287E006BF64C /* TJCollectionHeaderReusableView.m in Sources */,

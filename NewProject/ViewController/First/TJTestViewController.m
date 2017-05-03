@@ -8,6 +8,8 @@
 
 #import "TJTestViewController.h"
 
+#import "IQTextView.h"
+
 @interface TJTestViewController ()
 
 @end
@@ -19,6 +21,19 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"test";
    
+    UITextView *textView = [[UITextView alloc] init];
+   // textView.placeholder = @"placeholder";
+    textView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:textView];
+    
+    [textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(10);
+        make.left.mas_equalTo(10);
+        make.width.mas_equalTo(kMainScreenWidth - 20);
+        make.height.mas_equalTo(200);
+    }];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

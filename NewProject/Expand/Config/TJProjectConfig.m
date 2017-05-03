@@ -75,12 +75,12 @@
                                           NSFontAttributeName:[UIFont defaultFontOfSize15]};
     [[UIBarButtonItem appearance] setTitleTextAttributes:attributeDictionary1 forState:UIControlStateNormal];
    //导航栏图片
-//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
     //返回按钮图片
-//    UIImage *backImage = [UIImage imageNamed:@""];
-//    backImage = [backImage resizableImageWithCapInsets:UIEdgeInsetsMake(17, 9, 9, 9) resizingMode:UIImageResizingModeStretch];
-//    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationController class], nil] setBackButtonBackgroundImage:backImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-//    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationController class], nil] setBackButtonBackgroundImage:backImage forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    UIImage *backImage = [UIImage imageNamed:@""];
+    backImage = [backImage resizableImageWithCapInsets:UIEdgeInsetsMake(17, 9, 9, 9) resizingMode:UIImageResizingModeStretch];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationController class], nil] setBackButtonBackgroundImage:backImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationController class], nil] setBackButtonBackgroundImage:backImage forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
 }
 
 /**

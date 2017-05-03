@@ -34,6 +34,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - SocketRocket (0.5.1)
   - SVProgressHUD (2.1.2)
   - TZImagePickerController (1.7.9)
 
@@ -51,6 +52,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDCycleScrollView
   - SDWebImage
+  - SocketRocket
   - SVProgressHUD
   - TZImagePickerController
 
@@ -68,9 +70,10 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   TZImagePickerController: 0a8ff228d287ebdd7d485e8c42a2a932894f1fba
 
-PODFILE CHECKSUM: 0d80c2e197b16aa6869299c17f31232c01583208
+PODFILE CHECKSUM: 47c55a9611bc94e8602d410661cec28ef078f3ff
 
 COCOAPODS: 1.2.0

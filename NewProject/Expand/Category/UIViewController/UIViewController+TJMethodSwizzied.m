@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 
 #import "TJFourViewController.h"
+#import "TJOrientationViewController.h"
 
 @implementation UIViewController (TJMethodSwizzied)
 
@@ -75,5 +76,6 @@
         }
     return needNavigationBarHidden;
 }
+
 
 @end

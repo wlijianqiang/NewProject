@@ -13,6 +13,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
     IndexPathSection_AlertView = 0,
     IndexPathSection_TableView,
     IndexPathSection_CollectionView,
+    IndexPathSection_Orientation,
 };
 
 @interface TJThirdViewController ()<UITableViewDelegate,UITableViewDataSource,TJCustomAlertViewDelegate>
@@ -47,12 +48,18 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
     
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 - (void)DataForTableView{
-    self.sectionTitleMutableArray = [NSMutableArray arrayWithObjects:@"弹出框",@"tableView",@"collectionView",nil];
+    self.sectionTitleMutableArray = [NSMutableArray arrayWithObjects:@"弹出框",@"tableView",@"collectionView",@"Orientation",nil];
     self.dataMutableArray = [NSMutableArray arrayWithObjects:
       @[@"系统默认样式",@"xib自定义弹出框"],
       @[@"tableView描边"],
-      @[@"collectionView(代码)",@"collectionView(Storyboard)",@"图片选择器"],nil];
+      @[@"collectionView(代码)",@"collectionView(Storyboard)",@"图片选择器"],
+      @[@"程序旋转方向"],nil];
 }
 #pragma mark tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -92,6 +99,8 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
        [JLRoutes routeURL:[NSURL URLWithString:@"/TJStrockViewController"] withParameters:nil];
     }else if (IndexPathSection_CollectionView == indexPath.section){
         [self showCollectionViewForRow:indexPath.row];
+    }else if (indexPath.section == IndexPathSection_Orientation){
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJOrientationViewController"]];
     }
 }
 

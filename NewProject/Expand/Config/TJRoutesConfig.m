@@ -15,7 +15,7 @@
 #import "TJCollectionViewController.h"
 #import "TJStoryboardCollectionViewController.h"
 #import "TJImagePickerViewController.h"
-
+#import "TJOrientationViewController.h"
 
 @implementation TJRoutesConfig
 
@@ -57,6 +57,11 @@
              }],
              [TJRoutes routePattern:@"/TJImagePickerViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  TJImagePickerViewController *vc = [[TJImagePickerViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"/TJOrientationViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJOrientationViewController *vc = [[TJOrientationViewController alloc] init];
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
              }]
