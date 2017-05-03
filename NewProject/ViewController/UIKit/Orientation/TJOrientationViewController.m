@@ -126,20 +126,28 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    //1.私有方法 不推荐但是很有效 上传appstore有被拒的风险
-    //[[UIDevice currentDevice] setValue:@(UIDeviceOrientationLandscapeLeft) forKey:@"orientation"];
+    //1.私有方法 不推荐需开启自动旋转功能 上传appstore有被拒的风险
+    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationLandscapeLeft) forKey:@"orientation"];
     
     //2.假旋转 并未改变UIDevice的orientation而是改变某个view的transform 利用CGAffineTransformMakeRotation达到目的（思路是先设置statusBarOrientation，然后再改变某个view的方向跟statusBarOrinetation 一致）注意：先关闭自动选转，否则setStatusBarOrientation无效
-    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeLeft];
-    self.view.transform = CGAffineTransformMakeRotation(M_PI/2);
-    self.view.bounds = CGRectMake(0, 0, kMainScreenHeight, kMainScreenWidth);
+//    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeLeft];
+//    self.view.transform = CGAffineTransformMakeRotation(M_PI/2);
+//    self.view.bounds = CGRectMake(0, 0, kMainScreenHeight, kMainScreenWidth);
     
 }
 //
 -(void)viewWillDisappear:(BOOL)animated{
+    //1.私有方法
     [super viewWillDisappear:animated];
-//    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
-    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
+    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+    //2.假旋转
+    //[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
+}
+
+
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
