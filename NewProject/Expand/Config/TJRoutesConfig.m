@@ -16,6 +16,8 @@
 #import "TJStoryboardCollectionViewController.h"
 #import "TJImagePickerViewController.h"
 #import "TJOrientationViewController.h"
+#import "TJAudioViewController.h"
+#import "TJAudioRecorderViewController.h"
 
 @implementation TJRoutesConfig
 
@@ -62,6 +64,17 @@
              }],
              [TJRoutes routePattern:@"/TJOrientationViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  TJOrientationViewController *vc = [[TJOrientationViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"/TJAudioViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJAudioViewController *vc = [[TJAudioViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"/TJAudioRecorderViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 
+                 TJAudioRecorderViewController *vc = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJStoryboardAudioRecorderViewController_Storyboard];
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
              }]

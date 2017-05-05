@@ -57,6 +57,15 @@
 		CD8AEB2E1E2DB45700C64BB7 /* NSString+TJCountCut.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEB2D1E2DB45700C64BB7 /* NSString+TJCountCut.m */; };
 		CD8AEB321E2DB86400C64BB7 /* UIWindow+TJWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEB311E2DB86400C64BB7 /* UIWindow+TJWindow.m */; };
 		CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */; };
+		CD9538011EB9D21600326288 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9538001EB9D21600326288 /* MediaPlayer.framework */; };
+		CD9538041EBAC8F700326288 /* TJThirdViewController+pushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */; };
+		CD95380E1EBAFDFF00326288 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95380D1EBAFDFF00326288 /* AVFoundation.framework */; };
+		CD9538101EBAFE1000326288 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95380F1EBAFE1000326288 /* AudioToolbox.framework */; };
+		CD9538131EBAFE5200326288 /* TJAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538121EBAFE5200326288 /* TJAudioViewController.m */; };
+		CD9538151EBB066700326288 /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = CD9538141EBB066600326288 /* videoRing.caf */; };
+		CD9538171EBB08B100326288 /* The New Look of OS X Yosemite.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CD9538161EBB08B100326288 /* The New Look of OS X Yosemite.mp4 */; };
+		CD9538191EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD9538181EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 */; };
+		CD95381C1EBB18E000326288 /* TJAudioRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD95381B1EBB18E000326288 /* TJAudioRecorderViewController.m */; };
 		CDC414BD1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414BA1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m */; };
 		CDC414BE1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414BC1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m */; };
 		CDC414D81E24EFC900EA685D /* UIFont+TJFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414D71E24EFC900EA685D /* UIFont+TJFont.m */; };
@@ -197,6 +206,18 @@
 		CD8AEB411E2DBFE100C64BB7 /* TJRoutesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJRoutesDelegate.h; sourceTree = "<group>"; };
 		CD9537FC1EB96F3300326288 /* TJOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJOrientationViewController.h; sourceTree = "<group>"; };
 		CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJOrientationViewController.m; sourceTree = "<group>"; };
+		CD9538001EB9D21600326288 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CD9538021EBAC8F700326288 /* TJThirdViewController+pushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TJThirdViewController+pushViewController.h"; sourceTree = "<group>"; };
+		CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TJThirdViewController+pushViewController.m"; sourceTree = "<group>"; };
+		CD95380D1EBAFDFF00326288 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD95380F1EBAFE1000326288 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CD9538111EBAFE5200326288 /* TJAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJAudioViewController.h; sourceTree = "<group>"; };
+		CD9538121EBAFE5200326288 /* TJAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJAudioViewController.m; sourceTree = "<group>"; };
+		CD9538141EBB066600326288 /* videoRing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = videoRing.caf; path = "../../../../Downloads/13+MediaDemo/SoudeEffect/Audio/Resources/Audio/videoRing.caf"; sourceTree = "<group>"; };
+		CD9538161EBB08B100326288 /* The New Look of OS X Yosemite.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The New Look of OS X Yosemite.mp4"; sourceTree = "<group>"; };
+		CD9538181EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "派对动物_五月天_派对动物.mp3"; sourceTree = "<group>"; };
+		CD95381A1EBB18E000326288 /* TJAudioRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJAudioRecorderViewController.h; sourceTree = "<group>"; };
+		CD95381B1EBB18E000326288 /* TJAudioRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJAudioRecorderViewController.m; sourceTree = "<group>"; };
 		CDC414B91E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJDismissKeyboard.h"; sourceTree = "<group>"; };
 		CDC414BA1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TJDismissKeyboard.m"; sourceTree = "<group>"; };
 		CDC414BB1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJMBProgressHUD.h"; sourceTree = "<group>"; };
@@ -233,6 +254,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9538101EBAFE1000326288 /* AudioToolbox.framework in Frameworks */,
+				CD95380E1EBAFDFF00326288 /* AVFoundation.framework in Frameworks */,
+				CD9538011EB9D21600326288 /* MediaPlayer.framework in Frameworks */,
 				4F5C2FBF65254427F27A69E8 /* libPods-NewProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +281,9 @@
 		14C01A1DE18A5FED6F6BCA7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD95380F1EBAFE1000326288 /* AudioToolbox.framework */,
+				CD95380D1EBAFDFF00326288 /* AVFoundation.framework */,
+				CD9538001EB9D21600326288 /* MediaPlayer.framework */,
 				8C28FFE686E2C28AB0B8B924 /* libPods-NewProject.a */,
 			);
 			name = Frameworks;
@@ -423,10 +450,13 @@
 		CD71E5B21E6D02750058B89F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				CD71E5B31E6D02750058B89F /* CustomAltertView */,
 				CD71E5B71E6D02750058B89F /* Third.storyboard */,
 				CD71E5B81E6D02750058B89F /* TJThirdViewController.h */,
 				CD71E5B91E6D02750058B89F /* TJThirdViewController.m */,
+				CD9538021EBAC8F700326288 /* TJThirdViewController+pushViewController.h */,
+				CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */,
+				CD9538051EBACD0D00326288 /* Media */,
+				CD71E5B31E6D02750058B89F /* CustomAltertView */,
 				CD9537FB1EB96F0B00326288 /* Orientation */,
 				CD71E5BA1E6D02750058B89F /* UICollectionView */,
 				CD71E5BB1E6D02750058B89F /* UITableView */,
@@ -605,6 +635,9 @@
 		CD8AEB221E2CB99900C64BB7 /* Resources(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				CD9538161EBB08B100326288 /* The New Look of OS X Yosemite.mp4 */,
+				CD9538141EBB066600326288 /* videoRing.caf */,
+				CD9538181EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 */,
 				CD67A2AD1E6940A900FEA095 /* 1.jpg */,
 				CD8AEB251E2CB99900C64BB7 /* TabIcon.xcassets */,
 			);
@@ -637,6 +670,18 @@
 				CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */,
 			);
 			path = Orientation;
+			sourceTree = "<group>";
+		};
+		CD9538051EBACD0D00326288 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				CD9538111EBAFE5200326288 /* TJAudioViewController.h */,
+				CD9538121EBAFE5200326288 /* TJAudioViewController.m */,
+				CD95381A1EBB18E000326288 /* TJAudioRecorderViewController.h */,
+				CD95381B1EBB18E000326288 /* TJAudioRecorderViewController.m */,
+			);
+			name = Media;
+			path = ../../../../../Desktop/Media;
 			sourceTree = "<group>";
 		};
 		CDC414A61E24ED7400EA685D /* Expand(扩展) */ = {
@@ -918,6 +963,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9538151EBB066700326288 /* videoRing.caf in Resources */,
 				CD67A2AE1E6940A900FEA095 /* 1.jpg in Resources */,
 				CD13B0E31E2333C900093161 /* LaunchScreen.storyboard in Resources */,
 				CD71E5AD1E6D023E0058B89F /* Second.storyboard in Resources */,
@@ -928,6 +974,8 @@
 				CD71E5BF1E6D02750058B89F /* TJCustomAlertView.xib in Resources */,
 				CD13B0DE1E2333C900093161 /* Main.storyboard in Resources */,
 				CD71E5B11E6D02520058B89F /* Four.storyboard in Resources */,
+				CD9538171EBB08B100326288 /* The New Look of OS X Yosemite.mp4 in Resources */,
+				CD9538191EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 in Resources */,
 				CD71E5AB1E6D02370058B89F /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1006,6 +1054,7 @@
 				CD8AEB321E2DB86400C64BB7 /* UIWindow+TJWindow.m in Sources */,
 				CD8AEAE21E2C95C300C64BB7 /* TJFirstViewController.m in Sources */,
 				CD0CF9B61EB196A800B98686 /* TJFirstViewController+CycleScrollView.m in Sources */,
+				CD9538131EBAFE5200326288 /* TJAudioViewController.m in Sources */,
 				CD71E5C21E6D02750058B89F /* TJStrockViewController.m in Sources */,
 				CDC96DEE1E35E4AD000239DB /* TJModel.m in Sources */,
 				CD1DCF561E694CB9002C21AF /* TJTableViewHeaderView.m in Sources */,
@@ -1019,6 +1068,7 @@
 				CD3659D71E5BD672008DCB12 /* UIImage+Extension.m in Sources */,
 				CDC414D81E24EFC900EA685D /* UIFont+TJFont.m in Sources */,
 				CD4B7C171E26053A007945A0 /* TJProjectConfig.m in Sources */,
+				CD9538041EBAC8F700326288 /* TJThirdViewController+pushViewController.m in Sources */,
 				CDC96AA41E348903000239DB /* AppDelegate+JLRoute.m in Sources */,
 				CD13B1571E2472B800093161 /* AFNetworkActivityConsoleLogger.m in Sources */,
 				CDC414BD1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m in Sources */,
@@ -1030,6 +1080,7 @@
 				CD0CF9CE1EB2E05E00B98686 /* LxGridViewFlowLayout.m in Sources */,
 				CDED526A1EAF288E006BF64C /* TJCollectionFooterReusableView.m in Sources */,
 				CDED523B1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m in Sources */,
+				CD95381C1EBB18E000326288 /* TJAudioRecorderViewController.m in Sources */,
 				CDC414DD1E24F0FE00EA685D /* UIColor+TJColor.m in Sources */,
 				CD13B1581E2472B800093161 /* AFNetworkActivityLogger.m in Sources */,
 				CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */,
