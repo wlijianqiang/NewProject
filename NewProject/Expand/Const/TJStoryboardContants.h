@@ -19,4 +19,5 @@ static NSString * _Nonnull const TJTestViewController_Storyboard = @"TJTestViewC
 static NSString * _Nonnull const TJFMDBViewController_Storyboard = @"TJFMDBViewController";
 static NSString * _Nonnull const   TJStoryboardCollectionViewController_Storyboard = @"TJStoryboardCollectionViewController";
 static NSString * _Nonnull const   TJStoryboardAudioRecorderViewController_Storyboard = @"TJAudioRecorderViewController";
+static NSString * _Nonnull const   TJStoryboardFoundationCameraViewController_Storyboard = @"TJFoundationCameraViewController";
 #endif /* TJStoryboardContants_h */

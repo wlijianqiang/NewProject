@@ -26,7 +26,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vs-kv-Ajw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="-110"/>
+            <point key="canvasLocation" x="62" y="-186"/>
+        </scene>
+        <!--Foundation Camera View Controller-->
+        <scene sceneID="g7e-E6-CYZ">
+            <objects>
+                <viewController storyboardIdentifier="TJFoundationCameraViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aJw-JZ-lvJ" customClass="TJFoundationCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P5S-8y-gRm"/>
+                        <viewControllerLayoutGuide type="bottom" id="VML-uW-ZUH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z1b-nE-Crk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2E-el-xq3">
+                                <rect key="frame" x="98" y="617" width="179" height="30"/>
+                                <color key="backgroundColor" red="0.84696626659999996" green="0.84711211919999996" blue="0.84695702790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="flashChange:" destination="aJw-JZ-lvJ" eventType="touchUpInside" id="ycV-VC-hIP"/>
+                                    <action selector="takePhoto:" destination="aJw-JZ-lvJ" eventType="touchUpInside" id="EcY-pr-Y4T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZT-fd-SHU">
+                                <rect key="frame" x="251" y="28" width="108" height="30"/>
+                                <state key="normal" title="前后摄像头切换"/>
+                                <connections>
+                                    <action selector="cameraChange:" destination="aJw-JZ-lvJ" eventType="touchUpInside" id="ay4-5j-1en"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9Q-vf-irk">
+                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                                <state key="normal" title="闪光灯"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlbumAddBtn" translatesAutoresizingMaskIntoConstraints="NO" id="clC-eY-8nJ">
+                                <rect key="frame" x="153" y="303" width="68" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N86-Dk-vSO">
+                                <rect key="frame" x="16" y="66" width="343" height="525"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="h9Q-vf-irk" secondAttribute="leading" id="25l-te-GmR"/>
+                            <constraint firstItem="D2E-el-xq3" firstAttribute="leading" secondItem="Z1b-nE-Crk" secondAttribute="leadingMargin" constant="82" id="3cW-ri-WhP"/>
+                            <constraint firstItem="N86-Dk-vSO" firstAttribute="centerX" secondItem="Z1b-nE-Crk" secondAttribute="centerX" id="5PF-hP-hLc"/>
+                            <constraint firstItem="h9Q-vf-irk" firstAttribute="top" secondItem="P5S-8y-gRm" secondAttribute="bottom" constant="8" id="BiO-DK-WMZ"/>
+                            <constraint firstItem="N86-Dk-vSO" firstAttribute="leading" secondItem="h9Q-vf-irk" secondAttribute="leading" id="Yr4-fO-Fez"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D2E-el-xq3" secondAttribute="trailing" constant="82" id="Zj4-hd-vwk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LZT-fd-SHU" secondAttribute="trailing" id="nLp-Dm-H0B"/>
+                            <constraint firstItem="D2E-el-xq3" firstAttribute="top" secondItem="N86-Dk-vSO" secondAttribute="bottom" constant="26" id="oh0-Mx-o0e"/>
+                            <constraint firstItem="N86-Dk-vSO" firstAttribute="centerY" secondItem="Z1b-nE-Crk" secondAttribute="centerY" constant="-5" id="rly-Lz-QRz"/>
+                            <constraint firstItem="VML-uW-ZUH" firstAttribute="top" secondItem="D2E-el-xq3" secondAttribute="bottom" constant="20" id="soy-q8-k5i"/>
+                            <constraint firstItem="LZT-fd-SHU" firstAttribute="top" secondItem="P5S-8y-gRm" secondAttribute="bottom" constant="8" id="sxV-Vw-4Ts"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="focusCursor" destination="clC-eY-8nJ" id="Qu2-vg-uIi"/>
+                        <outlet property="preView" destination="N86-Dk-vSO" id="ubF-2Q-JTH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gm7-xN-GlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="-186.65667166416793"/>
         </scene>
         <!--Storyboard Collection View Controller-->
         <scene sceneID="93m-VX-z2H">
@@ -72,7 +137,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqM-Ix-W85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="710" y="-110"/>
+            <point key="canvasLocation" x="63" y="-831"/>
         </scene>
         <!--Audio Recorder View Controller-->
         <scene sceneID="7Dj-DJ-qC4">
@@ -117,7 +182,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdJ-n2-whC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421.5999999999999" y="-111.0944527736132"/>
+            <point key="canvasLocation" x="708" y="-832"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AlbumAddBtn" width="65" height="65"/>
+    </resources>
 </document>

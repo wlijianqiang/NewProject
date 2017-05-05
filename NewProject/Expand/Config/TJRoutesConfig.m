@@ -18,6 +18,7 @@
 #import "TJOrientationViewController.h"
 #import "TJAudioViewController.h"
 #import "TJAudioRecorderViewController.h"
+#import "TJFoundationCameraViewController.h"
 
 @implementation TJRoutesConfig
 
@@ -77,8 +78,14 @@
                  TJAudioRecorderViewController *vc = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJStoryboardAudioRecorderViewController_Storyboard];
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
+             }],
+             [TJRoutes routePattern:@"/TJFoundationCameraViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 
+                 TJFoundationCameraViewController *vc = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJStoryboardFoundationCameraViewController_Storyboard];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
              }]
-            
+
             ];
 }
 

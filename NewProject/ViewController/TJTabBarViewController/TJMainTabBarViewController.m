@@ -99,9 +99,9 @@
 }
 #pragma mark -  
 //禁止屏幕旋转，在需要旋转的页面再打开
-- (BOOL)shouldAutorotate{
-    return NO;
-}
+//- (BOOL)shouldAutorotate{
+//    return NO;
+//}
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
     return UIInterfaceOrientationPortrait;
