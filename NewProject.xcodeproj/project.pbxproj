@@ -56,17 +56,17 @@
 		CD8AEB2A1E2CBD3200C64BB7 /* UITabBar+TJBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEB291E2CBD3200C64BB7 /* UITabBar+TJBadge.m */; };
 		CD8AEB2E1E2DB45700C64BB7 /* NSString+TJCountCut.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEB2D1E2DB45700C64BB7 /* NSString+TJCountCut.m */; };
 		CD8AEB321E2DB86400C64BB7 /* UIWindow+TJWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8AEB311E2DB86400C64BB7 /* UIWindow+TJWindow.m */; };
+		CD92058B1EC0057600061E93 /* TJAudioRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205861EC0057600061E93 /* TJAudioRecorderViewController.m */; };
+		CD92058C1EC0057600061E93 /* TJAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205881EC0057600061E93 /* TJAudioViewController.m */; };
+		CD92058D1EC0057600061E93 /* TJFoundationCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD92058A1EC0057600061E93 /* TJFoundationCameraViewController.m */; };
 		CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */; };
 		CD9538011EB9D21600326288 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9538001EB9D21600326288 /* MediaPlayer.framework */; };
 		CD9538041EBAC8F700326288 /* TJThirdViewController+pushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */; };
 		CD95380E1EBAFDFF00326288 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95380D1EBAFDFF00326288 /* AVFoundation.framework */; };
 		CD9538101EBAFE1000326288 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95380F1EBAFE1000326288 /* AudioToolbox.framework */; };
-		CD9538131EBAFE5200326288 /* TJAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538121EBAFE5200326288 /* TJAudioViewController.m */; };
 		CD9538151EBB066700326288 /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = CD9538141EBB066600326288 /* videoRing.caf */; };
 		CD9538171EBB08B100326288 /* The New Look of OS X Yosemite.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CD9538161EBB08B100326288 /* The New Look of OS X Yosemite.mp4 */; };
 		CD9538191EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD9538181EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 */; };
-		CD95381C1EBB18E000326288 /* TJAudioRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD95381B1EBB18E000326288 /* TJAudioRecorderViewController.m */; };
-		CD9538711EBC55CA00326288 /* TJFoundationCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538701EBC55CA00326288 /* TJFoundationCameraViewController.m */; };
 		CD9538731EBC560900326288 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9538721EBC560900326288 /* AssetsLibrary.framework */; };
 		CDC414BD1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414BA1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m */; };
 		CDC414BE1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414BC1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m */; };
@@ -206,6 +206,12 @@
 		CD8AEB301E2DB86400C64BB7 /* UIWindow+TJWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TJWindow.h"; sourceTree = "<group>"; };
 		CD8AEB311E2DB86400C64BB7 /* UIWindow+TJWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+TJWindow.m"; sourceTree = "<group>"; };
 		CD8AEB411E2DBFE100C64BB7 /* TJRoutesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJRoutesDelegate.h; sourceTree = "<group>"; };
+		CD9205851EC0057600061E93 /* TJAudioRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJAudioRecorderViewController.h; sourceTree = "<group>"; };
+		CD9205861EC0057600061E93 /* TJAudioRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJAudioRecorderViewController.m; sourceTree = "<group>"; };
+		CD9205871EC0057600061E93 /* TJAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJAudioViewController.h; sourceTree = "<group>"; };
+		CD9205881EC0057600061E93 /* TJAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJAudioViewController.m; sourceTree = "<group>"; };
+		CD9205891EC0057600061E93 /* TJFoundationCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJFoundationCameraViewController.h; sourceTree = "<group>"; };
+		CD92058A1EC0057600061E93 /* TJFoundationCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJFoundationCameraViewController.m; sourceTree = "<group>"; };
 		CD9537FC1EB96F3300326288 /* TJOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJOrientationViewController.h; sourceTree = "<group>"; };
 		CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJOrientationViewController.m; sourceTree = "<group>"; };
 		CD9538001EB9D21600326288 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -213,15 +219,9 @@
 		CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TJThirdViewController+pushViewController.m"; sourceTree = "<group>"; };
 		CD95380D1EBAFDFF00326288 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CD95380F1EBAFE1000326288 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		CD9538111EBAFE5200326288 /* TJAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJAudioViewController.h; sourceTree = "<group>"; };
-		CD9538121EBAFE5200326288 /* TJAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJAudioViewController.m; sourceTree = "<group>"; };
 		CD9538141EBB066600326288 /* videoRing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = videoRing.caf; path = "../../../../Downloads/13+MediaDemo/SoudeEffect/Audio/Resources/Audio/videoRing.caf"; sourceTree = "<group>"; };
 		CD9538161EBB08B100326288 /* The New Look of OS X Yosemite.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The New Look of OS X Yosemite.mp4"; sourceTree = "<group>"; };
 		CD9538181EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "派对动物_五月天_派对动物.mp3"; sourceTree = "<group>"; };
-		CD95381A1EBB18E000326288 /* TJAudioRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJAudioRecorderViewController.h; sourceTree = "<group>"; };
-		CD95381B1EBB18E000326288 /* TJAudioRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJAudioRecorderViewController.m; sourceTree = "<group>"; };
-		CD95386F1EBC55CA00326288 /* TJFoundationCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJFoundationCameraViewController.h; sourceTree = "<group>"; };
-		CD9538701EBC55CA00326288 /* TJFoundationCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJFoundationCameraViewController.m; sourceTree = "<group>"; };
 		CD9538721EBC560900326288 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		CDC414B91E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJDismissKeyboard.h"; sourceTree = "<group>"; };
 		CDC414BA1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TJDismissKeyboard.m"; sourceTree = "<group>"; };
@@ -457,12 +457,12 @@
 		CD71E5B21E6D02750058B89F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CD9205841EC0057600061E93 /* Media */,
 				CD71E5B71E6D02750058B89F /* Third.storyboard */,
 				CD71E5B81E6D02750058B89F /* TJThirdViewController.h */,
 				CD71E5B91E6D02750058B89F /* TJThirdViewController.m */,
 				CD9538021EBAC8F700326288 /* TJThirdViewController+pushViewController.h */,
 				CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */,
-				CD9538051EBACD0D00326288 /* Media */,
 				CD71E5B31E6D02750058B89F /* CustomAltertView */,
 				CD9537FB1EB96F0B00326288 /* Orientation */,
 				CD71E5BA1E6D02750058B89F /* UICollectionView */,
@@ -670,6 +670,19 @@
 			path = UIWindow;
 			sourceTree = "<group>";
 		};
+		CD9205841EC0057600061E93 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				CD9205851EC0057600061E93 /* TJAudioRecorderViewController.h */,
+				CD9205861EC0057600061E93 /* TJAudioRecorderViewController.m */,
+				CD9205871EC0057600061E93 /* TJAudioViewController.h */,
+				CD9205881EC0057600061E93 /* TJAudioViewController.m */,
+				CD9205891EC0057600061E93 /* TJFoundationCameraViewController.h */,
+				CD92058A1EC0057600061E93 /* TJFoundationCameraViewController.m */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		CD9537FB1EB96F0B00326288 /* Orientation */ = {
 			isa = PBXGroup;
 			children = (
@@ -677,20 +690,6 @@
 				CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */,
 			);
 			path = Orientation;
-			sourceTree = "<group>";
-		};
-		CD9538051EBACD0D00326288 /* Media */ = {
-			isa = PBXGroup;
-			children = (
-				CD9538111EBAFE5200326288 /* TJAudioViewController.h */,
-				CD9538121EBAFE5200326288 /* TJAudioViewController.m */,
-				CD95381A1EBB18E000326288 /* TJAudioRecorderViewController.h */,
-				CD95381B1EBB18E000326288 /* TJAudioRecorderViewController.m */,
-				CD95386F1EBC55CA00326288 /* TJFoundationCameraViewController.h */,
-				CD9538701EBC55CA00326288 /* TJFoundationCameraViewController.m */,
-			);
-			name = Media;
-			path = ../../../../../Desktop/Media;
 			sourceTree = "<group>";
 		};
 		CDC414A61E24ED7400EA685D /* Expand(扩展) */ = {
@@ -1061,18 +1060,19 @@
 				CDC414BE1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m in Sources */,
 				CD7E7BE01E33A0EC002405A5 /* TJRoutes.m in Sources */,
 				CD8AEB321E2DB86400C64BB7 /* UIWindow+TJWindow.m in Sources */,
+				CD92058B1EC0057600061E93 /* TJAudioRecorderViewController.m in Sources */,
 				CD8AEAE21E2C95C300C64BB7 /* TJFirstViewController.m in Sources */,
 				CD0CF9B61EB196A800B98686 /* TJFirstViewController+CycleScrollView.m in Sources */,
-				CD9538131EBAFE5200326288 /* TJAudioViewController.m in Sources */,
 				CD71E5C21E6D02750058B89F /* TJStrockViewController.m in Sources */,
 				CDC96DEE1E35E4AD000239DB /* TJModel.m in Sources */,
+				CD92058C1EC0057600061E93 /* TJAudioViewController.m in Sources */,
 				CD1DCF561E694CB9002C21AF /* TJTableViewHeaderView.m in Sources */,
 				CD02EF5C1E44648F00A7E8CC /* UIView+showOnKeyWindow.m in Sources */,
 				CD8AEAAD1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m in Sources */,
 				CDED525D1EAF2817006BF64C /* TJCollectionViewController.m in Sources */,
 				CDED52641EAF286A006BF64C /* TJCollectionViewCell.m in Sources */,
+				CD92058D1EC0057600061E93 /* TJFoundationCameraViewController.m in Sources */,
 				CD8AEABC1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m in Sources */,
-				CD9538711EBC55CA00326288 /* TJFoundationCameraViewController.m in Sources */,
 				CD71E5CB1E6D04210058B89F /* TJBaseTableViewController.m in Sources */,
 				CD8AEAFD1E2C9AF700C64BB7 /* UIWebView+TJCache.m in Sources */,
 				CD3659D71E5BD672008DCB12 /* UIImage+Extension.m in Sources */,
@@ -1090,7 +1090,6 @@
 				CD0CF9CE1EB2E05E00B98686 /* LxGridViewFlowLayout.m in Sources */,
 				CDED526A1EAF288E006BF64C /* TJCollectionFooterReusableView.m in Sources */,
 				CDED523B1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m in Sources */,
-				CD95381C1EBB18E000326288 /* TJAudioRecorderViewController.m in Sources */,
 				CDC414DD1E24F0FE00EA685D /* UIColor+TJColor.m in Sources */,
 				CD13B1581E2472B800093161 /* AFNetworkActivityLogger.m in Sources */,
 				CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */,
