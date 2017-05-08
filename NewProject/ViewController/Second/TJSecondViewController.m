@@ -46,7 +46,7 @@
 }
 
 - (void)addTableViewData{
-    self.dataMutableArray  = [NSMutableArray arrayWithObjects:@"FMDB", nil];
+    self.dataMutableArray  = [NSMutableArray arrayWithObjects:@"FMDB",@"WebView", nil];
 }
 - (void)viewRefresh{
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -82,7 +82,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+
         UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([UITableViewCell class])];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
@@ -90,7 +90,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [JLRoutes routeURL:[NSURL URLWithString:@"/TJFMDBViewController"] withParameters:nil];
+    if (0 == indexPath.row) {
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJFMDBViewController"] withParameters:nil];
+    }else{
+       [JLRoutes routeURL:[NSURL URLWithString:@"/TJWebListTableViewController"] withParameters:nil];
+    }
 }
 
 - (void)tabBarNotification{

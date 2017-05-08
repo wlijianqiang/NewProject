@@ -59,6 +59,9 @@
 		CD92058B1EC0057600061E93 /* TJAudioRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205861EC0057600061E93 /* TJAudioRecorderViewController.m */; };
 		CD92058C1EC0057600061E93 /* TJAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205881EC0057600061E93 /* TJAudioViewController.m */; };
 		CD92058D1EC0057600061E93 /* TJFoundationCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD92058A1EC0057600061E93 /* TJFoundationCameraViewController.m */; };
+		CD9205971EC0503400061E93 /* TJWebListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205961EC0503400061E93 /* TJWebListTableViewController.m */; };
+		CD92059B1EC0527D00061E93 /* TJWebviewProgressLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD92059A1EC0527D00061E93 /* TJWebviewProgressLineViewController.m */; };
+		CD92059E1EC052AE00061E93 /* TJViewProgressLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CD92059D1EC052AE00061E93 /* TJViewProgressLine.m */; };
 		CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */; };
 		CD9538011EB9D21600326288 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9538001EB9D21600326288 /* MediaPlayer.framework */; };
 		CD9538041EBAC8F700326288 /* TJThirdViewController+pushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */; };
@@ -212,6 +215,12 @@
 		CD9205881EC0057600061E93 /* TJAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJAudioViewController.m; sourceTree = "<group>"; };
 		CD9205891EC0057600061E93 /* TJFoundationCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJFoundationCameraViewController.h; sourceTree = "<group>"; };
 		CD92058A1EC0057600061E93 /* TJFoundationCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJFoundationCameraViewController.m; sourceTree = "<group>"; };
+		CD9205951EC0503400061E93 /* TJWebListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJWebListTableViewController.h; sourceTree = "<group>"; };
+		CD9205961EC0503400061E93 /* TJWebListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJWebListTableViewController.m; sourceTree = "<group>"; };
+		CD9205991EC0527D00061E93 /* TJWebviewProgressLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJWebviewProgressLineViewController.h; sourceTree = "<group>"; };
+		CD92059A1EC0527D00061E93 /* TJWebviewProgressLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJWebviewProgressLineViewController.m; sourceTree = "<group>"; };
+		CD92059C1EC052AE00061E93 /* TJViewProgressLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJViewProgressLine.h; sourceTree = "<group>"; };
+		CD92059D1EC052AE00061E93 /* TJViewProgressLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJViewProgressLine.m; sourceTree = "<group>"; };
 		CD9537FC1EB96F3300326288 /* TJOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJOrientationViewController.h; sourceTree = "<group>"; };
 		CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJOrientationViewController.m; sourceTree = "<group>"; };
 		CD9538001EB9D21600326288 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -589,6 +598,7 @@
 		CD8AEAC61E2C906400C64BB7 /* Second(咨询) */ = {
 			isa = PBXGroup;
 			children = (
+				CD9205911EC04FB400061E93 /* WebView */,
 				CD71E5A61E6D01710058B89F /* FMDB */,
 				CD8AEAE31E2C95CF00C64BB7 /* TJSecondViewController.h */,
 				CD8AEAE41E2C95CF00C64BB7 /* TJSecondViewController.m */,
@@ -681,6 +691,28 @@
 				CD92058A1EC0057600061E93 /* TJFoundationCameraViewController.m */,
 			);
 			path = Media;
+			sourceTree = "<group>";
+		};
+		CD9205911EC04FB400061E93 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				CD9205981EC0519200061E93 /* UIWebView进度条 */,
+				CD9205951EC0503400061E93 /* TJWebListTableViewController.h */,
+				CD9205961EC0503400061E93 /* TJWebListTableViewController.m */,
+			);
+			name = WebView;
+			path = FMDB/WebView;
+			sourceTree = "<group>";
+		};
+		CD9205981EC0519200061E93 /* UIWebView进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				CD92059C1EC052AE00061E93 /* TJViewProgressLine.h */,
+				CD92059D1EC052AE00061E93 /* TJViewProgressLine.m */,
+				CD9205991EC0527D00061E93 /* TJWebviewProgressLineViewController.h */,
+				CD92059A1EC0527D00061E93 /* TJWebviewProgressLineViewController.m */,
+			);
+			path = "UIWebView进度条";
 			sourceTree = "<group>";
 		};
 		CD9537FB1EB96F0B00326288 /* Orientation */ = {
@@ -1091,8 +1123,11 @@
 				CDED526A1EAF288E006BF64C /* TJCollectionFooterReusableView.m in Sources */,
 				CDED523B1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m in Sources */,
 				CDC414DD1E24F0FE00EA685D /* UIColor+TJColor.m in Sources */,
+				CD92059E1EC052AE00061E93 /* TJViewProgressLine.m in Sources */,
 				CD13B1581E2472B800093161 /* AFNetworkActivityLogger.m in Sources */,
+				CD92059B1EC0527D00061E93 /* TJWebviewProgressLineViewController.m in Sources */,
 				CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */,
+				CD9205971EC0503400061E93 /* TJWebListTableViewController.m in Sources */,
 				CD71E5CF1E6D04FC0058B89F /* TJFMDBViewController.m in Sources */,
 				CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */,
 				CD8AEB2A1E2CBD3200C64BB7 /* UITabBar+TJBadge.m in Sources */,

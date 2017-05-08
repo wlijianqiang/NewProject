@@ -19,6 +19,8 @@
 #import "TJAudioViewController.h"
 #import "TJAudioRecorderViewController.h"
 #import "TJFoundationCameraViewController.h"
+#import "TJWebListTableViewController.h"
+#import "TJWebviewProgressLineViewController.h"
 
 @implementation TJRoutesConfig
 
@@ -45,6 +47,19 @@
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  
                  return YES;
+             }],
+             [TJRoutes routePattern:@"/TJWebListTableViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJWebListTableViewController *vc = [[TJWebListTableViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"/TJWebviewProgressLineViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJWebviewProgressLineViewController *vc = [[TJWebviewProgressLineViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 
+                 return YES;
+
              }],
              //CollectionViewController 
              [TJRoutes routePattern:@"/TJCollectionViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {

@@ -15,5 +15,7 @@
 + (UIColor *)RGBColorWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(NSInteger)alpha;
 /** 随即颜色*/
 + (UIColor *)randomColor;
+/**默认颜色*/
++ (UIColor *)defaultColor;
 
 @end
