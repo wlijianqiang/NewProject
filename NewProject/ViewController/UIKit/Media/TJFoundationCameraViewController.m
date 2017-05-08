@@ -81,9 +81,9 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 }
 
 -(void)tapScreen:(UITapGestureRecognizer *)tapGesture{
-    CGPoint point = [tapGesture locationInView:self.preView];
+//    CGPoint point = [tapGesture locationInView:self.preView];
     //将UI坐标转化为摄像头坐标
-    CGPoint cameraPoint = [self.captureVideoPreviewLayer captureDevicePointOfInterestForPoint:point];
+//    CGPoint cameraPoint = [self.captureVideoPreviewLayer captureDevicePointOfInterestForPoint:point];
     
 }
 - (void)addNotificationToCaptureDevice:(AVCaptureDevice *)captureDevice{

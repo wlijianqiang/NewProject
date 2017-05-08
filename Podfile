@@ -2,7 +2,7 @@ platform :ios, '8.0'
 
 target 'NewProject' do
 
-#pod 'JSPatch'
+#pod 'JSPatch' 如使用上传市场会被拒绝
 pod 'Masonry'
 pod 'SDWebImage'
 pod 'AFNetworking'
@@ -19,5 +19,5 @@ pod 'MBProgressHUD'
 pod 'TZImagePickerController'
 pod 'SDCycleScrollView'
 pod 'SocketRocket'
-
+pod 'WebViewJavascriptBridge'
 end

@@ -46,6 +46,7 @@
     });
 }
 
+//添加一些常用的代理
 - (void)swizzled_viewWillAppear:(BOOL)animated{
     NSString *classPrefix = NSStringFromClass([self class]);
     if ([[classPrefix substringWithRange:NSMakeRange(0, 2)]isEqualToString:@"TJ"]) {//判断类的前缀

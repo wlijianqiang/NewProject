@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -76,7 +75,6 @@
                         <constraint firstItem="FcF-Py-2SK" firstAttribute="top" secondItem="RW1-ST-qBt" secondAttribute="bottom" constant="1" id="KjM-HP-Nss"/>
                         <constraint firstItem="xdA-RM-c0R" firstAttribute="trailing" secondItem="0go-y8-4da" secondAttribute="trailing" id="aQS-rk-nWA"/>
                         <constraint firstAttribute="width" secondItem="ggX-JA-L4v" secondAttribute="height" multiplier="65:37" id="bnj-cB-gsU"/>
-                        <constraint firstAttribute="centerY" secondItem="ggX-JA-L4v" secondAttribute="centerY" id="fUG-UX-HsN"/>
                         <constraint firstItem="RW1-ST-qBt" firstAttribute="top" secondItem="xdA-RM-c0R" secondAttribute="bottom" constant="2" id="feb-Wo-F8v"/>
                         <constraint firstAttribute="trailing" secondItem="0go-y8-4da" secondAttribute="trailing" id="ffi-9y-iwG"/>
                         <constraint firstItem="FcF-Py-2SK" firstAttribute="leading" secondItem="ggX-JA-L4v" secondAttribute="leading" id="gxT-VX-gG4"/>
@@ -87,10 +85,10 @@
                 </view>
             </subviews>
             <constraints>
+                <constraint firstItem="ggX-JA-L4v" firstAttribute="centerX" secondItem="SZd-r6-k12" secondAttribute="centerX" id="Hs3-aB-3VM"/>
                 <constraint firstAttribute="trailing" secondItem="Wav-Z6-ilA" secondAttribute="trailing" id="OZE-kg-Pe0"/>
-                <constraint firstItem="ggX-JA-L4v" firstAttribute="centerY" secondItem="SZd-r6-k12" secondAttribute="centerY" id="PTa-xG-Ydn"/>
+                <constraint firstItem="ggX-JA-L4v" firstAttribute="centerY" secondItem="SZd-r6-k12" secondAttribute="centerY" id="az1-3c-AnU"/>
                 <constraint firstItem="Wav-Z6-ilA" firstAttribute="top" secondItem="SZd-r6-k12" secondAttribute="top" id="bW3-Qa-mAn"/>
-                <constraint firstItem="ggX-JA-L4v" firstAttribute="centerX" secondItem="SZd-r6-k12" secondAttribute="centerX" id="eFV-Aj-VzA"/>
                 <constraint firstAttribute="bottom" secondItem="Wav-Z6-ilA" secondAttribute="bottom" id="gYJ-jI-Vmm"/>
                 <constraint firstItem="Wav-Z6-ilA" firstAttribute="leading" secondItem="SZd-r6-k12" secondAttribute="leading" id="sW2-a8-4Z2"/>
             </constraints>

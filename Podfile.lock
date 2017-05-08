@@ -37,6 +37,7 @@ PODS:
   - SocketRocket (0.5.1)
   - SVProgressHUD (2.1.2)
   - TZImagePickerController (1.7.9)
+  - WebViewJavascriptBridge (6.0.2)
 
 DEPENDENCIES:
   - AFNetworking
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - SocketRocket
   - SVProgressHUD
   - TZImagePickerController
+  - WebViewJavascriptBridge
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -73,7 +75,8 @@ SPEC CHECKSUMS:
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   TZImagePickerController: 0a8ff228d287ebdd7d485e8c42a2a932894f1fba
+  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
 
-PODFILE CHECKSUM: 47c55a9611bc94e8602d410661cec28ef078f3ff
+PODFILE CHECKSUM: abd3ca2dcd6564192c31d214d67ea45ad7371b41
 
 COCOAPODS: 1.2.0

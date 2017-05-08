@@ -35,7 +35,9 @@
             customAlertView.frame = self.view.frame;
             customAlertView.delegate = self;
             [customAlertView customAlterViewForTitle:@"标题" message:@"不知所云"];
+            [customAlertView becomeFirstResponder];
             [[UIApplication sharedApplication].keyWindow addSubview:customAlertView];
+            
         }
             break;
     }

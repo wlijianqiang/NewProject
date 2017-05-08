@@ -7,7 +7,7 @@
 //
 
 #import "TJThirdViewController.h"
-#import "TJThirdViewController+pushViewController.m"
+#import "TJThirdViewController+pushViewController.h"
 
 typedef NS_ENUM(NSInteger, IndexPathSection) {
     IndexPathSection_AlertView = 0,

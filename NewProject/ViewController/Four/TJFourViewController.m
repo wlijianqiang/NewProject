@@ -9,7 +9,7 @@
 #import "TJFourViewController.h"
 #import "TJTableViewHeaderView.h"
 //#import <Photos/PHPhotoLibrary.h>
-#import "TJFourViewController+HeaderView.m"
+#import "TJFourViewController+HeaderView.h"
 
 typedef NS_ENUM(NSInteger,CellIndexPath){
     CellIndexPath_ImagePickerView = 0,
