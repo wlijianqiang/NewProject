@@ -62,6 +62,7 @@
 		CD9205971EC0503400061E93 /* TJWebListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205961EC0503400061E93 /* TJWebListTableViewController.m */; };
 		CD92059B1EC0527D00061E93 /* TJWebviewProgressLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD92059A1EC0527D00061E93 /* TJWebviewProgressLineViewController.m */; };
 		CD92059E1EC052AE00061E93 /* TJViewProgressLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CD92059D1EC052AE00061E93 /* TJViewProgressLine.m */; };
+		CD9205A21EC05E3E00061E93 /* TJWKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205A11EC05E3E00061E93 /* TJWKWebViewViewController.m */; };
 		CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */; };
 		CD9538011EB9D21600326288 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9538001EB9D21600326288 /* MediaPlayer.framework */; };
 		CD9538041EBAC8F700326288 /* TJThirdViewController+pushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */; };
@@ -221,6 +222,8 @@
 		CD92059A1EC0527D00061E93 /* TJWebviewProgressLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJWebviewProgressLineViewController.m; sourceTree = "<group>"; };
 		CD92059C1EC052AE00061E93 /* TJViewProgressLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJViewProgressLine.h; sourceTree = "<group>"; };
 		CD92059D1EC052AE00061E93 /* TJViewProgressLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJViewProgressLine.m; sourceTree = "<group>"; };
+		CD9205A01EC05E3E00061E93 /* TJWKWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJWKWebViewViewController.h; sourceTree = "<group>"; };
+		CD9205A11EC05E3E00061E93 /* TJWKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJWKWebViewViewController.m; sourceTree = "<group>"; };
 		CD9537FC1EB96F3300326288 /* TJOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJOrientationViewController.h; sourceTree = "<group>"; };
 		CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJOrientationViewController.m; sourceTree = "<group>"; };
 		CD9538001EB9D21600326288 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -696,6 +699,7 @@
 		CD9205911EC04FB400061E93 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				CD92059F1EC05E1D00061E93 /* WKWebView */,
 				CD9205981EC0519200061E93 /* UIWebView进度条 */,
 				CD9205951EC0503400061E93 /* TJWebListTableViewController.h */,
 				CD9205961EC0503400061E93 /* TJWebListTableViewController.m */,
@@ -713,6 +717,15 @@
 				CD92059A1EC0527D00061E93 /* TJWebviewProgressLineViewController.m */,
 			);
 			path = "UIWebView进度条";
+			sourceTree = "<group>";
+		};
+		CD92059F1EC05E1D00061E93 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				CD9205A01EC05E3E00061E93 /* TJWKWebViewViewController.h */,
+				CD9205A11EC05E3E00061E93 /* TJWKWebViewViewController.m */,
+			);
+			path = WKWebView;
 			sourceTree = "<group>";
 		};
 		CD9537FB1EB96F0B00326288 /* Orientation */ = {
@@ -1125,6 +1138,7 @@
 				CDC414DD1E24F0FE00EA685D /* UIColor+TJColor.m in Sources */,
 				CD92059E1EC052AE00061E93 /* TJViewProgressLine.m in Sources */,
 				CD13B1581E2472B800093161 /* AFNetworkActivityLogger.m in Sources */,
+				CD9205A21EC05E3E00061E93 /* TJWKWebViewViewController.m in Sources */,
 				CD92059B1EC0527D00061E93 /* TJWebviewProgressLineViewController.m in Sources */,
 				CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */,
 				CD9205971EC0503400061E93 /* TJWebListTableViewController.m in Sources */,

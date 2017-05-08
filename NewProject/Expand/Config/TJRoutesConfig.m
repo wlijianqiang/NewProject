@@ -21,6 +21,7 @@
 #import "TJFoundationCameraViewController.h"
 #import "TJWebListTableViewController.h"
 #import "TJWebviewProgressLineViewController.h"
+#import "TJWKWebViewViewController.h"
 
 @implementation TJRoutesConfig
 
@@ -59,9 +60,15 @@
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  
                  return YES;
-
              }],
-             //CollectionViewController 
+            [TJRoutes routePattern:@"/TJWKWebViewViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                TJWKWebViewViewController *vc = [[TJWKWebViewViewController alloc] init];
+                [routeDelegate shouldPushViewController:vc animated:YES];
+                
+                return YES;
+
+            }],
+             //CollectionViewController
              [TJRoutes routePattern:@"/TJCollectionViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  TJCollectionViewController *vc = [[TJCollectionViewController alloc] init];
                  [routeDelegate shouldPushViewController:vc animated:YES];

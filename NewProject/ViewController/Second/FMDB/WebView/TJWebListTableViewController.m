@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     
-    self.dataMutableArray = [NSMutableArray arrayWithObjects:@"UIWebView进度条", nil];
+    self.dataMutableArray = [NSMutableArray arrayWithObjects:@"UIWebView进度条",@"WKWebView", nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -40,7 +40,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [JLRoutes routeURL:[NSURL URLWithString:@"/TJWebviewProgressLineViewController"] withParameters:nil];
+    if (0 == indexPath.row) {
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJWebviewProgressLineViewController"] withParameters:nil];
+    }else if (1 == indexPath.row){
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJWKWebViewViewController"] withParameters:nil];
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
