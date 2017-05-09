@@ -52,6 +52,9 @@
 #pragma mark - SDCycleScrollViewDelegate
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
     NSLog(@"---点击了第%ld张图片", (long)index);
+    NSString *imageUrl = cycleScrollView.imageURLStringsGroup[index];
+    [JLRoutes routeURL:[NSURL URLWithString:@"/TJWKUserScriptViewController"] withParameters:@{@"imageUrl":imageUrl }];
+    
 }
 
 -(void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didScrollToIndex:(NSInteger)index{

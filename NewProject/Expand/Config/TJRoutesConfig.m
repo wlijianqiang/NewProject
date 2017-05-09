@@ -22,6 +22,9 @@
 #import "TJWebListTableViewController.h"
 #import "TJWebviewProgressLineViewController.h"
 #import "TJWKWebViewViewController.h"
+#import "TJWKUserScriptViewController.h"
+#import "TJWebViewJavascriptBridgeViewController.h"
+
 
 @implementation TJRoutesConfig
 
@@ -68,6 +71,21 @@
                 return YES;
 
             }],
+             [TJRoutes routePattern:@"/TJWKUserScriptViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJWKUserScriptViewController *vc = [[TJWKUserScriptViewController alloc] init];
+                 vc.imageUrl =  parameters[@"imageUrl"];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 
+                 return YES;
+                 
+             }],
+             [TJRoutes routePattern:@"/TJWebViewJavascriptBridgeViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJWebViewJavascriptBridgeViewController *vc = [[TJWebViewJavascriptBridgeViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 
+                 return YES;
+
+             }],
              //CollectionViewController
              [TJRoutes routePattern:@"/TJCollectionViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  TJCollectionViewController *vc = [[TJCollectionViewController alloc] init];

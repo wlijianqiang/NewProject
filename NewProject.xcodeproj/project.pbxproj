@@ -63,6 +63,9 @@
 		CD92059B1EC0527D00061E93 /* TJWebviewProgressLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD92059A1EC0527D00061E93 /* TJWebviewProgressLineViewController.m */; };
 		CD92059E1EC052AE00061E93 /* TJViewProgressLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CD92059D1EC052AE00061E93 /* TJViewProgressLine.m */; };
 		CD9205A21EC05E3E00061E93 /* TJWKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205A11EC05E3E00061E93 /* TJWKWebViewViewController.m */; };
+		CD9205A71EC15CBB00061E93 /* TJWKUserScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205A61EC15CBB00061E93 /* TJWKUserScriptViewController.m */; };
+		CD9205AB1EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205AA1EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.m */; };
+		CD9205AD1EC164F300061E93 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = CD9205AC1EC164F300061E93 /* ExampleApp.html */; };
 		CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */; };
 		CD9538011EB9D21600326288 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9538001EB9D21600326288 /* MediaPlayer.framework */; };
 		CD9538041EBAC8F700326288 /* TJThirdViewController+pushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */; };
@@ -224,6 +227,11 @@
 		CD92059D1EC052AE00061E93 /* TJViewProgressLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJViewProgressLine.m; sourceTree = "<group>"; };
 		CD9205A01EC05E3E00061E93 /* TJWKWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJWKWebViewViewController.h; sourceTree = "<group>"; };
 		CD9205A11EC05E3E00061E93 /* TJWKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJWKWebViewViewController.m; sourceTree = "<group>"; };
+		CD9205A51EC15CBB00061E93 /* TJWKUserScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJWKUserScriptViewController.h; sourceTree = "<group>"; };
+		CD9205A61EC15CBB00061E93 /* TJWKUserScriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJWKUserScriptViewController.m; sourceTree = "<group>"; };
+		CD9205A91EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJWebViewJavascriptBridgeViewController.h; sourceTree = "<group>"; };
+		CD9205AA1EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJWebViewJavascriptBridgeViewController.m; sourceTree = "<group>"; };
+		CD9205AC1EC164F300061E93 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
 		CD9537FC1EB96F3300326288 /* TJOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJOrientationViewController.h; sourceTree = "<group>"; };
 		CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJOrientationViewController.m; sourceTree = "<group>"; };
 		CD9538001EB9D21600326288 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -699,6 +707,8 @@
 		CD9205911EC04FB400061E93 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				CD9205A81EC1629500061E93 /* WebViewJavascriptBridge */,
+				CD9205A41EC15C9C00061E93 /* WKUserScript */,
 				CD92059F1EC05E1D00061E93 /* WKWebView */,
 				CD9205981EC0519200061E93 /* UIWebView进度条 */,
 				CD9205951EC0503400061E93 /* TJWebListTableViewController.h */,
@@ -726,6 +736,25 @@
 				CD9205A11EC05E3E00061E93 /* TJWKWebViewViewController.m */,
 			);
 			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		CD9205A41EC15C9C00061E93 /* WKUserScript */ = {
+			isa = PBXGroup;
+			children = (
+				CD9205A51EC15CBB00061E93 /* TJWKUserScriptViewController.h */,
+				CD9205A61EC15CBB00061E93 /* TJWKUserScriptViewController.m */,
+			);
+			path = WKUserScript;
+			sourceTree = "<group>";
+		};
+		CD9205A81EC1629500061E93 /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				CD9205AC1EC164F300061E93 /* ExampleApp.html */,
+				CD9205A91EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.h */,
+				CD9205AA1EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.m */,
+			);
+			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
 		CD9537FB1EB96F0B00326288 /* Orientation */ = {
@@ -1021,6 +1050,7 @@
 				CD13B0E31E2333C900093161 /* LaunchScreen.storyboard in Resources */,
 				CD71E5AD1E6D023E0058B89F /* Second.storyboard in Resources */,
 				CD13B0E01E2333C900093161 /* Assets.xcassets in Resources */,
+				CD9205AD1EC164F300061E93 /* ExampleApp.html in Resources */,
 				CD71E5C01E6D02750058B89F /* Third.storyboard in Resources */,
 				CD1DCF531E694CA6002C21AF /* TJTableViewHeaderView.xib in Resources */,
 				CD8AEB261E2CB99900C64BB7 /* TabIcon.xcassets in Resources */,
@@ -1116,6 +1146,7 @@
 				CD8AEAAD1E2C671500C64BB7 /* UIViewController+TJMethodSwizzied.m in Sources */,
 				CDED525D1EAF2817006BF64C /* TJCollectionViewController.m in Sources */,
 				CDED52641EAF286A006BF64C /* TJCollectionViewCell.m in Sources */,
+				CD9205AB1EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.m in Sources */,
 				CD92058D1EC0057600061E93 /* TJFoundationCameraViewController.m in Sources */,
 				CD8AEABC1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m in Sources */,
 				CD71E5CB1E6D04210058B89F /* TJBaseTableViewController.m in Sources */,
@@ -1129,6 +1160,7 @@
 				CDC414BD1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m in Sources */,
 				CD0CF9C21EB1E2D200B98686 /* TJFourViewController+HeaderView.m in Sources */,
 				CD8AEABB1E2C8F6C00C64BB7 /* TJAPIManager.m in Sources */,
+				CD9205A71EC15CBB00061E93 /* TJWKUserScriptViewController.m in Sources */,
 				CD7F23AE1E372B6300F47D3F /* TJTestModel.m in Sources */,
 				CD13B0D51E2333C900093161 /* main.m in Sources */,
 				CD71E5CA1E6D04210058B89F /* TJBaseNavigationViewController.m in Sources */,

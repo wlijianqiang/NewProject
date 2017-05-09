@@ -92,7 +92,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (0 == indexPath.row) {
         [JLRoutes routeURL:[NSURL URLWithString:@"/TJFMDBViewController"] withParameters:nil];
-    }else{
+    }else if(1 == indexPath.row){
        [JLRoutes routeURL:[NSURL URLWithString:@"/TJWebListTableViewController"] withParameters:nil];
     }
 }

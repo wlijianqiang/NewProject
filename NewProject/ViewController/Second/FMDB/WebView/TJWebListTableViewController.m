@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     
-    self.dataMutableArray = [NSMutableArray arrayWithObjects:@"UIWebView进度条",@"WKWebView", nil];
+    self.dataMutableArray = [NSMutableArray arrayWithObjects:@"UIWebView进度条",@"WKWebView",@"WKUserScript",@"WebViewJavascriptBridge", nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -44,6 +44,10 @@
         [JLRoutes routeURL:[NSURL URLWithString:@"/TJWebviewProgressLineViewController"] withParameters:nil];
     }else if (1 == indexPath.row){
         [JLRoutes routeURL:[NSURL URLWithString:@"/TJWKWebViewViewController"] withParameters:nil];
+    }else if (2 == indexPath.row){
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJWKUserScriptViewController"] withParameters:nil];
+    }else if (3 == indexPath.row){
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJWebViewJavascriptBridgeViewController"] withParameters:nil];
     }
 }
 - (void)didReceiveMemoryWarning {
