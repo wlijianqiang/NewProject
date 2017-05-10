@@ -72,6 +72,7 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     [layer insertSublayer:self.captureVideoPreviewLayer below:self.focusCursor.layer];
     [self.captureSession startRunning];
     [self addNotificationToCaptureDevice:captureDevice];
+    [self addGenstureRecognizer];
 }
 
 - (void)addGenstureRecognizer{
@@ -81,19 +82,62 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 }
 
 -(void)tapScreen:(UITapGestureRecognizer *)tapGesture{
-//    CGPoint point = [tapGesture locationInView:self.preView];
+    CGPoint point = [tapGesture locationInView:self.preView];
     //将UI坐标转化为摄像头坐标
-//    CGPoint cameraPoint = [self.captureVideoPreviewLayer captureDevicePointOfInterestForPoint:point];
-    
+    CGPoint cameraPoint = [self.captureVideoPreviewLayer captureDevicePointOfInterestForPoint:point];
+    [self setFocusCursorWithPoint:point];
+    [self focusWithMode:AVCaptureFocusModeAutoFocus exposureMode:AVCaptureExposureModeAutoExpose atPoint:cameraPoint];
 }
+
+/**
+ 设置聚焦模式
+ @param point 聚焦点
+ */
+
+- (void)focusWithMode:(AVCaptureFocusMode)focusMode exposureMode:(AVCaptureExposureMode)exposureMode atPoint:(CGPoint)point{
+    [self changeDeviceProperty:^(AVCaptureDevice *captureDevice) {
+        if ([captureDevice isFocusModeSupported:focusMode]) {
+            [captureDevice setFocusMode:AVCaptureFocusModeAutoFocus];
+        }
+        if ([captureDevice isFocusPointOfInterestSupported]) {
+            [captureDevice setFocusPointOfInterest:point];
+        }
+        if ([captureDevice isExposureModeSupported:exposureMode]) {
+            [captureDevice setExposureMode:AVCaptureExposureModeAutoExpose];
+        }
+        if ([captureDevice isExposurePointOfInterestSupported]) {
+            [captureDevice setExposurePointOfInterest:point];
+        }
+    }];
+}
+/**
+ 设置聚焦光标位置
+ @param point 光标位置
+ */
+- (void)setFocusCursorWithPoint:(CGPoint)point{
+    self.focusCursor.center = point;
+    self.focusCursor.transform = CGAffineTransformMakeScale(1.5, 1.5);
+    self.focusCursor.alpha = 1.0f;
+    [UIView animateWithDuration:1.0f animations:^{
+        self.focusCursor.transform = CGAffineTransformIdentity;
+        
+    }completion:^(BOOL finished) {
+         self.focusCursor.alpha=0;
+    }];
+}
+/**输入设备添加通知*/
 - (void)addNotificationToCaptureDevice:(AVCaptureDevice *)captureDevice{
     //添加区域改变捕获通知必须先设置允许设备捕获
     [self changeDeviceProperty:^(AVCaptureDevice *captureDevice) {
         captureDevice.subjectAreaChangeMonitoringEnabled = YES;
     }];
+    //捕获区域发生改变
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(areaChange:) name:AVCaptureDeviceSubjectAreaDidChangeNotification object:captureDevice];
 }
-
+/**移除监测捕获区域通知*/
+- (void)removeNotificationFromCaptureDevice:(AVCaptureDevice *)captureDevice{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:AVCaptureDeviceSubjectAreaDidChangeNotification object:captureDevice];
+}
 - (void)areaChange:(NSNotification *)notification{
     TJLog(@"捕获区域改变");
 }
@@ -132,10 +176,59 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 }
 
 - (IBAction)flashChange:(UIButton *)sender {
+    AVCaptureDevice *device = [self.captureDeviceInput device];
+    if ([device hasFlash]) {
+        //改变设备属性前一定要先调用lockForConfiguration:调用完成后使用unlockForConfiguration方法解锁
+        [device lockForConfiguration:nil];
+        if (!device.torchMode ) {
+            device.torchMode = AVCaptureTorchModeOn;
+        }else{
+            device.torchMode = AVCaptureTorchModeOff;
+        }
+        [device unlockForConfiguration];
+    }
 }
+#pragma mark 前后摄像头切换
 - (IBAction)cameraChange:(UIButton *)sender {
+    //获取当前摄像头
+    AVCaptureDevice *currentDevice = [self.captureDeviceInput device];
+    AVCaptureDevicePosition currentPostion = [currentDevice position];
+    
+    [self removeNotificationFromCaptureDevice:currentDevice];
+    AVCaptureDevice *toChangeDevice;
+    AVCaptureDevicePosition toChangePostion = AVCaptureDevicePositionFront;
+    if (currentPostion == AVCaptureDevicePositionFront || currentDevice == AVCaptureDevicePositionUnspecified) {
+        toChangePostion = AVCaptureDevicePositionBack;
+    }
+    toChangeDevice = [self getCameraDeviceWithPostion:toChangePostion];
+    [self addNotificationToCaptureDevice:toChangeDevice];
+    //获取要调整的设备输入对象
+    AVCaptureDeviceInput *toChangeDeviceInput = [[AVCaptureDeviceInput alloc] initWithDevice:toChangeDevice error:nil];
+    //改变会话前一定要开启配置，完成配置后调教配置改变
+    [self.captureSession beginConfiguration];
+    //移除原有对象
+    [self.captureSession removeInput:self.captureDeviceInput];
+    if ([self.captureSession canAddInput:toChangeDeviceInput]) {
+        [self.captureSession addInput:toChangeDeviceInput];
+        self.captureDeviceInput = toChangeDeviceInput;
+    }
+    //提交会话
+    [self.captureSession commitConfiguration];
 }
 - (IBAction)takePhoto:(UIButton *)sender {
+    //根据设备输出获得连接
+    AVCaptureConnection *captureConnection = [self.captureStillImageOutput connectionWithMediaType:AVMediaTypeVideo];
+    //根据连接取得设备输出
+    [self.captureStillImageOutput captureStillImageAsynchronouslyFromConnection:captureConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+        if (imageDataSampleBuffer) {
+            NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+            UIImage *image = [UIImage imageWithData:imageData];
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+            
+//            ALAssetsLibrary *assetsLibrary=[[ALAssetsLibrary alloc]init];
+//            [assetsLibrary writeImageToSavedPhotosAlbum:[image CGImage] orientation:(ALAssetOrientation)[image imageOrientation] completionBlock:nil];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

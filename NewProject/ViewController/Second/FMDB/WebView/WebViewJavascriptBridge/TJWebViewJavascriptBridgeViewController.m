@@ -59,7 +59,7 @@
         NSDictionary *dict = (NSDictionary *)data;
         NSString *str = [NSString stringWithFormat:@"用户名：%@ 姓名:%@",dict[@"userId"],dict[@"name"]];
         [self rendButton:str];
-        
+        [self showHint:[NSString stringWithFormat:@"用户名：%@ 姓名:%@",dict[@"userId"],dict[@"name"]]];
         //responseCallback 给后台的回复
         responseCallback(@"oc 已收到js的请求！");
     }];

@@ -45,7 +45,6 @@
                                 <color key="backgroundColor" red="0.84696626659999996" green="0.84711211919999996" blue="0.84695702790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="拍照"/>
                                 <connections>
-                                    <action selector="flashChange:" destination="aJw-JZ-lvJ" eventType="touchUpInside" id="ycV-VC-hIP"/>
                                     <action selector="takePhoto:" destination="aJw-JZ-lvJ" eventType="touchUpInside" id="EcY-pr-Y4T"/>
                                 </connections>
                             </button>
@@ -59,13 +58,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9Q-vf-irk">
                                 <rect key="frame" x="16" y="28" width="46" height="30"/>
                                 <state key="normal" title="闪光灯"/>
+                                <connections>
+                                    <action selector="flashChange:" destination="aJw-JZ-lvJ" eventType="touchUpInside" id="eg6-Nl-iNY"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlbumAddBtn" translatesAutoresizingMaskIntoConstraints="NO" id="clC-eY-8nJ">
-                                <rect key="frame" x="153" y="303" width="68" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N86-Dk-vSO">
                                 <rect key="frame" x="16" y="66" width="343" height="525"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlbumAddBtn" translatesAutoresizingMaskIntoConstraints="NO" id="clC-eY-8nJ">
+                                        <rect key="frame" x="137" y="232" width="68" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.80000000000000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -73,13 +77,13 @@
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="h9Q-vf-irk" secondAttribute="leading" id="25l-te-GmR"/>
                             <constraint firstItem="D2E-el-xq3" firstAttribute="leading" secondItem="Z1b-nE-Crk" secondAttribute="leadingMargin" constant="82" id="3cW-ri-WhP"/>
-                            <constraint firstItem="N86-Dk-vSO" firstAttribute="centerX" secondItem="Z1b-nE-Crk" secondAttribute="centerX" id="5PF-hP-hLc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N86-Dk-vSO" secondAttribute="trailing" id="4IB-zB-EN0"/>
+                            <constraint firstItem="VML-uW-ZUH" firstAttribute="top" secondItem="N86-Dk-vSO" secondAttribute="bottom" constant="76" id="7YG-1X-Wru"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="N86-Dk-vSO" secondAttribute="leading" id="8k7-u6-i7Q"/>
                             <constraint firstItem="h9Q-vf-irk" firstAttribute="top" secondItem="P5S-8y-gRm" secondAttribute="bottom" constant="8" id="BiO-DK-WMZ"/>
-                            <constraint firstItem="N86-Dk-vSO" firstAttribute="leading" secondItem="h9Q-vf-irk" secondAttribute="leading" id="Yr4-fO-Fez"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D2E-el-xq3" secondAttribute="trailing" constant="82" id="Zj4-hd-vwk"/>
+                            <constraint firstItem="N86-Dk-vSO" firstAttribute="top" secondItem="P5S-8y-gRm" secondAttribute="bottom" constant="46" id="mE1-Db-put"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LZT-fd-SHU" secondAttribute="trailing" id="nLp-Dm-H0B"/>
-                            <constraint firstItem="D2E-el-xq3" firstAttribute="top" secondItem="N86-Dk-vSO" secondAttribute="bottom" constant="26" id="oh0-Mx-o0e"/>
-                            <constraint firstItem="N86-Dk-vSO" firstAttribute="centerY" secondItem="Z1b-nE-Crk" secondAttribute="centerY" constant="-5" id="rly-Lz-QRz"/>
                             <constraint firstItem="VML-uW-ZUH" firstAttribute="top" secondItem="D2E-el-xq3" secondAttribute="bottom" constant="20" id="soy-q8-k5i"/>
                             <constraint firstItem="LZT-fd-SHU" firstAttribute="top" secondItem="P5S-8y-gRm" secondAttribute="bottom" constant="8" id="sxV-Vw-4Ts"/>
                         </constraints>
