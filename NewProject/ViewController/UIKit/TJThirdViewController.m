@@ -67,7 +67,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
                               @[@"tableView描边"],
                               @[@"collectionView(代码)",@"collectionView(Storyboard)",@"图片选择器"],
                               @[@"程序旋转方向"],
-                              @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera"],
+                              @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera",@"foundationCmeraRecord"],
                               nil];
 }
 #pragma mark tableViewDelegate
@@ -111,13 +111,15 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
     }else if (indexPath.section == IndexPathSection_Orientation){
         [JLRoutes routeURL:[NSURL URLWithString:@"/TJOrientationViewController"]];
     }else if (indexPath.section == IndexPathSection_Media){
-        if (indexPath.row == 0) {
+        if (0 == indexPath.row) {
             [JLRoutes routeURL:[NSURL URLWithString:@"/TJAudioViewController"]];
-        }else if (indexPath.row == 1){
-            
+        }else if (1 == indexPath.row){
             [JLRoutes routeURL:[NSURL URLWithString:@"/TJAudioRecorderViewController"]];
-        }else{
+        }else if (2 == indexPath.row){
             [JLRoutes routeURL:[NSURL URLWithString:@"/TJFoundationCameraViewController"]];
+        }else if (3 == indexPath.row){
+            [JLRoutes routeURL:[NSURL URLWithString:@"/TJFoundationCameraRecordingViewController"] withParameters:nil];
+            
         }
     }
 }

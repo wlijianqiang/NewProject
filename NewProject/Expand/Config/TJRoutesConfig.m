@@ -24,6 +24,7 @@
 #import "TJWKWebViewViewController.h"
 #import "TJWKUserScriptViewController.h"
 #import "TJWebViewJavascriptBridgeViewController.h"
+#import "TJFoundationCameraRecordingViewController.h"
 
 
 @implementation TJRoutesConfig
@@ -122,6 +123,11 @@
              [TJRoutes routePattern:@"/TJFoundationCameraViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  
                  TJFoundationCameraViewController *vc = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJStoryboardFoundationCameraViewController_Storyboard];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"/TJFoundationCameraRecordingViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJFoundationCameraRecordingViewController *vc = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJFoundationCameraRecordingViewController_Storyboard];
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
              }]

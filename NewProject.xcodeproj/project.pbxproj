@@ -28,6 +28,7 @@
 		CD4B7C171E26053A007945A0 /* TJProjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B7C161E26053A007945A0 /* TJProjectConfig.m */; };
 		CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67A29B1E67F08700FEA095 /* UIView+Nib.m */; };
 		CD67A2AE1E6940A900FEA095 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD67A2AD1E6940A900FEA095 /* 1.jpg */; };
+		CD6CE5681EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6CE5671EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.m */; };
 		CD71E5AB1E6D02370058B89F /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5AA1E6D02370058B89F /* First.storyboard */; };
 		CD71E5AD1E6D023E0058B89F /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5AC1E6D023E0058B89F /* Second.storyboard */; };
 		CD71E5B11E6D02520058B89F /* Four.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5B01E6D02520058B89F /* Four.storyboard */; };
@@ -156,6 +157,8 @@
 		CD67A29A1E67F08700FEA095 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
 		CD67A29B1E67F08700FEA095 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
 		CD67A2AD1E6940A900FEA095 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		CD6CE5661EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJFoundationCameraRecordingViewController.h; sourceTree = "<group>"; };
+		CD6CE5671EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJFoundationCameraRecordingViewController.m; sourceTree = "<group>"; };
 		CD71E5AA1E6D02370058B89F /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
 		CD71E5AC1E6D023E0058B89F /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		CD71E5B01E6D02520058B89F /* Four.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Four.storyboard; sourceTree = "<group>"; };
@@ -700,6 +703,8 @@
 				CD9205881EC0057600061E93 /* TJAudioViewController.m */,
 				CD9205891EC0057600061E93 /* TJFoundationCameraViewController.h */,
 				CD92058A1EC0057600061E93 /* TJFoundationCameraViewController.m */,
+				CD6CE5661EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.h */,
+				CD6CE5671EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.m */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -1191,6 +1196,7 @@
 				CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */,
 				CDED525E1EAF2817006BF64C /* TJStoryboardCollectionViewController.m in Sources */,
 				CD8AEB2E1E2DB45700C64BB7 /* NSString+TJCountCut.m in Sources */,
+				CD6CE5681EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.m in Sources */,
 				CDC96AA11E34861E000239DB /* TJTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
