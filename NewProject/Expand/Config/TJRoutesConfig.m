@@ -25,6 +25,8 @@
 #import "TJWKUserScriptViewController.h"
 #import "TJWebViewJavascriptBridgeViewController.h"
 #import "TJFoundationCameraRecordingViewController.h"
+#import "TJMPMoviePlayerController.h"
+#import "TJFontSizeAndBlurEffectViewController.h"
 
 
 @implementation TJRoutesConfig
@@ -82,6 +84,19 @@
              }],
              [TJRoutes routePattern:@"/TJWebViewJavascriptBridgeViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  TJWebViewJavascriptBridgeViewController *vc = [[TJWebViewJavascriptBridgeViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 
+                 return YES;
+
+             }],
+             [TJRoutes routePattern:@"/TJMPMoviePlayerController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJMPMoviePlayerController *vc = [[TJMPMoviePlayerController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"/TJFontSizeAndBlurEffectViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 
+                 TJFontSizeAndBlurEffectViewController *vc = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJFontSizeAndBlurEffectViewController_Storyboard];
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  
                  return YES;

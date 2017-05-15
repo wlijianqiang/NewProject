@@ -18,5 +18,6 @@
 #import "UIColor+TJColor.h"
 #import "UIFont+TJFont.h"
 #import "UIImage+Extension.h"
+#import "UIImageView+TJBlurEffeect.h"
 
 #endif /* TJCategory_h */

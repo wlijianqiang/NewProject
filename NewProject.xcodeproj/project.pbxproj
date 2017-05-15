@@ -29,6 +29,10 @@
 		CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67A29B1E67F08700FEA095 /* UIView+Nib.m */; };
 		CD67A2AE1E6940A900FEA095 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD67A2AD1E6940A900FEA095 /* 1.jpg */; };
 		CD6CE5681EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6CE5671EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.m */; };
+		CD6CE5831EC553FB00346B7D /* TJMPMoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6CE5821EC553FB00346B7D /* TJMPMoviePlayerController.m */; };
+		CD6CE5851EC555DB00346B7D /* The New Look of OS X Yosemite.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CD6CE5841EC555DB00346B7D /* The New Look of OS X Yosemite.mp4 */; };
+		CD6CE58A1EC5978F00346B7D /* UIImageView+TJBlurEffeect.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6CE5891EC5978F00346B7D /* UIImageView+TJBlurEffeect.m */; };
+		CD6CE58E1EC59C5F00346B7D /* TJFontSizeAndBlurEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6CE58D1EC59C5F00346B7D /* TJFontSizeAndBlurEffectViewController.m */; };
 		CD71E5AB1E6D02370058B89F /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5AA1E6D02370058B89F /* First.storyboard */; };
 		CD71E5AD1E6D023E0058B89F /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5AC1E6D023E0058B89F /* Second.storyboard */; };
 		CD71E5B11E6D02520058B89F /* Four.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD71E5B01E6D02520058B89F /* Four.storyboard */; };
@@ -159,6 +163,13 @@
 		CD67A2AD1E6940A900FEA095 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		CD6CE5661EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJFoundationCameraRecordingViewController.h; sourceTree = "<group>"; };
 		CD6CE5671EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJFoundationCameraRecordingViewController.m; sourceTree = "<group>"; };
+		CD6CE5811EC553FB00346B7D /* TJMPMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJMPMoviePlayerController.h; sourceTree = "<group>"; };
+		CD6CE5821EC553FB00346B7D /* TJMPMoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJMPMoviePlayerController.m; sourceTree = "<group>"; };
+		CD6CE5841EC555DB00346B7D /* The New Look of OS X Yosemite.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The New Look of OS X Yosemite.mp4"; sourceTree = "<group>"; };
+		CD6CE5881EC5978F00346B7D /* UIImageView+TJBlurEffeect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+TJBlurEffeect.h"; sourceTree = "<group>"; };
+		CD6CE5891EC5978F00346B7D /* UIImageView+TJBlurEffeect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+TJBlurEffeect.m"; sourceTree = "<group>"; };
+		CD6CE58C1EC59C5F00346B7D /* TJFontSizeAndBlurEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJFontSizeAndBlurEffectViewController.h; sourceTree = "<group>"; };
+		CD6CE58D1EC59C5F00346B7D /* TJFontSizeAndBlurEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJFontSizeAndBlurEffectViewController.m; sourceTree = "<group>"; };
 		CD71E5AA1E6D02370058B89F /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
 		CD71E5AC1E6D023E0058B89F /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		CD71E5B01E6D02520058B89F /* Four.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Four.storyboard; sourceTree = "<group>"; };
@@ -444,6 +455,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CD6CE5861EC5960D00346B7D /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				CD6CE5881EC5978F00346B7D /* UIImageView+TJBlurEffeect.h */,
+				CD6CE5891EC5978F00346B7D /* UIImageView+TJBlurEffeect.m */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		CD6CE58B1EC59C1E00346B7D /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				CD6CE58C1EC59C5F00346B7D /* TJFontSizeAndBlurEffectViewController.h */,
+				CD6CE58D1EC59C5F00346B7D /* TJFontSizeAndBlurEffectViewController.m */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
 		CD71E5A61E6D01710058B89F /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +509,7 @@
 		CD71E5B21E6D02750058B89F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CD6CE58B1EC59C1E00346B7D /* UIImageView */,
 				CD9205841EC0057600061E93 /* Media */,
 				CD71E5B71E6D02750058B89F /* Third.storyboard */,
 				CD71E5B81E6D02750058B89F /* TJThirdViewController.h */,
@@ -705,6 +735,9 @@
 				CD92058A1EC0057600061E93 /* TJFoundationCameraViewController.m */,
 				CD6CE5661EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.h */,
 				CD6CE5671EC3FC5B00346B7D /* TJFoundationCameraRecordingViewController.m */,
+				CD6CE5811EC553FB00346B7D /* TJMPMoviePlayerController.h */,
+				CD6CE5821EC553FB00346B7D /* TJMPMoviePlayerController.m */,
+				CD6CE5841EC555DB00346B7D /* The New Look of OS X Yosemite.mp4 */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -798,6 +831,7 @@
 		CDC414B71E24EE3000EA685D /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				CD6CE5861EC5960D00346B7D /* UIImageView */,
 				CD8AEB2B1E2DB31B00C64BB7 /* TJCategory.h */,
 				CD02EF561E44635100A7E8CC /* UIView */,
 				CD8AEB2F1E2DB84600C64BB7 /* UIWindow */,
@@ -1060,6 +1094,7 @@
 				CD1DCF531E694CA6002C21AF /* TJTableViewHeaderView.xib in Resources */,
 				CD8AEB261E2CB99900C64BB7 /* TabIcon.xcassets in Resources */,
 				CD71E5BF1E6D02750058B89F /* TJCustomAlertView.xib in Resources */,
+				CD6CE5851EC555DB00346B7D /* The New Look of OS X Yosemite.mp4 in Resources */,
 				CD13B0DE1E2333C900093161 /* Main.storyboard in Resources */,
 				CD71E5B11E6D02520058B89F /* Four.storyboard in Resources */,
 				CD9538171EBB08B100326288 /* The New Look of OS X Yosemite.mp4 in Resources */,
@@ -1143,6 +1178,7 @@
 				CD92058B1EC0057600061E93 /* TJAudioRecorderViewController.m in Sources */,
 				CD8AEAE21E2C95C300C64BB7 /* TJFirstViewController.m in Sources */,
 				CD0CF9B61EB196A800B98686 /* TJFirstViewController+CycleScrollView.m in Sources */,
+				CD6CE58E1EC59C5F00346B7D /* TJFontSizeAndBlurEffectViewController.m in Sources */,
 				CD71E5C21E6D02750058B89F /* TJStrockViewController.m in Sources */,
 				CDC96DEE1E35E4AD000239DB /* TJModel.m in Sources */,
 				CD92058C1EC0057600061E93 /* TJAudioViewController.m in Sources */,
@@ -1152,6 +1188,7 @@
 				CDED525D1EAF2817006BF64C /* TJCollectionViewController.m in Sources */,
 				CDED52641EAF286A006BF64C /* TJCollectionViewCell.m in Sources */,
 				CD9205AB1EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.m in Sources */,
+				CD6CE58A1EC5978F00346B7D /* UIImageView+TJBlurEffeect.m in Sources */,
 				CD92058D1EC0057600061E93 /* TJFoundationCameraViewController.m in Sources */,
 				CD8AEABC1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m in Sources */,
 				CD71E5CB1E6D04210058B89F /* TJBaseTableViewController.m in Sources */,
@@ -1191,6 +1228,7 @@
 				CD8AEAEB1E2C95E500C64BB7 /* TJFourViewController.m in Sources */,
 				CD71E5C11E6D02750058B89F /* TJThirdViewController.m in Sources */,
 				CD71E5BE1E6D02750058B89F /* TJCustomAlertView.m in Sources */,
+				CD6CE5831EC553FB00346B7D /* TJMPMoviePlayerController.m in Sources */,
 				CD0CF9C81EB2D9F700B98686 /* TJImagePickerViewController.m in Sources */,
 				CD8AEAE51E2C95CF00C64BB7 /* TJSecondViewController.m in Sources */,
 				CD7E7BDC1E339FBA002405A5 /* TJRoutesConfig.m in Sources */,

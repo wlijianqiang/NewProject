@@ -20,5 +20,5 @@ static NSString * _Nonnull const   TJStoryboardCollectionViewController_Storyboa
 static NSString * _Nonnull const   TJStoryboardAudioRecorderViewController_Storyboard = @"TJAudioRecorderViewController";
 static NSString * _Nonnull const   TJStoryboardFoundationCameraViewController_Storyboard = @"TJFoundationCameraViewController";
 static NSString *_Nonnull const    TJFoundationCameraRecordingViewController_Storyboard = @"TJFoundationCameraRecordingViewController";
-
+static NSString *_Nonnull const    TJFontSizeAndBlurEffectViewController_Storyboard = @"TJFontSizeAndBlurEffectViewController";
 #endif /* TJStoryboardContants_h */

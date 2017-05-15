@@ -19,6 +19,7 @@
  *  @return 二维码图片
  */
 + (UIImage *)encodeQRImageWithContent:(NSString *)content size:(CGSize)size;
+
 /**
  *  使用vImage API进行图像的模糊处理
  *

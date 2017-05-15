@@ -15,7 +15,7 @@
     [self cycleScrollViewData];
     
     self.cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero delegate:self placeholderImage:[UIImage imageNamed:@"1.jpg"]];
-    self.cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+    self.cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
     self.cycleScrollView.titlesGroup = self.bannerTitleArray;
     self.cycleScrollView.currentPageDotColor = [UIColor whiteColor];
     self.cycleScrollView.autoScrollTimeInterval = 3.0f;

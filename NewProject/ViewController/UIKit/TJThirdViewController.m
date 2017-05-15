@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
     IndexPathSection_CollectionView,
     IndexPathSection_Orientation,
     IndexPathSection_Media,
+    IndexPathSection_UIImageView,
 };
 
 @interface TJThirdViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -61,13 +62,15 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
                                      @"collectionView",
                                      @"Orientation",
                                      @"Media",
+                                     @"UIImageView",
                                      nil];
     self.dataMutableArray = [NSMutableArray arrayWithObjects:
                               @[@"系统默认样式",@"xib自定义弹出框"],
                               @[@"tableView描边"],
                               @[@"collectionView(代码)",@"collectionView(Storyboard)",@"图片选择器"],
                               @[@"程序旋转方向"],
-                              @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera",@"foundationCmeraRecord"],
+                              @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera",@"foundationCmeraRecord",@"MPMoviePlayerController"],
+                             @[@"BlurEffect"],
                               nil];
 }
 #pragma mark tableViewDelegate
@@ -108,9 +111,9 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
        [JLRoutes routeURL:[NSURL URLWithString:@"/TJStrockViewController"] withParameters:nil];
     }else if (IndexPathSection_CollectionView == indexPath.section){
         [self showCollectionViewForRow:indexPath.row];
-    }else if (indexPath.section == IndexPathSection_Orientation){
+    }else if (IndexPathSection_Orientation == indexPath.section){
         [JLRoutes routeURL:[NSURL URLWithString:@"/TJOrientationViewController"]];
-    }else if (indexPath.section == IndexPathSection_Media){
+    }else if (IndexPathSection_Media == indexPath.section){
         if (0 == indexPath.row) {
             [JLRoutes routeURL:[NSURL URLWithString:@"/TJAudioViewController"]];
         }else if (1 == indexPath.row){
@@ -119,8 +122,11 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
             [JLRoutes routeURL:[NSURL URLWithString:@"/TJFoundationCameraViewController"]];
         }else if (3 == indexPath.row){
             [JLRoutes routeURL:[NSURL URLWithString:@"/TJFoundationCameraRecordingViewController"] withParameters:nil];
-            
+        }else if (4 == indexPath.row){
+            [JLRoutes routeURL:[NSURL URLWithString:@"/TJMPMoviePlayerController"] withParameters:nil];
         }
+    }else if (IndexPathSection_UIImageView == indexPath.section){
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJFontSizeAndBlurEffectViewController"] withParameters:nil];
     }
 }
 
