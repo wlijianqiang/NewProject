@@ -28,6 +28,8 @@
     //显示红点
     [self.tabBarController.tabBar showBadgeOnItemIndex:0];
     TJLog(@"test");
+    
+    TJLog(@"%@", kPathTemp);
     [self reconnect];
 }
 

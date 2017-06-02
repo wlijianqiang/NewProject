@@ -27,7 +27,7 @@
 #import "TJFoundationCameraRecordingViewController.h"
 #import "TJMPMoviePlayerController.h"
 #import "TJFontSizeAndBlurEffectViewController.h"
-
+#import "TJVideoToolboxViewController.h"
 
 @implementation TJRoutesConfig
 
@@ -143,6 +143,11 @@
              }],
              [TJRoutes routePattern:@"/TJFoundationCameraRecordingViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  TJFoundationCameraRecordingViewController *vc = [[UIStoryboard ThirdTabStoryboard] instantiateViewControllerWithIdentifier:TJFoundationCameraRecordingViewController_Storyboard];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"/TJVideoToolboxViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 TJVideoToolboxViewController *vc = [[TJVideoToolboxViewController alloc] init];
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
              }]

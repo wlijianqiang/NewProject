@@ -69,7 +69,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
                               @[@"tableView描边"],
                               @[@"collectionView(代码)",@"collectionView(Storyboard)",@"图片选择器"],
                               @[@"程序旋转方向"],
-                              @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera",@"foundationCmeraRecord",@"MPMoviePlayerController"],
+                          @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera",@"foundationCmeraRecord",@"MPMoviePlayerController",@"VideoToolbox硬编码H.264_采集数据"],
                              @[@"BlurEffect"],
                               nil];
 }
@@ -124,7 +124,10 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
             [JLRoutes routeURL:[NSURL URLWithString:@"/TJFoundationCameraRecordingViewController"] withParameters:nil];
         }else if (4 == indexPath.row){
             [JLRoutes routeURL:[NSURL URLWithString:@"/TJMPMoviePlayerController"] withParameters:nil];
+        }else if (5 == indexPath.row){
+            [JLRoutes routeURL:[NSURL URLWithString:@"/TJVideoToolboxViewController"] withParameters:nil];
         }
+        
     }else if (IndexPathSection_UIImageView == indexPath.section){
         [JLRoutes routeURL:[NSURL URLWithString:@"/TJFontSizeAndBlurEffectViewController"] withParameters:nil];
     }
