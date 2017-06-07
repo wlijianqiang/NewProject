@@ -232,6 +232,8 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     AVCaptureDevice *currentDevice = [self.captureDeviceInput device];
     AVCaptureDevicePosition currentPostion = [currentDevice position];
     
+    
+    
     [self removeNotificationFromCaptureDevice:currentDevice];
     AVCaptureDevice *toChangeDevice;
     AVCaptureDevicePosition toChangePostion = AVCaptureDevicePositionFront;

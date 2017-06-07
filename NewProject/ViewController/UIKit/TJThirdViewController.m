@@ -69,7 +69,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
                               @[@"tableView描边"],
                               @[@"collectionView(代码)",@"collectionView(Storyboard)",@"图片选择器"],
                               @[@"程序旋转方向"],
-                          @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera",@"foundationCmeraRecord",@"MPMoviePlayerController",@"VideoToolbox硬编码H.264_采集数据"],
+                          @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera",@"foundationCmeraRecord",@"MPMoviePlayerController",@"VideoToolbox硬编码H.264",@"VideoToolbox硬解码H.264"],
                              @[@"BlurEffect"],
                               nil];
 }

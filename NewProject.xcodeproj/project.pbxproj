@@ -73,6 +73,7 @@
 		CD9205AD1EC164F300061E93 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = CD9205AC1EC164F300061E93 /* ExampleApp.html */; };
 		CD94DF431EDFDF4D002FE86D /* TJVideoToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94DF421EDFDF4D002FE86D /* TJVideoToolboxViewController.m */; };
 		CD94DF451EDFE0EA002FE86D /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD94DF441EDFE0EA002FE86D /* VideoToolbox.framework */; };
+		CD94DF481EE0FD57002FE86D /* TJVideoToolboxDecodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94DF471EE0FD57002FE86D /* TJVideoToolboxDecodeViewController.m */; };
 		CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */; };
 		CD9538011EB9D21600326288 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9538001EB9D21600326288 /* MediaPlayer.framework */; };
 		CD9538041EBAC8F700326288 /* TJThirdViewController+pushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */; };
@@ -251,6 +252,8 @@
 		CD94DF411EDFDF4D002FE86D /* TJVideoToolboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJVideoToolboxViewController.h; sourceTree = "<group>"; };
 		CD94DF421EDFDF4D002FE86D /* TJVideoToolboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJVideoToolboxViewController.m; sourceTree = "<group>"; };
 		CD94DF441EDFE0EA002FE86D /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		CD94DF461EE0FD57002FE86D /* TJVideoToolboxDecodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJVideoToolboxDecodeViewController.h; sourceTree = "<group>"; };
+		CD94DF471EE0FD57002FE86D /* TJVideoToolboxDecodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJVideoToolboxDecodeViewController.m; sourceTree = "<group>"; };
 		CD9537FC1EB96F3300326288 /* TJOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJOrientationViewController.h; sourceTree = "<group>"; };
 		CD9537FD1EB96F3300326288 /* TJOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJOrientationViewController.m; sourceTree = "<group>"; };
 		CD9538001EB9D21600326288 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -747,6 +750,8 @@
 				CD6CE5841EC555DB00346B7D /* The New Look of OS X Yosemite.mp4 */,
 				CD94DF411EDFDF4D002FE86D /* TJVideoToolboxViewController.h */,
 				CD94DF421EDFDF4D002FE86D /* TJVideoToolboxViewController.m */,
+				CD94DF461EE0FD57002FE86D /* TJVideoToolboxDecodeViewController.h */,
+				CD94DF471EE0FD57002FE86D /* TJVideoToolboxDecodeViewController.m */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -1229,6 +1234,7 @@
 				CD71E5CF1E6D04FC0058B89F /* TJFMDBViewController.m in Sources */,
 				CD9537FE1EB96F3300326288 /* TJOrientationViewController.m in Sources */,
 				CD8AEB2A1E2CBD3200C64BB7 /* UITabBar+TJBadge.m in Sources */,
+				CD94DF481EE0FD57002FE86D /* TJVideoToolboxDecodeViewController.m in Sources */,
 				CDC96A8B1E345289000239DB /* AppDelegate.m in Sources */,
 				CDED52671EAF287E006BF64C /* TJCollectionHeaderReusableView.m in Sources */,
 				CD0CF9D11EB2E5B000B98686 /* TZTestCell.m in Sources */,
