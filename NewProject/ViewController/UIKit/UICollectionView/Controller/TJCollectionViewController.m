@@ -25,6 +25,7 @@
 - (void)setCollectionView{
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+
     flowLayout.itemSize = CGSizeMake(self.view.frame.size.width - 20, 100);
     flowLayout.minimumLineSpacing = 10.0f;
     

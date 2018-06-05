@@ -86,13 +86,14 @@ typedef NS_ENUM(NSInteger, ButtonTag) {
 
 - (void)query{
     //执行查询语句
-    FMResultSet *resultSet = [self.database executeQuery:@"SELECT * FROM t_student"];
+    FMResultSet *resultSet = [self.database executeQuery:@"SELECT * FROM t_student WHERE id = 3"];
     //遍历结果
     while ([resultSet next]) {
         int ID  = [resultSet intForColumn:@"id"];
+
         NSString *name = [resultSet stringForColumn:@"name"];
         int age = [resultSet intForColumn:@"age"];
-        NSLog(@"id is %d name is %@ age is %d",ID,name,age);
+        TJLog(@"id is %d name is %@ age is %d",ID,name,age);
     }
     
 }

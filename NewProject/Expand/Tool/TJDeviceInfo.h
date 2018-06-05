@@ -10,4 +10,11 @@
 
 @interface TJDeviceInfo : NSObject
 
+//app版本
++ (nullable NSString *)appVersionInfo;
+
+//是否开启系统通知
++ (BOOL)isMessageNotificationServiceOpen;
+
+
 @end

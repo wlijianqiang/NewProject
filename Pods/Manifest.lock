@@ -15,6 +15,11 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
+  - FBAllocationTracker (0.1.5)
+  - FBMemoryProfiler (0.1.3):
+    - FBAllocationTracker (~> 0.1)
+    - FBRetainCycleDetector (~> 0.1)
+  - FBRetainCycleDetector (0.1.4)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -42,6 +47,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Aspects
+  - FBMemoryProfiler
   - FMDB
   - FMDBMigrationManager
   - IQKeyboardManager
@@ -61,6 +67,9 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  FBAllocationTracker: dfdca3f71aceca6a85e95e3c6ec76a9785eba0f1
+  FBMemoryProfiler: 623fc5f8a61f7d02ec75c87e3b97c90f621d8b02
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   FMDBMigrationManager: d52007f328ea0665e8985ca8a33500707aef084f
   IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
@@ -77,6 +86,6 @@ SPEC CHECKSUMS:
   TZImagePickerController: 0a8ff228d287ebdd7d485e8c42a2a932894f1fba
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
 
-PODFILE CHECKSUM: abd3ca2dcd6564192c31d214d67ea45ad7371b41
+PODFILE CHECKSUM: 9399306800b107a3bb834ebdda91342dcfb821ca
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1

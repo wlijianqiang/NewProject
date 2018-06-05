@@ -10,4 +10,18 @@
 
 @implementation TJDeviceInfo
 
++ (NSString *)appVersionInfo{
+    return [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+}
+
++ (BOOL)isMessageNotificationServiceOpen {
+    UIUserNotificationSettings *setting = [[UIApplication sharedApplication] currentUserNotificationSettings];
+
+    if (UIUserNotificationTypeNone != setting.types) {
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
 @end

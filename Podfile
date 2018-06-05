@@ -20,4 +20,7 @@ pod 'TZImagePickerController'
 pod 'SDCycleScrollView'
 pod 'SocketRocket'
 pod 'WebViewJavascriptBridge'
+
+pod 'FBMemoryProfiler'
+
 end

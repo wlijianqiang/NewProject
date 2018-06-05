@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "TJMainTabBarViewController.h"
 #import "TJRoutes.h"
+#import <FBMemoryProfiler/FBMemoryProfiler.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong)TJMainTabBarViewController *mainTabBarViewController;
+@property (nonatomic, strong)FBMemoryProfiler *memoryProfiler;
 
 @end
 

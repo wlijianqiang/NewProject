@@ -65,6 +65,7 @@
         TJCollectionHeaderReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind : UICollectionElementKindSectionHeader withReuseIdentifier : NSStringFromClass([TJCollectionHeaderReusableView class]) forIndexPath :indexPath];
         
         reusableview = headerView;
+        reusableview.backgroundColor = [UIColor redColor];
         
     }
     
@@ -72,6 +73,8 @@
         
         TJCollectionFooterReusableView *footerview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:NSStringFromClass([TJCollectionFooterReusableView class]) forIndexPath:indexPath];
         reusableview = footerview;
+        reusableview.backgroundColor = [UIColor yellowColor];
+
         
     }
     

@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "AFNetworkActivityLogger.h"
 #import "AppDelegate+JLRoute.h"
+#import "TJCacheCleanerPlugin.h"
+#import "TJRetainCycleLoggerPlugin.h"
 
 @implementation AppDelegate
 
@@ -20,14 +22,28 @@
 #endif
     [TJProjectConfig setSystemConfig];
     [self setupRoute];
+    [self memoryManage];
 
+    //全屏禁止触摸开启
+    [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+    //全屏禁止触摸关闭
+    [[UIApplication sharedApplication] endIgnoringInteractionEvents];
     return YES;
 }
 
+- (void)memoryManage {
+#if DEBUG
+    self.memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[TJCacheCleanerPlugin new],
+                          [TJRetainCycleLoggerPlugin new]]
+                          retainCycleDetectorConfiguration:nil];
+    [self.memoryProfiler enable];
+
+#endif
+}
 //设置屏幕旋转方向 或直接在plis文件中设置
-//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
-//    return UIInterfaceOrientationMaskAll;
-//}
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    return UIInterfaceOrientationMaskAll;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

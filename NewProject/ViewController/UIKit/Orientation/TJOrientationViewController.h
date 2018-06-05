@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//程序旋转方向
 @interface TJOrientationViewController : UIViewController
 
 @end

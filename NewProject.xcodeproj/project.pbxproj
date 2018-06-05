@@ -24,6 +24,8 @@
 		CD13B1581E2472B800093161 /* AFNetworkActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13B1551E2472B800093161 /* AFNetworkActivityLogger.m */; };
 		CD1DCF531E694CA6002C21AF /* TJTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD1DCF521E694CA6002C21AF /* TJTableViewHeaderView.xib */; };
 		CD1DCF561E694CB9002C21AF /* TJTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1DCF551E694CB9002C21AF /* TJTableViewHeaderView.m */; };
+		CD2C02FE20AAB85E0064A2C6 /* TJCacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C02FD20AAB85E0064A2C6 /* TJCacheCleanerPlugin.m */; };
+		CD2C030120AABA250064A2C6 /* TJRetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C030020AABA250064A2C6 /* TJRetainCycleLoggerPlugin.m */; };
 		CD3659D71E5BD672008DCB12 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3659D61E5BD672008DCB12 /* UIImage+Extension.m */; };
 		CD4B7C171E26053A007945A0 /* TJProjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B7C161E26053A007945A0 /* TJProjectConfig.m */; };
 		CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67A29B1E67F08700FEA095 /* UIView+Nib.m */; };
@@ -71,6 +73,7 @@
 		CD9205A71EC15CBB00061E93 /* TJWKUserScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205A61EC15CBB00061E93 /* TJWKUserScriptViewController.m */; };
 		CD9205AB1EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9205AA1EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.m */; };
 		CD9205AD1EC164F300061E93 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = CD9205AC1EC164F300061E93 /* ExampleApp.html */; };
+		CD943E892079FC4C00850906 /* TJDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CD943E882079FC4C00850906 /* TJDeviceInfo.m */; };
 		CD94DF431EDFDF4D002FE86D /* TJVideoToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94DF421EDFDF4D002FE86D /* TJVideoToolboxViewController.m */; };
 		CD94DF451EDFE0EA002FE86D /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD94DF441EDFE0EA002FE86D /* VideoToolbox.framework */; };
 		CD94DF481EE0FD57002FE86D /* TJVideoToolboxDecodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94DF471EE0FD57002FE86D /* TJVideoToolboxDecodeViewController.m */; };
@@ -79,10 +82,10 @@
 		CD9538041EBAC8F700326288 /* TJThirdViewController+pushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */; };
 		CD95380E1EBAFDFF00326288 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95380D1EBAFDFF00326288 /* AVFoundation.framework */; };
 		CD9538101EBAFE1000326288 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD95380F1EBAFE1000326288 /* AudioToolbox.framework */; };
-		CD9538151EBB066700326288 /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = CD9538141EBB066600326288 /* videoRing.caf */; };
 		CD9538171EBB08B100326288 /* The New Look of OS X Yosemite.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CD9538161EBB08B100326288 /* The New Look of OS X Yosemite.mp4 */; };
 		CD9538191EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD9538181EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 */; };
 		CD9538731EBC560900326288 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9538721EBC560900326288 /* AssetsLibrary.framework */; };
+		CDA35B3420A5428F00A97D40 /* videoRing.caf in Resources */ = {isa = PBXBuildFile; fileRef = CDA35B3320A5428F00A97D40 /* videoRing.caf */; };
 		CDC414BD1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414BA1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m */; };
 		CDC414BE1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414BC1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.m */; };
 		CDC414D81E24EFC900EA685D /* UIFont+TJFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC414D71E24EFC900EA685D /* UIFont+TJFont.m */; };
@@ -156,6 +159,10 @@
 		CD1DCF521E694CA6002C21AF /* TJTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TJTableViewHeaderView.xib; sourceTree = "<group>"; };
 		CD1DCF541E694CB9002C21AF /* TJTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJTableViewHeaderView.h; sourceTree = "<group>"; };
 		CD1DCF551E694CB9002C21AF /* TJTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJTableViewHeaderView.m; sourceTree = "<group>"; };
+		CD2C02FC20AAB85E0064A2C6 /* TJCacheCleanerPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJCacheCleanerPlugin.h; sourceTree = "<group>"; };
+		CD2C02FD20AAB85E0064A2C6 /* TJCacheCleanerPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJCacheCleanerPlugin.m; sourceTree = "<group>"; };
+		CD2C02FF20AABA250064A2C6 /* TJRetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJRetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
+		CD2C030020AABA250064A2C6 /* TJRetainCycleLoggerPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJRetainCycleLoggerPlugin.m; sourceTree = "<group>"; };
 		CD3659D51E5BD672008DCB12 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		CD3659D61E5BD672008DCB12 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		CD4B7C0F1E25CC87007945A0 /* TJPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJPrefixHeader.pch; sourceTree = "<group>"; };
@@ -249,6 +256,8 @@
 		CD9205A91EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJWebViewJavascriptBridgeViewController.h; sourceTree = "<group>"; };
 		CD9205AA1EC162CC00061E93 /* TJWebViewJavascriptBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJWebViewJavascriptBridgeViewController.m; sourceTree = "<group>"; };
 		CD9205AC1EC164F300061E93 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		CD943E872079FC4C00850906 /* TJDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJDeviceInfo.h; sourceTree = "<group>"; };
+		CD943E882079FC4C00850906 /* TJDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJDeviceInfo.m; sourceTree = "<group>"; };
 		CD94DF411EDFDF4D002FE86D /* TJVideoToolboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJVideoToolboxViewController.h; sourceTree = "<group>"; };
 		CD94DF421EDFDF4D002FE86D /* TJVideoToolboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJVideoToolboxViewController.m; sourceTree = "<group>"; };
 		CD94DF441EDFE0EA002FE86D /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
@@ -261,10 +270,10 @@
 		CD9538031EBAC8F700326288 /* TJThirdViewController+pushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TJThirdViewController+pushViewController.m"; sourceTree = "<group>"; };
 		CD95380D1EBAFDFF00326288 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CD95380F1EBAFE1000326288 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		CD9538141EBB066600326288 /* videoRing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = videoRing.caf; path = "../../../../Downloads/13+MediaDemo/SoudeEffect/Audio/Resources/Audio/videoRing.caf"; sourceTree = "<group>"; };
 		CD9538161EBB08B100326288 /* The New Look of OS X Yosemite.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The New Look of OS X Yosemite.mp4"; sourceTree = "<group>"; };
 		CD9538181EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "派对动物_五月天_派对动物.mp3"; sourceTree = "<group>"; };
 		CD9538721EBC560900326288 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CDA35B3320A5428F00A97D40 /* videoRing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoRing.caf; sourceTree = "<group>"; };
 		CDC414B91E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJDismissKeyboard.h"; sourceTree = "<group>"; };
 		CDC414BA1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TJDismissKeyboard.m"; sourceTree = "<group>"; };
 		CDC414BB1E24EE3B00EA685D /* UIViewController+TJMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJMBProgressHUD.h"; sourceTree = "<group>"; };
@@ -338,6 +347,13 @@
 				8C28FFE686E2C28AB0B8B924 /* libPods-NewProject.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD0073AD20A960DF003D25B5 /* localFile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = localFile;
 			sourceTree = "<group>";
 		};
 		CD02EF561E44635100A7E8CC /* UIView */ = {
@@ -519,6 +535,7 @@
 		CD71E5B21E6D02750058B89F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CD0073AD20A960DF003D25B5 /* localFile */,
 				CD6CE58B1EC59C1E00346B7D /* UIImageView */,
 				CD9205841EC0057600061E93 /* Media */,
 				CD71E5B71E6D02750058B89F /* Third.storyboard */,
@@ -582,6 +599,8 @@
 			children = (
 				CD7E7BDE1E33A0EC002405A5 /* TJRoutes.h */,
 				CD7E7BDF1E33A0EC002405A5 /* TJRoutes.m */,
+				CD943E872079FC4C00850906 /* TJDeviceInfo.h */,
+				CD943E882079FC4C00850906 /* TJDeviceInfo.m */,
 			);
 			name = "Tool(工具类)";
 			path = Tool;
@@ -706,8 +725,8 @@
 		CD8AEB221E2CB99900C64BB7 /* Resources(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				CDA35B3320A5428F00A97D40 /* videoRing.caf */,
 				CD9538161EBB08B100326288 /* The New Look of OS X Yosemite.mp4 */,
-				CD9538141EBB066600326288 /* videoRing.caf */,
 				CD9538181EBB0B5800326288 /* 派对动物_五月天_派对动物.mp3 */,
 				CD67A2AD1E6940A900FEA095 /* 1.jpg */,
 				CD8AEB251E2CB99900C64BB7 /* TabIcon.xcassets */,
@@ -845,8 +864,8 @@
 		CDC414B71E24EE3000EA685D /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
-				CD6CE5861EC5960D00346B7D /* UIImageView */,
 				CD8AEB2B1E2DB31B00C64BB7 /* TJCategory.h */,
+				CD6CE5861EC5960D00346B7D /* UIImageView */,
 				CD02EF561E44635100A7E8CC /* UIView */,
 				CD8AEB2F1E2DB84600C64BB7 /* UIWindow */,
 				CDC414B81E24EE3B00EA685D /* UIViewController */,
@@ -916,6 +935,10 @@
 			children = (
 				CDC96A891E345289000239DB /* AppDelegate.h */,
 				CDC96A8A1E345289000239DB /* AppDelegate.m */,
+				CD2C02FC20AAB85E0064A2C6 /* TJCacheCleanerPlugin.h */,
+				CD2C02FD20AAB85E0064A2C6 /* TJCacheCleanerPlugin.m */,
+				CD2C02FF20AABA250064A2C6 /* TJRetainCycleLoggerPlugin.h */,
+				CD2C030020AABA250064A2C6 /* TJRetainCycleLoggerPlugin.m */,
 				CDC96AA21E348903000239DB /* AppDelegate+JLRoute.h */,
 				CDC96AA31E348903000239DB /* AppDelegate+JLRoute.m */,
 			);
@@ -1098,7 +1121,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9538151EBB066700326288 /* videoRing.caf in Resources */,
 				CD67A2AE1E6940A900FEA095 /* 1.jpg in Resources */,
 				CD13B0E31E2333C900093161 /* LaunchScreen.storyboard in Resources */,
 				CD71E5AD1E6D023E0058B89F /* Second.storyboard in Resources */,
@@ -1107,6 +1129,7 @@
 				CD71E5C01E6D02750058B89F /* Third.storyboard in Resources */,
 				CD1DCF531E694CA6002C21AF /* TJTableViewHeaderView.xib in Resources */,
 				CD8AEB261E2CB99900C64BB7 /* TabIcon.xcassets in Resources */,
+				CDA35B3420A5428F00A97D40 /* videoRing.caf in Resources */,
 				CD71E5BF1E6D02750058B89F /* TJCustomAlertView.xib in Resources */,
 				CD6CE5851EC555DB00346B7D /* The New Look of OS X Yosemite.mp4 in Resources */,
 				CD13B0DE1E2333C900093161 /* Main.storyboard in Resources */,
@@ -1140,9 +1163,15 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NewProject/Pods-NewProject-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1170,13 +1199,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1222,6 +1254,7 @@
 				CD71E5CA1E6D04210058B89F /* TJBaseNavigationViewController.m in Sources */,
 				CD0CF9CE1EB2E05E00B98686 /* LxGridViewFlowLayout.m in Sources */,
 				CDED526A1EAF288E006BF64C /* TJCollectionFooterReusableView.m in Sources */,
+				CD2C030120AABA250064A2C6 /* TJRetainCycleLoggerPlugin.m in Sources */,
 				CDED523B1EAEEEED006BF64C /* TJImagePickerCollectionViewCell.m in Sources */,
 				CDC414DD1E24F0FE00EA685D /* UIColor+TJColor.m in Sources */,
 				CD92059E1EC052AE00061E93 /* TJViewProgressLine.m in Sources */,
@@ -1238,11 +1271,13 @@
 				CDC96A8B1E345289000239DB /* AppDelegate.m in Sources */,
 				CDED52671EAF287E006BF64C /* TJCollectionHeaderReusableView.m in Sources */,
 				CD0CF9D11EB2E5B000B98686 /* TZTestCell.m in Sources */,
+				CD2C02FE20AAB85E0064A2C6 /* TJCacheCleanerPlugin.m in Sources */,
 				CD71E5CC1E6D04210058B89F /* TJBaseViewController.m in Sources */,
 				CD8AEAEF1E2C96EF00C64BB7 /* UIStoryboard+NewProject.m in Sources */,
 				CD8AEADF1E2C94F300C64BB7 /* TJMainTabBarViewController.m in Sources */,
 				CD8AEAEB1E2C95E500C64BB7 /* TJFourViewController.m in Sources */,
 				CD71E5C11E6D02750058B89F /* TJThirdViewController.m in Sources */,
+				CD943E892079FC4C00850906 /* TJDeviceInfo.m in Sources */,
 				CD71E5BE1E6D02750058B89F /* TJCustomAlertView.m in Sources */,
 				CD6CE5831EC553FB00346B7D /* TJMPMoviePlayerController.m in Sources */,
 				CD0CF9C81EB2D9F700B98686 /* TJImagePickerViewController.m in Sources */,

@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
     IndexPathSection_Orientation,
     IndexPathSection_Media,
     IndexPathSection_UIImageView,
+    IndexPathSection_Local,
 };
 
 @interface TJThirdViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -63,6 +64,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
                                      @"Orientation",
                                      @"Media",
                                      @"UIImageView",
+                                     @"Local",
                                      nil];
     self.dataMutableArray = [NSMutableArray arrayWithObjects:
                               @[@"系统默认样式",@"xib自定义弹出框"],
@@ -71,6 +73,7 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
                               @[@"程序旋转方向"],
                           @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera",@"foundationCmeraRecord",@"MPMoviePlayerController",@"VideoToolbox硬编码H.264",@"VideoToolbox硬解码H.264"],
                              @[@"BlurEffect"],
+                             @[@"本地文件操作"],
                               nil];
 }
 #pragma mark tableViewDelegate
@@ -129,6 +132,8 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
         }
         
     }else if (IndexPathSection_UIImageView == indexPath.section){
+        [JLRoutes routeURL:[NSURL URLWithString:@"/TJFontSizeAndBlurEffectViewController"] withParameters:nil];
+    }else if (IndexPathSection_Local == indexPath.section) {
         [JLRoutes routeURL:[NSURL URLWithString:@"/TJFontSizeAndBlurEffectViewController"] withParameters:nil];
     }
 }

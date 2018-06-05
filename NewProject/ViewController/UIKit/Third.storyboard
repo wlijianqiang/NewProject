@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="BbE-OY-Z6u"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Wbj-ll-3gT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -38,25 +38,25 @@
                         <viewControllerLayoutGuide type="bottom" id="VML-uW-ZUH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z1b-nE-Crk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZT-fd-SHU">
-                                <rect key="frame" x="251" y="28" width="108" height="30"/>
+                                <rect key="frame" x="286" y="28" width="108" height="30"/>
                                 <state key="normal" title="前后摄像头切换"/>
                                 <connections>
                                     <action selector="cameraChange:" destination="aJw-JZ-lvJ" eventType="touchUpInside" id="ay4-5j-1en"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9Q-vf-irk">
-                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                                <rect key="frame" x="20" y="28" width="46" height="30"/>
                                 <state key="normal" title="闪光灯"/>
                                 <connections>
                                     <action selector="flashChange:" destination="aJw-JZ-lvJ" eventType="touchUpInside" id="eg6-Nl-iNY"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N86-Dk-vSO">
-                                <rect key="frame" x="16" y="71" width="343" height="525"/>
+                                <rect key="frame" x="20" y="81.666666666666686" width="374" height="572.66666666666652"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlbumAddBtn" translatesAutoresizingMaskIntoConstraints="NO" id="clC-eY-8nJ" userLabel="FocusCursor">
                                         <rect key="frame" x="137" y="232" width="68" height="61"/>
@@ -69,7 +69,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2E-el-xq3">
-                                <rect key="frame" x="98" y="604" width="179" height="30"/>
+                                <rect key="frame" x="102" y="662.33333333333337" width="210" height="30"/>
                                 <color key="backgroundColor" red="0.84696626659999996" green="0.84711211919999996" blue="0.84695702790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="拍照"/>
                                 <connections>
@@ -110,18 +110,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Gbc-Qp-HWL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QES-Ld-zhP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKX-p8-vX5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="4" y="0.0" width="406" height="736"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AlbumAddBtn" translatesAutoresizingMaskIntoConstraints="NO" id="3Pv-Oc-h1M">
                                         <rect key="frame" x="144" y="227" width="64" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoq-lU-8TV">
-                                        <rect key="frame" x="66" y="617" width="244" height="30"/>
+                                        <rect key="frame" x="66" y="686" width="275" height="30"/>
                                         <state key="normal" title="录制视频"/>
                                         <connections>
                                             <action selector="recordButton:" destination="3AG-yi-N7g" eventType="touchUpInside" id="dDh-uI-4vu"/>
@@ -142,7 +142,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFZ-qi-ob3">
-                                        <rect key="frame" x="296" y="19" width="62" height="30"/>
+                                        <rect key="frame" x="327" y="19" width="62" height="30"/>
                                         <state key="normal" title="相机切换"/>
                                         <connections>
                                             <action selector="cameraChange:" destination="3AG-yi-N7g" eventType="touchUpInside" id="SHD-tj-Kh3"/>
@@ -186,34 +186,33 @@
             <objects>
                 <collectionViewController storyboardIdentifier="TJStoryboardCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rbb-F3-JEg" customClass="TJStoryboardCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="LnJ-Mm-UdE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zk1-9v-2pu">
-                            <size key="itemSize" width="373" height="52"/>
+                            <size key="itemSize" width="412" height="48"/>
                             <size key="headerReferenceSize" width="0.0" height="60"/>
                             <size key="footerReferenceSize" width="0.0" height="60"/>
                             <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TJCollectionViewCell" id="b4T-CZ-OO0" customClass="TJCollectionViewCell">
-                                <rect key="frame" x="1" y="70" width="373" height="52"/>
+                                <rect key="frame" x="1" y="70" width="412" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="373" height="52"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="412" height="48"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="customSize" width="373" height="52"/>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TJCollectionHeaderReusableView" id="tkR-9H-aba" customClass="TJCollectionHeaderReusableView">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <color key="backgroundColor" red="0.17308387159999999" green="0.70444160700000003" blue="0.99966150519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </collectionReusableView>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TJCollectionFooterReusableView" id="SLy-kW-sj7" customClass="TJCollectionFooterReusableView">
-                            <rect key="frame" x="0.0" y="132" width="375" height="60"/>
+                            <rect key="frame" x="0.0" y="128" width="414" height="60"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <color key="backgroundColor" red="0.17308387159999999" green="0.70444160700000003" blue="0.99966150519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </collectionReusableView>
@@ -225,7 +224,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqM-Ix-W85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63" y="-831"/>
+            <point key="canvasLocation" x="60.869565217391312" y="-833.1521739130435"/>
         </scene>
         <!--Audio Recorder View Controller-->
         <scene sceneID="7Dj-DJ-qC4">
@@ -236,14 +235,14 @@
                         <viewControllerLayoutGuide type="bottom" id="0bG-P5-oGM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cwy-P0-ue1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yp8-NV-pGz">
-                                <rect key="frame" x="16" y="186" width="343" height="2"/>
+                                <rect key="frame" x="20" y="186" width="374" height="2"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wck-jb-yeR">
-                                <rect key="frame" x="11" y="86" width="348" height="55"/>
+                                <rect key="frame" x="15" y="86" width="379" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="OLR-7i-ynA"/>
                                 </constraints>
@@ -281,11 +280,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Qgu-uO-puy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eh1-8n-BBM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ncR-N4-G18">
-                                <rect key="frame" x="0.0" y="20" width="375" height="165"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="165"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="165" id="wU3-G3-Hhx"/>
                                 </constraints>

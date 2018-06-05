@@ -14,7 +14,7 @@
 - (void)showAltertViewForRow:(NSInteger )row{
     switch (row) {
         case 0:
-        {
+        {//系统默认样式
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"标题" message:@"这个是UIAlertController的默认样式" preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
@@ -30,7 +30,7 @@
         }
             break;
         case 1:
-        {
+        {//xib自定义弹出框
             TJCustomAlertView *customAlertView = [TJCustomAlertView loadFromNib];
             customAlertView.frame = self.view.frame;
             customAlertView.delegate = self;

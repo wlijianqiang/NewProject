@@ -189,7 +189,7 @@
 //        return;
 //    }
 //    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:self.maxCountTF.text.integerValue columnNumber:self.columnNumberTF.text.integerValue delegate:self pushPhotoPickerVc:YES];
-    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:9 columnNumber:3 delegate:self pushPhotoPickerVc:YES];
+    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:9 columnNumber:1 delegate:self pushPhotoPickerVc:YES];
     imagePickerVc.delegate  = self;
 #pragma mark - 四类个性化设置，这些参数都可以不传，此时会走默认设置
     imagePickerVc.isSelectOriginalPhoto = _isSelectOriginalPhoto;
@@ -211,9 +211,9 @@
     // 3. Set allow picking video & photo & originalPhoto or not
     // 3. 设置是否可以选择视频/图片/原图
     imagePickerVc.allowPickingVideo = YES;
-    imagePickerVc.allowPickingImage = YES;
-    imagePickerVc.allowPickingOriginalPhoto = YES;
-    imagePickerVc.allowPickingGif = YES;
+    imagePickerVc.allowPickingImage = NO;
+    imagePickerVc.allowPickingOriginalPhoto = NO;
+    imagePickerVc.allowPickingGif = NO;
     
     // 4. 照片排列按修改时间升序
     imagePickerVc.sortAscendingByModificationDate = YES;
@@ -254,12 +254,12 @@
     _selectedPhotos = [NSMutableArray arrayWithArray:@[coverImage]];
     _selectedAssets = [NSMutableArray arrayWithArray:@[asset]];
     // open this code to send video / 打开这段代码发送视频
-    // [[TZImageManager manager] getVideoOutputPathWithAsset:asset completion:^(NSString *outputPath) {
-    // NSLog(@"视频导出到本地完成,沙盒路径为:%@",outputPath);
+     [[TZImageManager manager] getVideoOutputPathWithAsset:asset completion:^(NSString *outputPath) {
+     NSLog(@"视频导出到本地完成,沙盒路径为:%@",outputPath);
     // Export completed, send video here, send by outputPath or NSData
     // 导出完成，在这里写上传代码，通过路径或者通过NSData上传
-    
-    // }];
+
+     }];
     [_collectionView reloadData];
     // _collectionView.contentSize = CGSizeMake(0, ((_selectedPhotos.count + 2) / 3 ) * (_margin + _itemWH));
 }
