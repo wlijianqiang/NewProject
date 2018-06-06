@@ -48,7 +48,12 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
         make.right.mas_equalTo(0);
         make.bottom.mas_equalTo(0);
     }];
-    
+
+    [[TJAPIManager shareManager] signinParameters:@"" success:^(NSURLSessionDataTask * _Nullable task, id  _Nullable responseObject, NSInteger code, NSString * _Nullable message) {
+
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nullable error, NSInteger code, NSString * _Nullable message) {
+
+    }];
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations

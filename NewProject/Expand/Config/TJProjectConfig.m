@@ -37,10 +37,10 @@
 
 }
 + (void)setUIAppearance{
-    //键盘管理
-    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
-    [IQKeyboardManager sharedManager].enable = YES;
-    
+//    //键盘管理
+//    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
+//    [IQKeyboardManager sharedManager].enable = YES;
+
     [UIViewController aspect_hookSelector:@selector(viewDidLoad)
                     withOptions:AspectPositionAfter
                      usingBlock:^(id<AspectInfo> aspectInfo){
@@ -78,16 +78,12 @@
     
     [[UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil] setTintColor:[UIColor blackColor]];
     //导航栏颜色
-    //旧方法
-    //[[UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil] setBarTintColor:[UIColor redColor]];
     [[UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UINavigationController class]]] setBarTintColor:[UIColor redColor]];
+    //半透明模糊
+    [[UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UINavigationController class]]]setTranslucent:YES];
 
     [[UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UINavigationController class]]]setBarStyle:UIBarStyleDefault];
 
-    //半透明
-    [[UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UINavigationController class]]]setTranslucent:YES];
-
-    
     //导航栏字体
     NSDictionary *attributeDictionary = @{NSForegroundColorAttributeName:[UIColor whiteColor],
                                                    NSShadowAttributeName:[NSShadow new],
@@ -95,11 +91,11 @@
     [[UINavigationBar appearance] setTitleTextAttributes:attributeDictionary];
     //导航栏图片
     [[UINavigationBar appearance]setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
-    
-    NSDictionary *attributeDictionary1 = @{NSForegroundColorAttributeName:[UIColor blackColor],
-                                          NSShadowAttributeName:[NSShadow new],
-                                          NSFontAttributeName:[UIFont defaultFontOfSize15]};
-    [[UIBarButtonItem appearance] setTitleTextAttributes:attributeDictionary1 forState:UIControlStateNormal];
+    //在tabBarViewController中设置
+//    NSDictionary *attributeDictionary1 = @{NSForegroundColorAttributeName:[UIColor blackColor],
+//                                          NSShadowAttributeName:[NSShadow new],
+//                                          NSFontAttributeName:[UIFont defaultFontOfSize15]};
+//    [[UIBarButtonItem appearance] setTitleTextAttributes:attributeDictionary1 forState:UIControlStateNormal];
    //导航栏图片
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
     //返回按钮图片

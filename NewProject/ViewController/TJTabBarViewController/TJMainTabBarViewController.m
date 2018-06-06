@@ -69,9 +69,16 @@
     UINavigationController *v4 = [[UINavigationController alloc]initWithRootViewController:fourController];
     self.viewControllers = @[v1,v2,v3,v4];
     
-    NSDictionary *tabBarNormalColor = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil];
-    NSDictionary *tabBarSelectedColor = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithHexString:@"96cc29"], NSForegroundColorAttributeName, nil];
-    
+
+    //tabBar字体大小、颜色
+    NSDictionary *tabBarNormalColor = @{NSForegroundColorAttributeName:[UIColor lightGrayColor],
+                                        NSShadowAttributeName:[NSShadow new],
+                                        NSFontAttributeName:[UIFont systemFontOfSize:12],
+                                        };
+    NSDictionary *tabBarSelectedColor = @{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"96cc29"],
+                                          NSShadowAttributeName:[NSShadow new],
+                                          NSFontAttributeName:[UIFont systemFontOfSize:12],
+                                          };
     for (NSUInteger i = 0; i < self.viewControllers.count; i++) {
         UITabBarItem *item = self.tabBar.items[i];
         //文字位置

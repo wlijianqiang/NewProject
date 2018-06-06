@@ -10,8 +10,14 @@
 
 @interface UIWebView (TJCache)
 
+/**
+ 清除Cookie
+ */
 + (void)clearCookie;
 
+/**
+ 清除Cache
+ */
 + (void)clearCache;
 
 
