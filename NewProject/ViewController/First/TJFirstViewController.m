@@ -34,7 +34,6 @@
 
     UIImage *image = [self createImageWithColor:[UIColor colorWithHexString:@"789098"]];
 
-
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.image = [self circleImageWithImage:image borderWidth:1 borderColor:[UIColor redColor]];
     [self.view addSubview:imageView];
@@ -44,8 +43,6 @@
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(100);
     }];
-
-
 }
 
 #pragma mark - 生成一个待圆角的图片
@@ -87,7 +84,6 @@
     return newImage;
 }
 
-
 #pragma mark - 把颜色转变成为图片
 - (UIImage*) createImageWithColor:(UIColor*) color
 {
@@ -100,6 +96,7 @@
     UIGraphicsEndImageContext();
     return theImage;
 }
+
 - (void)reconnect{
     self.webSocket.delegate = nil;
     [self.webSocket close];
@@ -111,12 +108,15 @@
 - (void)webSocketDidOpen:(SRWebSocket *)webSocket{
     
 }
+
 - (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error{
     
 }
+
 - (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean{
     
 }
+
 - (void)webSocket:(SRWebSocket *)webSocket didReceivePong:(NSData *)pongPayload{
     
 }

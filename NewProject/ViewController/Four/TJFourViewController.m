@@ -55,12 +55,13 @@ typedef NS_ENUM(NSInteger,CellIndexPath){
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    if (CellIndexPath_ImagePickerView == indexPath.row) {
-        cell.textLabel.text = @"图片选择器";
-    }else{
-        cell.textLabel.text = kRandomData;
-    }
+//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    if (CellIndexPath_ImagePickerView == indexPath.row) {
+//        cell.textLabel.text = @"图片选择器";
+//    }else{
+//        cell.textLabel.text = kRandomData;
+//    }
+     cell.textLabel.text = kRandomData;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -17,6 +17,9 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
     IndexPathSection_Media,
     IndexPathSection_UIImageView,
     IndexPathSection_Local,
+    IndexPathSection_Gesture,
+    IndexPathSection_RunLoop,
+
 };
 
 @interface TJThirdViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -65,6 +68,8 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
                                      @"Media",
                                      @"UIImageView",
                                      @"Local",
+                                     @"Gesture",
+                                     @"RunLoop",
                                      nil];
     self.dataMutableArray = [NSMutableArray arrayWithObjects:
                               @[@"系统默认样式",@"xib自定义弹出框"],
@@ -74,6 +79,8 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
                           @[@"AboutAudioToolbox",@"audioRecorder",@"foundationCamera",@"foundationCmeraRecord",@"MPMoviePlayerController",@"VideoToolbox硬编码H.264",@"VideoToolbox硬解码H.264"],
                              @[@"BlurEffect"],
                              @[@"本地文件操作"],
+                             @[@"手势"],
+                             @[@"RunLoop"],
                               nil];
 }
 #pragma mark tableViewDelegate
@@ -135,6 +142,10 @@ typedef NS_ENUM(NSInteger, IndexPathSection) {
         [JLRoutes routeURL:[NSURL URLWithString:@"/TJFontSizeAndBlurEffectViewController"] withParameters:nil];
     }else if (IndexPathSection_Local == indexPath.section) {
         [JLRoutes routeURL:[NSURL URLWithString:@"/TJFontSizeAndBlurEffectViewController"] withParameters:nil];
+    }else if (IndexPathSection_Gesture == indexPath.section) {
+        [JLRoutes routeURL:[NSURL URLWithString:@"/JQGestureViewController"] withParameters:nil];
+    }else {
+        [JLRoutes routeURL:[NSURL URLWithString:@"/JQRunLoopViewController"] withParameters:nil];
     }
 }
 

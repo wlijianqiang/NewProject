@@ -104,6 +104,8 @@
 		CDED52641EAF286A006BF64C /* TJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED52631EAF286A006BF64C /* TJCollectionViewCell.m */; };
 		CDED52671EAF287E006BF64C /* TJCollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED52661EAF287E006BF64C /* TJCollectionHeaderReusableView.m */; };
 		CDED526A1EAF288E006BF64C /* TJCollectionFooterReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED52691EAF288E006BF64C /* TJCollectionFooterReusableView.m */; };
+		CDF7BB032135298700A97B6F /* JQGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF7BB022135298700A97B6F /* JQGestureViewController.m */; };
+		CDF7BB0621391A1100A97B6F /* JQRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF7BB0521391A1100A97B6F /* JQRunLoopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -303,6 +305,10 @@
 		CDED52661EAF287E006BF64C /* TJCollectionHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCollectionHeaderReusableView.m; sourceTree = "<group>"; };
 		CDED52681EAF288E006BF64C /* TJCollectionFooterReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCollectionFooterReusableView.h; sourceTree = "<group>"; };
 		CDED52691EAF288E006BF64C /* TJCollectionFooterReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCollectionFooterReusableView.m; sourceTree = "<group>"; };
+		CDF7BB012135298700A97B6F /* JQGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQGestureViewController.h; sourceTree = "<group>"; };
+		CDF7BB022135298700A97B6F /* JQGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQGestureViewController.m; sourceTree = "<group>"; };
+		CDF7BB0421391A1100A97B6F /* JQRunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQRunLoopViewController.h; sourceTree = "<group>"; };
+		CDF7BB0521391A1100A97B6F /* JQRunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQRunLoopViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +541,10 @@
 		CD71E5B21E6D02750058B89F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CDF7BB0421391A1100A97B6F /* JQRunLoopViewController.h */,
+				CDF7BB0521391A1100A97B6F /* JQRunLoopViewController.m */,
+				CDF7BB012135298700A97B6F /* JQGestureViewController.h */,
+				CDF7BB022135298700A97B6F /* JQGestureViewController.m */,
 				CD0073AD20A960DF003D25B5 /* localFile */,
 				CD6CE58B1EC59C1E00346B7D /* UIImageView */,
 				CD9205841EC0057600061E93 /* Media */,
@@ -1241,9 +1251,11 @@
 				CD8AEAFD1E2C9AF700C64BB7 /* UIWebView+TJCache.m in Sources */,
 				CD3659D71E5BD672008DCB12 /* UIImage+Extension.m in Sources */,
 				CDC414D81E24EFC900EA685D /* UIFont+TJFont.m in Sources */,
+				CDF7BB032135298700A97B6F /* JQGestureViewController.m in Sources */,
 				CD4B7C171E26053A007945A0 /* TJProjectConfig.m in Sources */,
 				CD9538041EBAC8F700326288 /* TJThirdViewController+pushViewController.m in Sources */,
 				CDC96AA41E348903000239DB /* AppDelegate+JLRoute.m in Sources */,
+				CDF7BB0621391A1100A97B6F /* JQRunLoopViewController.m in Sources */,
 				CD13B1571E2472B800093161 /* AFNetworkActivityConsoleLogger.m in Sources */,
 				CDC414BD1E24EE3B00EA685D /* UIViewController+TJDismissKeyboard.m in Sources */,
 				CD0CF9C21EB1E2D200B98686 /* TJFourViewController+HeaderView.m in Sources */,

@@ -32,12 +32,12 @@
         case 1:
         {//xib自定义弹出框
             TJCustomAlertView *customAlertView = [TJCustomAlertView loadFromNib];
-            customAlertView.frame = self.view.frame;
+            customAlertView.frame = CGRectMake(0, 0, kMainScreenWidth, kMainScreenHeight);
             customAlertView.delegate = self;
             [customAlertView customAlterViewForTitle:@"标题" message:@"不知所云"];
             [customAlertView becomeFirstResponder];
             [[UIApplication sharedApplication].keyWindow addSubview:customAlertView];
-            
+//            [[[UIApplication sharedApplication].delegate window] addSubview:customAlertView];
         }
             break;
     }

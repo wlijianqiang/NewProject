@@ -67,12 +67,18 @@
     //    [[UIView appearance] setContentMode:UIViewContentModeScaleToFill];//慎用 会影响storyboard UIview相关控件的显示
 
 //    [[UIView appearance] setContentMode:UIViewContentModeScaleToFill];
+    /*
+     参考：https://blog.csdn.net/u011363981/article/details/73294499
+     setExclusiveTouch  是UIView的一个属性，默认为NO（不互斥），设置UIView 接收手势的互斥性为YES，防止多个响应区域被“同时”点击，“同时”响应的问题。
+     1.可以通过  [[UIView appearance] setExclusiveTouch:YES]; UIImageView ，UILabel等，都可以添加手势，响应方式和UIButton 相同。全局设置响应区域的点击手势的互斥，是有效的
+     */
+    [[UIView appearance] setExclusiveTouch:YES];
 
     [[UIScrollView appearance] setKeyboardDismissMode:UIScrollViewKeyboardDismissModeOnDrag];
     
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-    
+
     [[UITableView appearance] setSeparatorInset:UIEdgeInsetsMake(0.0f, 15.0f, 0.0f, 15.0f)];
     [[UITableView appearance] setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     

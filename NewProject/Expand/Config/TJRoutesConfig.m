@@ -29,7 +29,8 @@
 #import "TJFontSizeAndBlurEffectViewController.h"
 #import "TJVideoToolboxViewController.h"
 #import "TJVideoToolboxDecodeViewController.h"
-
+#import "JQGestureViewController.h"
+#import "JQRunLoopViewController.h"
 
 @implementation TJRoutesConfig
 
@@ -153,8 +154,18 @@
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
              }],
+             [TJRoutes routePattern:@"/JQGestureViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 JQGestureViewController *vc = [[JQGestureViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
              [TJRoutes routePattern:@"/TJVideoToolboxDecodeViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
                  TJVideoToolboxDecodeViewController *vc = [[TJVideoToolboxDecodeViewController alloc] init];
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
+             }],
+             [TJRoutes routePattern:@"/JQRunLoopViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 JQRunLoopViewController *vc = [[JQRunLoopViewController alloc] init];
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
              }]
