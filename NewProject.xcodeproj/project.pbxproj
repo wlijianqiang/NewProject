@@ -1030,7 +1030,6 @@
 				CD13B0CC1E2333C900093161 /* Sources */,
 				CD13B0CD1E2333C900093161 /* Frameworks */,
 				CD13B0CE1E2333C900093161 /* Resources */,
-				3EE98091F74F11A502784F65 /* [CP] Embed Pods Frameworks */,
 				1478F55799A44BB7BD1DF750 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1181,26 +1180,14 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewProject/Pods-NewProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3EE98091F74F11A502784F65 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewProject/Pods-NewProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6CFF150B16F68316E2E53305 /* [CP] Check Pods Manifest.lock */ = {
