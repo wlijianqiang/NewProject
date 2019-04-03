@@ -32,6 +32,7 @@
     TJLog(@"%@", kPathTemp);
     [self reconnect];
 
+    
     UIImage *image = [self createImageWithColor:[UIColor colorWithHexString:@"789098"]];
 
     UIImageView *imageView = [[UIImageView alloc] init];
