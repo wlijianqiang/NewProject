@@ -73,7 +73,9 @@
      1.可以通过  [[UIView appearance] setExclusiveTouch:YES]; UIImageView ，UILabel等，都可以添加手势，响应方式和UIButton 相同。全局设置响应区域的点击手势的互斥，是有效的
      */
     [[UIView appearance] setExclusiveTouch:YES];
-
+//iOS12.1一如的问题，只要UITabBar是push的，并且push viewController时 hidesBottomBarWhenPushed = YES 则手势返回的时候就会触发，原因是：tabBar内的按钮 UITabBarButton被设置了错误的frame，frame.size变为（0，0）导致的。
+    [UITabBar appearance].translucent = NO;
+    
     [[UIScrollView appearance] setKeyboardDismissMode:UIScrollViewKeyboardDismissModeOnDrag];
     
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
