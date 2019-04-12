@@ -130,7 +130,6 @@
         self.headrView.frame = CGRectMake(offsetY/2, 0, self.view.frame.size.width - offsetY, 150.0 - offsetY);
     }else{
         self.headrView.frame = CGRectMake(0, - offsetY, self.view.frame.size.width, 150.0);
-        
     }
 }
 
