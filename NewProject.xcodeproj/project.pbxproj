@@ -654,10 +654,10 @@
 			isa = PBXGroup;
 			children = (
 				CD8AEAB61E2C8F6C00C64BB7 /* TJAPIConst.h */,
-				CD8AEAB71E2C8F6C00C64BB7 /* TJAPIManager.h */,
-				CD8AEAB81E2C8F6C00C64BB7 /* TJAPIManager.m */,
 				CD8AEAB91E2C8F6C00C64BB7 /* TJHTTPSessionManager.h */,
 				CD8AEABA1E2C8F6C00C64BB7 /* TJHTTPSessionManager.m */,
+				CD8AEAB71E2C8F6C00C64BB7 /* TJAPIManager.h */,
+				CD8AEAB81E2C8F6C00C64BB7 /* TJAPIManager.m */,
 			);
 			name = "Network(网络)";
 			path = Network;

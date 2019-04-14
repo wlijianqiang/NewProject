@@ -17,7 +17,9 @@
     }
     self.requestSerializer = [AFJSONRequestSerializer serializer];//请求的数据格式/默认是二进制的
     self.responseSerializer = [AFJSONResponseSerializer serializer];//响应的数据格式/默认是JSON格式
+    [self.requestSerializer willChangeValueForKey:@"timeoutInterval"];
     self.requestSerializer.timeoutInterval = 10.0f;//超时时间
+    [self.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     //可接受的数据类型
     self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",
                                                       @"text/html",

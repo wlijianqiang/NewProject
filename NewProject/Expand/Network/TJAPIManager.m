@@ -47,9 +47,16 @@
 }
 
 - (AFSecurityPolicy*)apiServerSecurityPolicy {
-    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy defaultPolicy];
-    securityPolicy.allowInvalidCertificates = YES;
-    securityPolicy.validatesDomainName = NO;
+    //参考： https://blog.csdn.net/mickdev/article/details/79483919
+//    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy defaultPolicy];
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
+//获取证书路径
+    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"server" ofType:@"cer"];
+    NSData *certData = [NSData dataWithContentsOfFile:cerPath];
+    NSSet *dataSet = [NSSet setWithArray:@[certData]];
+    securityPolicy.allowInvalidCertificates = YES;//是否允许CA不信任的证书（自签名证书）
+    securityPolicy.pinnedCertificates = dataSet;//设置去匹配服务器端证书验证的证书
+    securityPolicy.validatesDomainName = NO;//是否需要验证域名，默认YES
     return securityPolicy;
     
     //使用命令：openssl s_client -connect apiserver.jijiankang.cn:443 </dev/null 2>/dev/null | openssl x509 -outform DER > apiserver.jijiankang.cn.cer

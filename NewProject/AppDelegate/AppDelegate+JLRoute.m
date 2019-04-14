@@ -10,6 +10,9 @@
 
 @implementation AppDelegate (JLRoute)
 
+/**
+ 添加路由
+ */
 - (void)setupRoute{
     self.mainTabBarViewController = [[UIStoryboard MainStoryboard]instantiateViewControllerWithIdentifier:TJMainTabBarViewController_Storyboard];
     [[TJRoutesConfig registerRoutes] enumerateObjectsUsingBlock:^(TJRoutes *route, NSUInteger idx, BOOL * _Nonnull stop) {

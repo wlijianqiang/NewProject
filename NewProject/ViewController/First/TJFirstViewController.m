@@ -27,9 +27,8 @@
     [self addCycleScrollView];
     //显示红点
     [self.tabBarController.tabBar showBadgeOnItemIndex:0];
-    TJLog(@"test");
+    TJLog(@"%@",NSStringFromClass([self class]));
     
-    TJLog(@"%@", kPathTemp);
     [self reconnect];
 
     
@@ -130,6 +129,7 @@
     //隐藏红点
     //[self.tabBarController.tabBar hiddenBadgeOnItemIndex:0];
     [JLRoutes routeURL:[NSURL URLWithString:@"/testViewController"] withParameters:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
