@@ -27,6 +27,7 @@
 		CD2C02FE20AAB85E0064A2C6 /* TJCacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C02FD20AAB85E0064A2C6 /* TJCacheCleanerPlugin.m */; };
 		CD2C030120AABA250064A2C6 /* TJRetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C030020AABA250064A2C6 /* TJRetainCycleLoggerPlugin.m */; };
 		CD3659D71E5BD672008DCB12 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3659D61E5BD672008DCB12 /* UIImage+Extension.m */; };
+		CD41D6A5228BCFD00057DCFA /* TJFourTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41D6A4228BCFD00057DCFA /* TJFourTestViewController.m */; };
 		CD4B7C171E26053A007945A0 /* TJProjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B7C161E26053A007945A0 /* TJProjectConfig.m */; };
 		CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67A29B1E67F08700FEA095 /* UIView+Nib.m */; };
 		CD67A2AE1E6940A900FEA095 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD67A2AD1E6940A900FEA095 /* 1.jpg */; };
@@ -167,6 +168,8 @@
 		CD2C030020AABA250064A2C6 /* TJRetainCycleLoggerPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJRetainCycleLoggerPlugin.m; sourceTree = "<group>"; };
 		CD3659D51E5BD672008DCB12 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		CD3659D61E5BD672008DCB12 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		CD41D6A3228BCFD00057DCFA /* TJFourTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJFourTestViewController.h; sourceTree = "<group>"; };
+		CD41D6A4228BCFD00057DCFA /* TJFourTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJFourTestViewController.m; sourceTree = "<group>"; };
 		CD4B7C0F1E25CC87007945A0 /* TJPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJPrefixHeader.pch; sourceTree = "<group>"; };
 		CD4B7C151E26053A007945A0 /* TJProjectConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJProjectConfig.h; sourceTree = "<group>"; };
 		CD4B7C161E26053A007945A0 /* TJProjectConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJProjectConfig.m; sourceTree = "<group>"; };
@@ -698,6 +701,8 @@
 				CD67A2A91E693FE600FEA095 /* View */,
 				CD8AEAE91E2C95E500C64BB7 /* TJFourViewController.h */,
 				CD8AEAEA1E2C95E500C64BB7 /* TJFourViewController.m */,
+				CD41D6A3228BCFD00057DCFA /* TJFourTestViewController.h */,
+				CD41D6A4228BCFD00057DCFA /* TJFourTestViewController.m */,
 				CD0CF9C01EB1E2D200B98686 /* TJFourViewController+HeaderView.h */,
 				CD0CF9C11EB1E2D200B98686 /* TJFourViewController+HeaderView.m */,
 			);
@@ -1262,6 +1267,7 @@
 				CD9205A21EC05E3E00061E93 /* TJWKWebViewViewController.m in Sources */,
 				CD92059B1EC0527D00061E93 /* TJWebviewProgressLineViewController.m in Sources */,
 				CD94DF431EDFDF4D002FE86D /* TJVideoToolboxViewController.m in Sources */,
+				CD41D6A5228BCFD00057DCFA /* TJFourTestViewController.m in Sources */,
 				CD67A29C1E67F08700FEA095 /* UIView+Nib.m in Sources */,
 				CD9205971EC0503400061E93 /* TJWebListTableViewController.m in Sources */,
 				CD71E5CF1E6D04FC0058B89F /* TJFMDBViewController.m in Sources */,

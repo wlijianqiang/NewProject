@@ -11,6 +11,7 @@
 //#import <Photos/PHPhotoLibrary.h>
 #import "TJFourViewController+HeaderView.h"
 
+
 typedef NS_ENUM(NSInteger,CellIndexPath){
     CellIndexPath_ImagePickerView = 0,
 };
@@ -81,7 +82,9 @@ typedef NS_ENUM(NSInteger,CellIndexPath){
 
         }
             break;
-            
+            default:
+             [JLRoutes routeURL:[NSURL URLWithString:@"/TJFourTestViewController"] withParameters:nil];
+            break;
     }
 }
 

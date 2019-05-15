@@ -31,6 +31,8 @@
 #import "TJVideoToolboxDecodeViewController.h"
 #import "JQGestureViewController.h"
 #import "JQRunLoopViewController.h"
+#import "TJFourTestViewController.h"
+
 
 @implementation TJRoutesConfig
 
@@ -168,8 +170,14 @@
                  JQRunLoopViewController *vc = [[JQRunLoopViewController alloc] init];
                  [routeDelegate shouldPushViewController:vc animated:YES];
                  return YES;
+             }],
+             
+             [TJRoutes routePattern:@"/TJFourTestViewController" handler:^BOOL(id<TJRoutesDelegate>  _Nullable routeDelegate, NSString * _Nullable routePattern, NSDictionary * _Nullable parameters) {
+                 JQRunLoopViewController *vc = [[JQRunLoopViewController alloc] init];
+                 vc.navigationController.navigationBar.hidden = YES;
+                 [routeDelegate shouldPushViewController:vc animated:YES];
+                 return YES;
              }]
-
             ];
 }
 
