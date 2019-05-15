@@ -169,4 +169,11 @@
     
     return [self POST:kSiginURL parameters:parameters success:success failure:failure];
 }
+
+- (void)cancelAllOperations {
+    [self.HTTPSessionManager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
+    //取消所有的网络请求
+    [self.HTTPSessionManager.operationQueue cancelAllOperations];
+}
 @end

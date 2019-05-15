@@ -1110,6 +1110,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1172,7 +1173,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NewProject/Pods-NewProject-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-NewProject/Pods-NewProject-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
@@ -1187,7 +1188,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewProject/Pods-NewProject-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewProject/Pods-NewProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6CFF150B16F68316E2E53305 /* [CP] Check Pods Manifest.lock */ = {
@@ -1440,7 +1441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TZF97Y7PMP;
-				GCC_PREFIX_HEADER = NewProject/TJPrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PRODUCT_NAME)/TJPrefixHeader.pch";
 				INFOPLIST_FILE = NewProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nover-supertv.NewProject";
@@ -1455,7 +1456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TZF97Y7PMP;
-				GCC_PREFIX_HEADER = NewProject/TJPrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PRODUCT_NAME)/TJPrefixHeader.pch";
 				INFOPLIST_FILE = NewProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nover-supertv.NewProject";

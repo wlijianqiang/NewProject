@@ -9,12 +9,13 @@
 #import "TJHTTPSessionManager.h"
 
 @implementation TJHTTPSessionManager
-
+//网络初始化
 -(instancetype)initWithBaseURL:(NSURL *)url{
     self = [super initWithBaseURL:url];
     if (!self) {
         return nil;
     }
+    
     self.requestSerializer = [AFJSONRequestSerializer serializer];//请求的数据格式/默认是二进制的
     self.responseSerializer = [AFJSONResponseSerializer serializer];//响应的数据格式/默认是JSON格式
     [self.requestSerializer willChangeValueForKey:@"timeoutInterval"];

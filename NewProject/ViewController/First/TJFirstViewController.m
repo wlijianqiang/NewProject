@@ -11,6 +11,7 @@
 #import "TJFirstViewController+CycleScrollView.h"
 
 #import "SRWebSocket.h"
+#import <objc/runtime.h>
 
 @interface TJFirstViewController ()<SRWebSocketDelegate>
 
@@ -43,6 +44,7 @@
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(100);
     }];
+    
 }
 
 #pragma mark - 生成一个待圆角的图片
@@ -130,6 +132,10 @@
     //[self.tabBarController.tabBar hiddenBadgeOnItemIndex:0];
     [JLRoutes routeURL:[NSURL URLWithString:@"/testViewController"] withParameters:nil];
 
+}
+
+-(void)dealloc {
+    [[TJAPIManager shareManager]cancelAllOperations ];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -25,4 +25,7 @@ typedef void(^FailureBlock)(NSURLSessionDataTask *_Nullable task, NSError * _Nul
 - (nullable NSURLSessionDataTask *)signinParameters:(nullable id)parameters
                                             success:(nullable SuccessBlock)success
                                             failure:(nullable FailureBlock)failure;
+#pragma mark 取消所有网络请求
+- (void)cancelAllOperations;
+
 @end
