@@ -24,7 +24,6 @@
     [self setupRoute];
     [self memoryManage];
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0];
-
     TJLog(@"模拟器路径为：%@",path);
     //全屏禁止触摸开启
     [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
